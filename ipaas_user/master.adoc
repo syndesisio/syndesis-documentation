@@ -1,0 +1,7 @@
+:prodname: iPaaS
+:prodversion: 1.0
+
+= {prodname} User Guide
+
+== Dummy Chapter
+include::dummy.adoc[]

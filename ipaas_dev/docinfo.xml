@@ -1,0 +1,13 @@
+<productname>iPaaS</productname>
+<productnumber>1.0</productnumber>
+<subtitle>iPaaS 1.0 Developer Guide</subtitle>
+<abstract>
+ <para>Developer guide for iPaaS</para>
+</abstract>
+<authorgroup>
+  <org>
+    <orgname>JBoss Fuse Documentation Team</orgname>
+    <email>fuse-docs-support@redhat.com</email>
+  </org>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
