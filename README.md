@@ -14,3 +14,7 @@ Just follow these steps:
 
         $ cd ipaas_user
         $ asciidoctor master.adoc
+
+*Q. Where can I learn about Asciidoc syntax?*
+
+See the [Asciidoc User Manual](http://asciidoctor.org/docs/user-manual/).
