@@ -1,0 +1,2 @@
+=== Create a New Integration Template
+Add the topic contents here.

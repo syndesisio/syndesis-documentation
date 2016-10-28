@@ -1,4 +1,0 @@
-This is the preamble to the dummy chapter.
-
-=== The First Section
-And the contents of the first section.

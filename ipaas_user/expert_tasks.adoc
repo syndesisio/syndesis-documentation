@@ -1,0 +1,13 @@
+This chapter describes some advanced tasks that you can perform from the iPaaS console.
+
+include::tasks/expert/create_connector_ui.adoc[]
+
+include::tasks/expert/verify_connection.adoc[]
+
+include::tasks/expert/create_template.adoc[]
+
+include::tasks/expert/data_mapper.adoc[]
+
+include::tasks/expert/expose_rest.adoc[]
+
+include::tasks/expert/api_management.adoc[]

@@ -3,5 +3,8 @@
 
 = {prodname} User Guide
 
-== Dummy Chapter
-include::dummy.adoc[]
+== Basic Workflow
+include::citizen_tasks.adoc[]
+
+== Advanced Workflow
+include::expert_tasks.adoc[]

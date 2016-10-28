@@ -3,5 +3,5 @@
 
 = {prodname} Administrator Guide
 
-== Dummy Chapter
-include::dummy.adoc[]
+== iPaaS Administrative Tasks
+include::admin_tasks.adoc[]

@@ -1,0 +1,13 @@
+This chapter describes typical administrative tasks and processes for the iPaaS administrator.
+
+include::tasks/user_admin.adoc[]
+
+include::tasks/team.adoc[]
+
+include::tasks/metrics.adoc[]
+
+include::tasks/logs.adoc[]
+
+include::tasks/nexus.adoc[]
+
+include::tasks/manage_pipelines.adoc[]

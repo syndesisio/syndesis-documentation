@@ -3,5 +3,5 @@
 
 = {prodname} Developer Guide
 
-== Dummy Chapter
-include::dummy.adoc[]
+== Developer Tasks
+include::dev_tasks.adoc[]

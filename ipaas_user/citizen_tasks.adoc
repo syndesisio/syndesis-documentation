@@ -1,0 +1,15 @@
+This chapter outlines the basic workflow for the iPaaS product.
+
+include::tasks/citizen/log_in.adoc[]
+
+include::tasks/citizen/explore_console.adoc[]
+
+include::tasks/citizen/create_integration_with_template.adoc[]
+
+include::tasks/citizen/create_integration_from_scratch.adoc[]
+
+include::tasks/citizen/test_in_editor.adoc[]
+
+include::tasks/citizen/deploy_integration.adoc[]
+
+include::tasks/citizen/trace_data.adoc[]
