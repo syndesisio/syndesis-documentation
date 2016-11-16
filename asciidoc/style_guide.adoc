@@ -1,0 +1,217 @@
+// Enable icons instead of text in admonitions (TIP, NOTE, and so on)
+:icons:
+
+[[style]]
+= Style Guide for JBoss Fuse Documentation
+
+[[style-boilerplate]]
+== Boilerplate
+
+[[style-headings]]
+== Headings and Anchor IDs
+The header for this subsection is defined as:
+
+....
+[[style-headings]] <1>
+== Headings and Anchor IDs <2>
+....
+
+<1> The anchor ID is defined between square brackets (making it possible to link to this section).
+<2> The header itself is defined using equals signs (where the number of signs indicates the depth).
+
+NOTE: Do _not_ use the `#` symbol for defining headers (supported only for the sake of backward compatibility with Markdown syntax).
+
+[[style-comments]]
+== Comments in AsciiDoc
+
+[[style-blocks]]
+== Paragraphs and Lists
+
+[[style-blocks-paras]]
+=== Paragraphs
+
+[[style-blocks-itemized-list]]
+=== Itemised List
+
+[[style-blocks-ordered-list]]
+=== Ordered List
+
+[[style-blocks-variable-list]]
+=== Variable List
+
+
+[[style-code]]
+== Code Formatting
+
+[[style-code-inline]]
+=== Inline Code
+Use backticks to enclose inline code.
+
+For example, to start the fuse container, enter the `./bin/fuse` command.
+
+----
+For example, to start the fuse container, enter the `./bin/fuse` command.
+----
+
+You can use `_underscores inside backticks_` or `*asterisks inside backticks*`. But if you prefer the underscore or asterisk to be shown literally, `\_escape the first one with a backslash_`.
+
+----
+You can use `_underscores inside backticks_` or `*asterisks inside backticks*`. But if you prefer the underscore or asterisk to be shown literally, `\_escape the first one with a backslash_`.
+----
+
+
+[[style-code-listing-notitle]]
+=== Code Listing without Title
+You _could_ create a code listing by putting spaces at the start of each line of code, but _this approach is deprecated._
+
+It is much better to delimit a code block by putting a line with four hyphens `----` at the beginning and end of the listing, like this:
+
+....
+----
+oc login -u admin -p admin
+----
+....
+
+Which renders as:
+----
+oc login -u admin -p admin
+----
+
+If you are presenting a snippet of XML code, it is strongly recommended to switch on syntax highlighting, like this:
+
+....
+[source,xml]
+----
+<repositories>
+  <repository>
+    <id>foo</id>
+  </repository>
+</repositories>
+----
+....
+
+Which renders as:
+[source,xml]
+----
+<repositories>
+  <repository>
+    <id>foo</id>
+  </repository>
+</repositories>
+----
+
+Likewise, for Java code snippets it is highly recommended to switch on syntax highlighting like this:
+
+....
+[source,java]
+----
+class FooBar {
+  int getNumberOfFoos();
+  void setNumberOfFoos();
+}
+----
+....
+
+Which renders as:
+[source,java]
+----
+class FooBar {
+  int getNumberOfFoos();
+  void setNumberOfFoos();
+}
+----
+
+[[style-code-listing-title]]
+=== Code Listing with Title
+To define a code listing with a title, precede it with a title line like `.This is a Code Example`.
+And if you are giving a code listing a title, it is generally a good idea to assign an anchor ID (between `[[` and `]]`) as well and to put it in a generic block (enclosed in `====` lines). For example:
+
+....
+[[style-code-xml-example]]
+.Code Caption
+====
+[source,xml]
+----
+<repositories>
+  <repository>
+    <id>foo</id>
+  </repository>
+</repositories>
+----
+====
+....
+
+Which renders as:
+
+[[style-code-xml-example]]
+.Code Caption
+====
+[source,xml]
+----
+<repositories>
+  <repository>
+    <id>foo</id>
+  </repository>
+</repositories>
+----
+====
+
+And because you have given the listing an anchor ID, you can easily cross-reference the <<style-code-xml-example>>.
+
+[[style-code-listing-attribute-sub]]
+=== Attribute Substitution in Code Listings
+There are circumstances where it can be useful to substitutes attribute values inside code listings.
+But by default, this is not possible because the curly braces, `{}`, are interpreted literally inside a code listing.
+But if you specify `[subs="attributes"]` at the start of the listing, attribute substitution _is_ performed. For example:
+
+....
+[subs="attributes"]
+----
+mvn archetype:generate \
+  -DarchetypeCatalog={archetype-catalog} \
+  -DarchetypeGroupId=org.jboss.fuse.fis.archetypes \
+  -DarchetypeArtifactId=spring-boot-camel-archetype \
+  -DarchetypeVersion={archetype-version}
+----
+....
+
+Which renders as:
+
+:archetype-version: 2.2.180.fuse-000003
+:archetype-catalog: https://repository.jboss.org/nexus/content/groups/ea/archetype-catalog.xml
+
+[subs="attributes"]
+----
+mvn archetype:generate \
+  -DarchetypeCatalog={archetype-catalog} \
+  -DarchetypeGroupId=org.jboss.fuse.fis.archetypes \
+  -DarchetypeArtifactId=spring-boot-camel-archetype \
+  -DarchetypeVersion={archetype-version}
+----
+
+[[style-images]]
+== Images and Figures
+
+[[style-images-inline]]
+=== Inline Image
+
+[[style-images-nocaption]]
+=== Image without Caption
+
+[[style-images-caption]]
+=== Image with Caption
+
+[[style-linking]]
+== Linking and Cross Referencing
+
+[[style-linking-url]]
+=== Hyperlinks
+
+[[style-linking-xref]]
+=== Cross References
+<<style-code-xml-example>>
+
+[[style-structure]]
+== Document Structure and Includes
+
+Here is a quick code example.
