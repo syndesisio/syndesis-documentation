@@ -1,5 +1,6 @@
 // Enable icons instead of text in admonitions (TIP, NOTE, and so on)
 :icons:
+:source-highlighter: pygments
 
 [[style]]
 = Style Guide for JBoss Fuse Documentation
@@ -23,6 +24,20 @@ NOTE: Do _not_ use the `#` symbol for defining headers (supported only for the s
 
 [[style-comments]]
 == Comments in AsciiDoc
+// This is a single line comment
+Single line comments start with a double forward slash, like this:
+....
+// This is a single line comment
+....
+
+Multi-line comments are enclosed in a group of four forward slashes, like this:
+....
+////
+This is a slightly longish
+multi-line
+comment.
+////
+....
 
 [[style-blocks]]
 == Paragraphs and Lists
@@ -31,14 +46,137 @@ NOTE: Do _not_ use the `#` symbol for defining headers (supported only for the s
 === Paragraphs
 
 [[style-blocks-itemized-list]]
-=== Itemised List
+=== Unordered List
+A simple unordered list (bulleted list) is signalled by putting an asterisk at the start of each line, like this:
+
+....
+* First bullet.
+* Second bullet.
+* Third bullet.
+....
+
+Which renders as:
+
+====
+* First bullet.
+* Second bullet.
+* Third bullet.
+====
+
+One of the most useful things to know about unordered lists is how to add extra content to a bullet point without breaking out of the list?
+The answer is to join the content with a `+` character (on its own line).
+
+For example, consider the following unordered list:
+
+....
+* Launch the virtual machine with the following command:
++
+----
+$ vagrant up
+----
++
+NOTE: Make sure that you run this command in the same directory as the `Vagrantfile` file
+
+* Shut down the virtual machine with the following command:
++
+----
+$ vagrant halt
+----
+....
+
+Which renders as:
+
+====
+* Launch the virtual machine with the following command:
++
+----
+$ vagrant up
+----
++
+NOTE: Make sure that run this command in the same directory as the `Vagrantfile` file
+
+* Shut down the virtual machine with the following command:
++
+----
+$ vagrant halt
+----
+====
 
 [[style-blocks-ordered-list]]
 === Ordered List
+An ordered list (numbered list) is signaled by putting a dot, `.`, at the start of each line. Once again, to join content and keep it in the same numbered point, use a the `+` character.
+
+For example, consider the following ordered list:
+
+....
+. Log in to OpenShift by entering the following command:
++
+----
+$ oc login -u admin -p admin
+----
++
+NOTE: The `admin` user account is created by default in the CDK.
+
+. Switch to the `test` project by entering the following command:
++
+----
+$ oc project test
+----
+....
+
+Which renders as:
+
+====
+. Log in to OpenShift by entering the following command:
++
+----
+$ oc login -u admin -p admin
+----
++
+NOTE: The `admin` user account is created by default in the CDK.
+
+. Switch to the `test` project by entering the following command:
++
+----
+$ oc project test
+----
+====
 
 [[style-blocks-variable-list]]
 === Variable List
+The variable list is a great layout to use when you need to present a list of terms and associated descriptions (and is often a superior alternative to using a bulleted list).
 
+For example, consider the following variable list:
+
+....
+OpenShift client:: If you are using the CDK, the `oc` client tool can conveniently be installed as follows:
++
+----
+$ vagrant service-manager install-cli openshift
+----
+
+Docker client:: If you are using the CDK, the `docker` client tool can conveniently be installed as follows:
++
+----
+$ vagrant service-manager install-cli docker
+----
+....
+
+Which renders as:
+
+====
+OpenShift client:: If you are using the CDK, the `oc` client tool can conveniently be installed as follows:
++
+----
+$ vagrant service-manager install-cli openshift
+----
+
+Docker client:: If you are using the CDK, the `docker` client tool can conveniently be installed as follows:
++
+----
+$ vagrant service-manager install-cli docker
+----
+====
 
 [[style-code]]
 == Code Formatting
@@ -73,9 +211,11 @@ oc login -u admin -p admin
 ....
 
 Which renders as:
+====
 ----
 oc login -u admin -p admin
 ----
+====
 
 If you are presenting a snippet of XML code, it is strongly recommended to switch on syntax highlighting, like this:
 
@@ -91,6 +231,8 @@ If you are presenting a snippet of XML code, it is strongly recommended to switc
 ....
 
 Which renders as:
+
+====
 [source,xml]
 ----
 <repositories>
@@ -99,6 +241,7 @@ Which renders as:
   </repository>
 </repositories>
 ----
+====
 
 Likewise, for Java code snippets it is highly recommended to switch on syntax highlighting like this:
 
@@ -113,6 +256,8 @@ class FooBar {
 ....
 
 Which renders as:
+
+====
 [source,java]
 ----
 class FooBar {
@@ -120,6 +265,7 @@ class FooBar {
   void setNumberOfFoos();
 }
 ----
+====
 
 [[style-code-listing-title]]
 === Code Listing with Title
@@ -161,7 +307,7 @@ And because you have given the listing an anchor ID, you can easily cross-refere
 [[style-code-listing-attribute-sub]]
 === Attribute Substitution in Code Listings
 There are circumstances where it can be useful to substitutes attribute values inside code listings.
-But by default, this is not possible because the curly braces, `{}`, are interpreted literally inside a code listing.
+By default, this is not possible because the curly braces, `{}`, are interpreted literally inside a code listing.
 But if you specify `[subs="attributes"]` at the start of the listing, attribute substitution _is_ performed. For example:
 
 ....
@@ -203,13 +349,83 @@ mvn archetype:generate \
 
 [[style-linking]]
 == Linking and Cross Referencing
+This section gives some recommendations for hyperlinking (HTTP link to an external resource) and cross referencing (linking to a location in the same book or in a different book in the same library).
 
 [[style-linking-url]]
 === Hyperlinks
+Creating a hyperlink (HTTP URL) in AsciiDoc could not be simpler.
+HTTP URLs and HTTPS URLs (and a few other URL schemes) are automatically converted to hyperlinks.
+
+For example, the following HTTP URL:
+
+....
+https://camel.apache.org/rest-dsl.html
+....
+
+Renders as:
+
+https://camel.apache.org/rest-dsl.html
+
+If you want to specify the link text, just add square braces at the end of the URL. For example:
+
+....
+https://camel.apache.org/rest-dsl.html[REST DSL upstream documentation]
+....
+
+Which renders as:
+
+https://camel.apache.org/rest-dsl.html[REST DSL upstream documentation]
+
+You can optionally prefix the HTTP URL with `link:` (as in `link:https://camel.apache.org/rest-dsl.html`), but it's _not_ necessary.
 
 [[style-linking-xref]]
-=== Cross References
-<<style-code-xml-example>>
+=== Cross Referencing within the Same Book
+To cross reference a location within the same book, all you need is the anchor ID of the location (which could be a section, code example, figure, and so on). There are two alternative syntaxes for defining a cross-references and they are both equally good.
+
+For example, here are two links to the same location with anchor ID `style-code-xml-example`:
+
+....
+See <<style-code-xml-example>>
+
+See xref:style-code-xml-example[]
+....
+
+Which render as:
+
+====
+See <<style-code-xml-example>>
+
+See xref:style-code-xml-example[]
+====
+
+If you want AsciiDoc to provide the link text automatically, you must be careful how you position the anchor ID at the target location.
+Make sure that the anchor ID appears just before the title of the item you are referencing. For example, this is the right way to add the anchor to a code example:
+
+....
+[[style-code-xml-example]]
+.Code Caption
+====
+[source,xml]
+----
+<repositories>
+  <repository>
+    <id>foo</id>
+  </repository>
+</repositories>
+----
+====
+....
+
+You might come across a variant of the cross reference syntax that includes the file name of the location you want to reference, as follows:
+
+....
+See <<style_guide.adoc#style-code-xml-example>>
+....
+
+
+_Do not use this syntax to reference a location in the same book!_
+It looks like a plausible thing to do, if the target location is in a different file.
+But it is bad, because it means that any time you move or rename the file, all of its associated cross references will be broken. It is not necessary to include the file name anyway, because when you build the whole book AsciiDoc will be able to resolve the cross references (even without the file name).
 
 [[style-structure]]
 == Document Structure and Includes
