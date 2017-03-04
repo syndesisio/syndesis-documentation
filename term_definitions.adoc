@@ -1,0 +1,24 @@
+=== Definitions of IPaaS Terms
+
+IPaaS lets you enable data transfer between different applications. For example,
+each time a customer is mentioned in Twitter, you might want to capture that
+mention in that customer’s Salesforce account.
+
+To set up data transfer between applications, you create an integration. When
+you create an integration you identify the source application and the target
+application by selecting from the set of iPaaS-provided connectors.
+
+A connector represents a specific application that you want to obtain data from
+or send data to. For example, iPaaS provides a Twitter connector, a Salesforce
+connector, a MongoDB connector. Each connector is a template for defining a
+connection to that application. In other words, the Twitter connector is a
+template for defining a connection to Twitter.
+
+In iPaaS, a connection is a configured connector.
+
+In any number of integrations, you can select the same connector. For example,
+in integration A you can select the Twitter connector to create a connection
+that uses a particular set of configuration details to connect to Twitter. In
+integration B, you can select that same Twitter connector but specify a
+different set of configuration details and so create a different connection to
+Twitter.
