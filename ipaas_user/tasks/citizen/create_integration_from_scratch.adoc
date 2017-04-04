@@ -1,2 +1,19 @@
-=== Create a New Integration from Scratch
-Add the topic contents here. 
+=== Create an Integration
+[Create an Integration]
+
+. Go to the Connections page.
+
+. Provide a name for the Integration.
+
+. Select source Connection.
+
+. Supply connection details for the source Connection if requested. The properties required are specific to each individual Connection.
+
+. Select destination Connection.
+
+. Supply connection details for destination Connection. The properties required are specific to each individual Connection.
+
+. Click *Create*.
+
+. View Integration on the page
+
