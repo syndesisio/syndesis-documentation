@@ -1,2 +1,37 @@
-=== Create a New Integration from Scratch
-Add the topic contents here. 
+=== Create an Integration
+[Create an Integration]
+
+*Prerequisites*
+
+You must have a connection type set up as a template for the type of connection you want to create. 
+For example, if you want to create a new Twitter connection, a Twitter connection must be available to be used as a template.
+
+. On the iPaaS home page, click on the *Connections* tab.
+
+. Click *Create*
+
+. Provide a name for the Integration.
+
+. Select source Connection. 
+.. Select the type of connection from the list of pre-defined connections. Supply connection credentials for the source Connection if requested. The properties required are specific to each individual Connection.
+
+. Enter a *Name* and optional *Description* for the connection.
+
+. Select destination Connection.
+.. Select the type of connection from the list of pre-defined connections. Supply connection credentials for the source Connection if requested. The properties required are specific to each individual Connection.
+
+. Enter a *Name* and optional *Description* for the connection.
+
+. You can add further steps or connections if required, by clicking *Add a step* or *Add a connection*.  
+.. *Add a step*   You can add some functionality to your Integration by adding a log entry, a filter, or by adding a data mapper. 
+.. *Add a connection*   You can add further connections to the Integration.
+
+. Click *Next*.
+
+. Enter a *Name* and optional *Description* for the Integration.
+
+. Click *Publish*.
+
+. View Integration on the *Integrations* page.
+
+
