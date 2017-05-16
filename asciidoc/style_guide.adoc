@@ -430,4 +430,13 @@ But it is bad, because it means that any time you move or rename the file, all o
 [[style-structure]]
 == Document Structure and Includes
 
-Here is a quick code example.
+=== Indexes
+
+To include an index in the generated document, add the following at the end of the `master.adoc file`:
+
+----
+[index, id='ix01']
+= Index: value
+----
+
+This assumes that there are index entries in the source files. 
