@@ -304,6 +304,13 @@ Which renders as:
 
 And because you have given the listing an anchor ID, you can easily cross-reference the <<style-code-xml-example>>.
 
+
+[[style-code-callouts]]
+=== Code Listing That Has Callouts and Italics
+Sometimes a code listing uses callouts and also italics for placeholders. 
+To be able to insert callouts and also preserve italics, 
+insert `[subs="+quotes"]` before the code listing. 
+
 [[style-code-listing-attribute-sub]]
 === Attribute Substitution in Code Listings
 There are circumstances where it can be useful to substitutes attribute values inside code listings.
