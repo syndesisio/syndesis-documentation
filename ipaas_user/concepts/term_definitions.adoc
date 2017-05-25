@@ -1,24 +1,45 @@
-=== Definitions of IPaaS Terms
+[[Understanding-IPaaS-Terms]]
+=== Understanding IPaaS Terms
 
 IPaaS lets you enable data transfer between different applications. For example,
 each time a customer is mentioned in Twitter, you might want to capture that
-mention in that customer’s Salesforce account.
+mention in that customer’s Salesforce account. Another example is a service 
+that makes stock trade recommendations. You can capture recommendations of interest
+and forward them to a service that automates stock transfers. 
+
+==== Integration
 
 To set up data transfer between applications, you create an integration. When
 you create an integration you identify the source application and the target
-application by selecting from the set of iPaaS-provided connectors.
+application by selecting from a set of connections.
 
-A connector represents a specific application that you want to obtain data from
-or send data to. For example, iPaaS provides a Twitter connector, a Salesforce
-connector, a MongoDB connector. Each connector is a template for defining a
-connection to that application. In other words, the Twitter connector is a
-template for defining a connection to Twitter.
+==== Connection
 
-In iPaaS, a connection is a configured connector.
+A connection represents a specific application that you want to obtain data from
+or send data to. For example, the set of connections you can choose from might  
+include a Twitter connection, a Salesforce connection, a Gmail connection, and so on. 
+Each connection has been created and configured by someone in your organization.
 
-In any number of integrations, you can select the same connector. For example,
-in integration A you can select the Twitter connector to create a connection
-that uses a particular set of configuration details to connect to Twitter. In
-integration B, you can select that same Twitter connector but specify a
-different set of configuration details and so create a different connection to
-Twitter.
+In any number of integrations, you can select the same connection. For example,
+in integration A you can select the Twitter connection and configure it to 
+use `JDoe` as the Twitter screen name. In
+integration B, you can select that same Twitter connection and configure it
+to use `KLee` as the Twitter screen name. 
+
+==== Action 
+
+In an integration, each connection performs an action. For some
+connections, you choose the action. Other connections can perform
+only one action and you are not offered a choice when you create
+an integration that uses that connection. For example, when you create
+an integration that uses a Salesforce connection the possible
+actions include creating a Salesforce account, updating a Salesforce
+account, searching Salesforce, and more. 
+
+==== Step
+
+In some integrations, obtaining data from one application and 
+using it in another application is all you want to do. But in other
+integrations, you might need a step between the data's
+source and target applications. Steps you can add include logging,
+filtering out data, spliting data, and more. 

@@ -3,6 +3,9 @@
 
 = {prodname} User Guide
 
+== Concepts
+include::concepts.adoc[]
+
 == Basic Workflow
 include::citizen_tasks.adoc[]
 

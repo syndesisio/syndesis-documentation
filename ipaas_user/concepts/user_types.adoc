@@ -1,0 +1,24 @@
+[[User-Types]]
+=== IPaaS User Types
+
+Several different kinds of users interact with iPaaS. These user groups 
+include:
+
+* *End users* create integrations in the iPaaS console, and then deploy
+and monitor those integrations in the iPaaS dashboard. 
+End users do not write code to create
+integrations. These users, sometimes referred to as citizen users,
+ understand the business requirements and how to 
+achieve them by integrating different applications. End users do not need
+to understand how the integration works. 
+
+* *Expert users* create iPaaS connections from iPaaS-provided connectors.
+They can also develop additional iPaaS connectors. Expert users are
+experienced programmers. 
+
+* *Developers* are programmers who contribute to the iPaaS code base. 
+
+* *Administrators* deploy iPaaS, manage iPaaS users and monitor iPaaS
+operation. 
+
+* *Contributors* add to the open source code base. 

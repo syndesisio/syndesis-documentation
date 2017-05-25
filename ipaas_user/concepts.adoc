@@ -1,0 +1,8 @@
+This chapter presents concepts that are helpful for all iPaaS users
+to understand.
+
+include::concepts/term_definitions.adoc[]
+
+include::concepts/user_types.adoc[]
+
+include::concepts/workflow_overview.adoc[]

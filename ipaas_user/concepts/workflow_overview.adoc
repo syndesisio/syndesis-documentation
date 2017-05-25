@@ -1,0 +1,44 @@
+[[Overview-of-Creating-an-Integration]]
+=== Overview of Creating an Integration
+
+Before you create an integration, it is assumed that you have done
+some planning. You should know:
+
+* Which application you want to obtain data from
+* What you want to do with that data
+* Where you want to send that data
+
+==== Prerequisites
+To create an integration, the following prerequisites
+must be met:
+
+* An expert iPaaS user in your organization has created
+connections for the applications you want to access in your integration. 
+
+* An administrative iPaaS user in your organization has
+provided you with login credentials for the iPaaS console. 
+
+==== General Steps for Creating an Integration
+To create an integration, the general steps are:
+
+. Log in to the iPaaS console.
+. Click *Create Integration*. 
+. Select a source connection. This connection accesses the application
+you want to obtain data from. 
+. Select the action you want the source connection to
+perform. 
+. Optionally, depending on the connection, enter some 
+configuration information, such as login credentials.
+. Select a destination connection. This connection accesses the 
+application that uses the data from the source connection. 
+. Select the action you want the destination connection to perform.
+. Optionally, depending on the connection, enter some configuration
+details. 
+. Optionally, add one or more steps to be performed between the 
+source application and the destination application. Possible steps
+include logging, filtering data, spliting data mapping data, and 
+more. 
+. Optionally, add a connection for an application you want to access
+after you obtain data from the source application and before
+you send data to the destination application. 
+. Publish your integration to run it. 
