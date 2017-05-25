@@ -1,10 +1,11 @@
+[[Log-In-to-the-iPaaS-Portal]]
 === Log In to the iPaaS Portal
-[Log In to the iPaaS Portal]
-==== Log In to an iPaaS Cluster using OpenShift's local Authentication.
-To log in to a cluster that uses local Authentication provided by OpenShift, you will automatically be redirected to the OpenShift log in screen.
 
-====== First Time Log In
-The first time you log in using OpenShift's local Authentication, you will be asked to provide the following credentials:
+==== Log In to an iPaaS Cluster using OpenShift's local Authentication.
+To log in to a cluster that uses local Authentication provided by OpenShift, you are automatically redirected to the OpenShift log in screen.
+
+===== First Time Log In
+The first time you log in using OpenShift's local Authentication, you are prompted to provide the following credentials:
 
 * Email address
 
@@ -13,15 +14,14 @@ The first time you log in using OpenShift's local Authentication, you will be as
 * Last name
 
 //verify this. Not sure what happens, really
-The next time you log in you will be asked for the usual log in credentials.
+The next time you log in you are prompted for the usual log in credentials.
 
 ==== Log in to an iPaaS Cluster using GitHub Authentication
 If you are logging in to a cluster that uses GitHub Authentication, there are two scenarios.
 
-* If you are already signed in to GitHub
-you will be signed straight in to iPaaS using GitHub's Single Sign On facility.
+* If you are already signed in to GitHub then GitHub's Single Sign On facility
+forwards you to iPaaS. .
 
-* If you are not signed in to GitHub
+* If you are not signed in to GitHub then the GitHub sign on screen appears.
 you will be redirected to the GitHub sign on screen where you can enter your credentials.
 //verify this
-

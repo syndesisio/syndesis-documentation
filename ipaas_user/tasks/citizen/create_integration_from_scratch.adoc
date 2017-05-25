@@ -1,12 +1,10 @@
+[[Create-an-Integration]]
 === Create an Integration
-[Create an Integration]
-
-*Prerequisites*
 
 You must have a connection type set up as a template for the type of connection you want to create. 
 For example, if you want to create a new Twitter connection, a Twitter connection must be available to be used as a template.
 
-. On the iPaaS home page, click on the *Connections* tab.
+. On the iPaaS home page, click the *Connections* tab.
 
 . Click *Create*
 
@@ -18,7 +16,8 @@ For example, if you want to create a new Twitter connection, a Twitter connectio
 . Enter a *Name* and optional *Description* for the connection.
 
 . Select destination Connection.
-.. Select the type of connection from the list of pre-defined connections. Supply connection credentials for the source Connection if requested. The properties required are specific to each individual Connection.
+.. Select the type of connection from the list of pre-defined connections. 
+-- Supply connection credentials for the source Connection if requested. The properties required are specific to each individual Connection.
 
 . Enter a *Name* and optional *Description* for the connection.
 
@@ -33,5 +32,3 @@ For example, if you want to create a new Twitter connection, a Twitter connectio
 . Click *Publish*.
 
 . View Integration on the *Integrations* page.
-
-
