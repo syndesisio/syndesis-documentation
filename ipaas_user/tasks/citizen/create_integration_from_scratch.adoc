@@ -4,7 +4,7 @@
 You must have a connection type set up as a template for the type of connection you want to create. 
 For example, if you want to create a new Twitter connection, a Twitter connection must be available to be used as a template.
 
-. On the iPaaS home page, click the *Connections* tab.
+. On the {prodname} home page, click the *Connections* tab.
 
 . Click *Create*
 

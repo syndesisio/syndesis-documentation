@@ -1,9 +1,9 @@
 [[Understanding-IPaaS-Terms]]
-=== Understanding IPaaS Terms
+=== Understanding {prodname} Terms
 
-IPaaS lets you enable data transfer between different applications. For example,
+{prodname} lets you enable data transfer between different applications. For example,
 each time a customer is mentioned in Twitter, you might want to capture that
-mention in that customer’s Salesforce account. Another example is a service 
+mention in your Salesforce account for that customer. Another example is a service 
 that makes stock trade recommendations. You can capture recommendations of interest
 and forward them to a service that automates stock transfers. 
 
