@@ -1,3 +1,6 @@
+:prodname: iPaaS
+:prodversion: 1.0
+
 [[Understanding-IPaaS-Terms]]
 === Understanding {prodname} Terms
 
@@ -43,3 +46,20 @@ using it in another application is all you want to do. But in other
 integrations, you might need a step between the data's
 source and target applications. Steps you can add include logging,
 filtering out data, spliting data, and more. 
+
+==== Connector
+
+{prodname} provides a set of connectors. Each connector provides the
+infrastructure for connecting to a particular application or service.
+For example, the Salesforce connector lets you connect 
+to Salesforce. 
+
+However, a connector does not provide everything needed to actually
+connect to an application or service, In an organization, an expert
+{prodname} user configures a connector with specific information, 
+such as login credentials. A configured connector is referred to
+as a connection. 
+
+To create an integration, end users select from available connections.
+Sometimes a connection needs additional configuration information.
+Sometimes, it does not. 

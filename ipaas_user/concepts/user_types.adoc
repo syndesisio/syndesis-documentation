@@ -1,24 +1,46 @@
+:prodname: iPaaS
+:prodversion: 1.0
+
 [[User-Types]]
 === {prodname} User Types
 
 Several different kinds of users interact with {prodname}. These user groups 
 include:
 
-* *End users* create integrations in the {prodname} console, and then deploy
-and monitor those integrations in the {prodname} dashboard. 
-End users do not write code to create
-integrations. These users, sometimes referred to as citizen users,
- understand the business requirements and how to 
-achieve them by integrating different applications. End users do not need
-to understand how the integration works. 
+* *End users*, sometimes referred to as citizen users, 
+interact with multiple software packages 
+to support lines of business within an organization. These software 
+packages are increasingly designed as software as a service (SaaS). 
+End users understand business requirements and workflows and 
+the relevant data. 
++
+End users create integrations in the {prodname} 
+console, and then deploy and monitor those integrations in the {prodname} 
+dashboard. 
++
+End users do not 
 
-* *Expert users* create {prodname} connections from {prodname}-provided connectors.
-They can also develop additional {prodname} connectors. Expert users are
-experienced programmers. 
+** Write code to create integrations
+** Need to understand how the integration works
+** Have experience with enterprise integration patterns or the use of
+traditional integration middleware.
+
+* *Expert users* are experienced developers who are familiar with 
+enterprise integration patterns and integration technology. 
++
+Within an organization, expert users help end users by creating {prodname}
+connections for the applications and services that end users want to 
+integrate. Experts can also develop additional {prodname} connectors. 
 
 * *Developers* are programmers who contribute to the {prodname} code base. 
 
-* *Administrators* deploy {prodname}, manage {prodname} users and monitor {prodname}
-operation. 
+* *Administrators* are experienced IT managers who are responsible for 
+organization-specific configuration, management, and monitoring of the 
+{prodname} environment.  {prodname}  administrators support end users
+and expert users in their use of {prodname} and they interact with 
+the Red Hat {prodname} operations team as needed. 
++
+Administrators use the {prodname} web-based administrative console and 
+{prodname} REST APIs. 
 
 * *Contributors* add to the open source code base. 
