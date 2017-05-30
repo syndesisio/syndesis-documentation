@@ -1,6 +1,8 @@
 This chapter presents concepts that are helpful for all iPaaS users
 to understand.
 
+include::concepts/product_overview.adoc[]
+
 include::concepts/term_definitions.adoc[]
 
 include::concepts/user_types.adoc[]

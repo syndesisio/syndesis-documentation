@@ -13,7 +13,8 @@ To create an integration, the following prerequisites
 must be met:
 
 * An expert {prodname} user in your organization has created
-connections for the applications you want to access in your integration. 
+connections for the applications or services
+ you want to access in your integration. 
 
 * An administrative {prodname} user in your organization has
 provided you with login credentials for the {prodname} console. 
@@ -36,7 +37,7 @@ application that uses the data from the source connection.
 details. 
 . Optionally, add one or more steps to be performed between the 
 source application and the destination application. Possible steps
-include logging, filtering data, splitting data mapping data, and 
+include logging, filtering data, splitting data, mapping data, and 
 more. 
 . Optionally, add a connection for an application you want to access
 after you obtain data from the source application and before

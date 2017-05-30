@@ -1,0 +1,87 @@
+:prodname: iPaaS
+:prodversion: 1.0
+
+[[Overview-For-All]]
+=== Introducing {prodname} 
+
+{prodname} is a flexible, customizable platform that provides integration 
+capabilities as a service. With {prodname}, you can copy data from an
+application or service, operate on that data if you need to, and then copy the 
+data to a completely different application or service.  No coding is 
+required to accomplish this. 
+
+==== What It Does
+{prodname} lets you connect to any application or service that your business uses. 
+Connectors provided with {prodname} function as templates for defining connections 
+to applications and services. For example, {prodname} provides a Salesforce connector 
+for creating connections to Salesforce installations. 
+
+==== How It Works
+
+Connectors form the foundation of {prodname}. Each connector
+is an Apache Camel component with added metadata that
+enables the intuitive {prodname} interface. This metadata
+specifies:
+
+* Some connection settings
+
+* Actions that can be performed and their
+properties and defaults
+
+* What the input data and output data look like
+
+Connectors hide component properties that are not relevant. 
+
+When an integration of different applications is ready to be deployed,
+{prodname} creates a Spring Boot-based Camel project and a build 
+configuration, triggers the build, 
+produces a container image, and starts running it on OpenShift. 
+
+==== How You Use It
+
+How you use {prodname} depends on whether you are integrating 
+applications, creating connections for particular applications
+or services, developing new connectors, or managing the
+{prodname} installation. 
+
+{prodname} provides a web browser interface that lets anyone integrate 
+two different applications 
+or services. No coding is required regardless of the complexity of the 
+integration. To deploy a simple integration, the main steps are to select a 
+connection for the source application, select a connection for the destination 
+application, respond to any prompts for configuration settings, 
+and give the 
+integration a name. You can then save the integration or immediately
+deploy it.
+
+The {prodname} dashboard lets you monitor and manage integrations. You can see 
+which integrations are running, start and stop integrations, edit and remove 
+integrations. 
+
+There is also a web browser interface for creating connections. You
+select the connector for the application or service you want to
+connect to.  {prodname} prompts you to
+enter values for the parameters required to create the connection.
+You then verify that the connection works before making it available
+to be used in integrations. 
+
+There are {prodname} APIs for creating additional connectors.
+
+==== Benefits
+
+The benefits of {prodname} include:
+
+* No coding required to share data between different applications or 
+services.
+
+* Deploy on the public cloud, a private cloud, or on-premise.
+
+* Run {prodname} on OpenShift or Kubernetes. 
+
+* Connectors are based on Apache Camel components. If {prodname} does
+not provide a 
+connector for an application or service you want to integrate then a 
+developer can create the connector you need. 
+
+* All the benefits of open source software. You can extend features,
+customize interfaces or connectors, and create additional connectors. 

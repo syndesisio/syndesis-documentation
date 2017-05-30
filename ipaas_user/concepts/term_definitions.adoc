@@ -24,10 +24,13 @@ include a Twitter connection, a Salesforce connection, a Gmail connection, and s
 Each connection has been created and configured by someone in your organization.
 
 In any number of integrations, you can select the same connection. For example,
-in integration A you can select the Twitter connection and configure it to 
+in integration A you can select a Twitter connection and configure it to 
 use `JDoe` as the Twitter screen name. In
 integration B, you can select that same Twitter connection and configure it
-to use `KLee` as the Twitter screen name. 
+to use `KLee` as the Twitter screen name. When multiple integrations
+use the same connection, and there is an update to that connection,
+{prodname} automatically updates all integrations that use 
+that connection. 
 
 ==== Action 
 
@@ -39,13 +42,19 @@ an integration that uses a Salesforce connection the possible
 actions include creating a Salesforce account, updating a Salesforce
 account, searching Salesforce, and more. 
 
+Some actions require additional configuration and {prodname}
+prompts you for this information if it is needed. 
+
 ==== Step
 
 In some integrations, obtaining data from one application and 
 using it in another application is all you want to do. But in other
-integrations, you might need a step between the data's
-source and target applications. Steps you can add include logging,
-filtering out data, spliting data, and more. 
+integrations, you might need one or more steps between the data's
+source and target applications. A step can be an interaction with 
+another application or service or it can be an operation on the
+data. Operations are based on the Enterprise Integration 
+Patterns, for example, steps can filter,
+split, map or log data. 
 
 ==== Connector
 
@@ -58,8 +67,15 @@ However, a connector does not provide everything needed to actually
 connect to an application or service, In an organization, an expert
 {prodname} user configures a connector with specific information, 
 such as login credentials. A configured connector is referred to
-as a connection. 
+as a connection. A particular connector is a template for any
+number of connections. For example, you can use the Salesforce
+connector to create multiple Salesforce connections. Each Salesforce
+connection would have different configuration settings. 
 
 To create an integration, end users select from available connections.
 Sometimes a connection needs additional configuration information.
 Sometimes, it does not. 
+
+Under the covers, {prodname} connectors are Apache Camel components. This
+gives {prodname} the potential to connect to more than one hundred applications
+and services. 

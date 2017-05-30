@@ -30,9 +30,13 @@ enterprise integration patterns and integration technology.
 +
 Within an organization, expert users help end users by creating {prodname}
 connections for the applications and services that end users want to 
-integrate. Experts can also develop additional {prodname} connectors. 
+integrate. Experts help end users and administrators debug issues 
+with integration configuration/logic. Also, expert users can
+develop additional {prodname} connectors. 
 
-* *Developers* are programmers who contribute to the {prodname} code base. 
+* *Developers* are programmers who are familiar with Apache Camel. 
+Developers can use any Camel domain-specific language (DSL) to add
+additional capabilities to an integration created by an end user.
 
 * *Administrators* are experienced IT managers who are responsible for 
 organization-specific configuration, management, and monitoring of the 
