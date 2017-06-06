@@ -1,4 +1,4 @@
-:prodname: iPaaS
+:prodname: Syndesis
 :prodversion: 1.0
 
 [[Overview-For-All]]
@@ -30,19 +30,32 @@ properties and defaults
 
 * What the input data and output data look like
 
-Connectors hide component properties that are not relevant. 
+Each connector
 
-When an integration of different applications is ready to be deployed,
-{prodname} creates a Spring Boot-based Camel project and a build 
-configuration, triggers the build, 
-produces a container image, and starts running it on OpenShift. 
+* Has a single purpose, for example, connect to a 
+Salesforce application
+
+* Hides component properties that are not relevant to that purpose
+
+When an integration of different applications is ready to be deployed:
+
+. {prodname} creates a Spring Boot-based Camel project and a 
+build configuration.
+
+. Triggers the build, which produces a container image.
+
+. Starts running the container image on OpenShift.
+
+In addition, {prodname} stores your integration’s implementation 
+source code and configuration in a source control management system,
+such as GitHub. This enables you to look at it, change it and 
+include it as a part of your DevOps pipeline. 
 
 ==== How You Use It
 
 How you use {prodname} depends on whether you are integrating 
 applications, creating connections for particular applications
-or services, developing new connectors, or managing the
-{prodname} installation. 
+or services, or developing new connectors. 
 
 {prodname} provides a web browser interface that lets anyone integrate 
 two different applications 

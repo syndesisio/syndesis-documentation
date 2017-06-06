@@ -1,4 +1,11 @@
-This chapter presents concepts that are helpful for all iPaaS users
+:prodname: Syndesis
+:prodversion: 1.0
+
+= {prodname} User Guide
+
+== Concepts
+
+This section presents concepts that are helpful for all {prodname} users
 to understand.
 
 include::concepts/product_overview.adoc[]

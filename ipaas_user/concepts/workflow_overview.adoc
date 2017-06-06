@@ -23,7 +23,7 @@ provided you with login credentials for the {prodname} console.
 To create an integration, the general steps are:
 
 . Log in to the {prodname} console.
-. Click *Create Integration*. 
+. Click *Create Integration*.
 . Select a source connection. This connection accesses the application
 you want to obtain data from. 
 . Select the action you want the source connection to

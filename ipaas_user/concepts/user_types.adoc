@@ -1,50 +1,34 @@
-:prodname: iPaaS
+:prodname: Syndesis
 :prodversion: 1.0
 
 [[User-Types]]
-=== {prodname} User Types
+=== About {prodname} Users
 
-Several different kinds of users interact with {prodname}. These user groups 
-include:
+{prodname} users are business experts in, for example, 
+finance, human resources, or
+marketing. They do not have the programming experience
+typically required to share data between two different 
+applications. Instead, their use of a
+variety of software-as-a-service (SaaS) applications gives them an
+understanding of business requirements, workflows and relevant data.
 
-* *End users*, sometimes referred to as citizen users, 
-interact with multiple software packages 
-to support lines of business within an organization. These software 
-packages are increasingly designed as software as a service (SaaS). 
-End users understand business requirements and workflows and 
-the relevant data. 
-+
-End users create integrations in the {prodname} 
-console, and then deploy and monitor those integrations in the {prodname} 
-dashboard. 
-+
-End users do not 
+Sometimes referred to as citizen integrators, these business users might
+be the only {prodname} users at a site. The {prodname}
+web interface lets them configure built-in connectors, and create,
+deploy and monitor integrations.
 
-** Write code to create integrations
-** Need to understand how the integration works
-** Have experience with enterprise integration patterns or the use of
-traditional integration middleware.
+At some sites, a citizen integrator might collaborate with more
+technical {prodname} users. These "expert" integrators have some programming
+experience. Although they are comfortable using scripts to add logic
+to applications, they do not work in integrated development
+environments (IDEs). Expert integrators have some familiarity with
+Camel enterprise integration patterns (EIPs) and they understand
+protocols such as REST and SOAP. 
 
-* *Expert users* are experienced developers who are familiar with 
-enterprise integration patterns and integration technology. 
-+
-Within an organization, expert users help end users by creating {prodname}
-connections for the applications and services that end users want to 
-integrate. Experts help end users and administrators debug issues 
-with integration configuration/logic. Also, expert users can
-develop additional {prodname} connectors. 
+Expert integrators can assist citizen integrators if the need arises.
 
-* *Developers* are programmers who are familiar with Apache Camel. 
+At some sites, there might be {prodname} developers. These users are
+programmers who are familiar with Apache Camel and Maven.
 Developers can use any Camel domain-specific language (DSL) to add
-additional capabilities to an integration created by an end user.
-
-* *Administrators* are experienced IT managers who are responsible for 
-organization-specific configuration, management, and monitoring of the 
-{prodname} environment.  {prodname}  administrators support end users
-and expert users in their use of {prodname} and they interact with 
-the Red Hat {prodname} operations team as needed. 
-+
-Administrators use the {prodname} web-based administrative console and 
-{prodname} REST APIs. 
-
-* *Contributors* add to the open source code base. 
+additional capabilities to an integration created by a citizen user.
+Developers can create additional {prodname} connectors. 
