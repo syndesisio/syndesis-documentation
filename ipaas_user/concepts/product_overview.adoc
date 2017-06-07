@@ -4,7 +4,7 @@
 [[Overview-For-All]]
 === Introducing {prodname} 
 
-{prodname} is a flexible, customizable platform that provides integration 
+{prodname} is a platform that provides integration 
 capabilities as a service. With {prodname}, you can copy data from an
 application or service, operate on that data if you need to, and then copy the 
 data to a completely different application or service.  No coding is 
