@@ -1,0 +1,25 @@
+Documentation for iPaaS - a platform for running JBoss Fuse on the enterprise public cloud (OpenShift Dedicated).
+
+== FAQ
+
+_Q. I'm new to Asciidoc. How do I get this stuff to work?_
+
+Just follow these steps:
+
+. Install Asciidoctor. On Fedora, this is as easy as:
+
+----
+$ sudo yum install asciidoctor
+----
+
+For other platforms, see http://asciidoctor.org/docs/install-toolchain/[Installing the Toolchain].
+. Build a book using `asciidoctor`. For example:
+
+----
+$ cd ipaas_user
+$ asciidoctor master.adoc
+----
+
+_Q. Where can I learn about Asciidoc syntax?_
+
+See the http://asciidoctor.org/docs/user-manual/[Asciidoc User Manual].
