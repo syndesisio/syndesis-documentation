@@ -1,4 +1,8 @@
-Documentation for iPaaS - a platform for running JBoss Fuse on the enterprise public cloud (OpenShift Dedicated).
+Documentation for Syndesis - a platform for running JBoss Fuse on the enterprise public cloud (OpenShift Dedicated).
+
+Syndesis source documentation is written in Asciidoc. 
+The instructions below get you started with Asciidoc.
+See also <<style>>.
 
 == FAQ
 
@@ -17,7 +21,7 @@ For other platforms, see http://asciidoctor.org/docs/install-toolchain/[Installi
 . Build a book using `asciidoctor`. For example:
 +
 ----
-$ cd ipaas_user
+$ cd citizen_users
 $ asciidoctor master.adoc
 ----
 
