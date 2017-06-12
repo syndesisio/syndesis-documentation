@@ -7,14 +7,15 @@ _Q. I'm new to Asciidoc. How do I get this stuff to work?_
 Just follow these steps:
 
 . Install Asciidoctor. On Fedora, this is as easy as:
-
++
 ----
 $ sudo yum install asciidoctor
 ----
-
++
 For other platforms, see http://asciidoctor.org/docs/install-toolchain/[Installing the Toolchain].
-. Build a book using `asciidoctor`. For example:
 
+. Build a book using `asciidoctor`. For example:
++
 ----
 $ cd ipaas_user
 $ asciidoctor master.adoc
