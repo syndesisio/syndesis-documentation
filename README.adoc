@@ -1,9 +1,11 @@
-Documentation for Syndesis - a platform for running JBoss Fuse on the enterprise public cloud (OpenShift Dedicated).
+Documentation for Syndesis - a platform for running JBoss Fuse on the 
+enterprise public cloud (OpenShift Dedicated).
 
-Syndesis source documentation is written in Asciidoc. 
+Syndesis source documentation is written in Asciidoc. See the 
+_Style Guide for JBoss Fuse Documentation_, which is in this 
+repository in the `asciidoc` folder.
+
 The instructions below get you started with Asciidoc.
-See also https://github.com/syndesisio/syndesis-documentation/asciidoc/style_guide.adoc[Style Guide for JBoss Fuse Documentation].
-See xref:style[].
 
 == FAQ
 
