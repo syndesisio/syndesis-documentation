@@ -1,2 +1,2 @@
-=== Manage and Monitor iPaaS Pipelines
+=== Manage and Monitor {prodname} Pipelines
 Add the topic contents here.

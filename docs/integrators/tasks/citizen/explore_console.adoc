@@ -1,2 +1,2 @@
-=== Explore the iPaaS Console
+=== Explore the {prodname} Console
 Add the topic contents here.

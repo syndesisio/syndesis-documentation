@@ -1,2 +1,2 @@
-=== Manage iPaaS Environments
+=== Manage {prodname} Environments
 Add the topic contents here.

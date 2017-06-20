@@ -1,2 +1,2 @@
-=== Administer Users in iPaaS
+=== Manage {prodname} Users
 Add the topic contents here.

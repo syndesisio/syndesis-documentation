@@ -1,0 +1,41 @@
+:prodname: Syndesis
+:prodversion: 1.0
+
+= Skeleton for {prodname} User Documentation 
+
+This document contains the very preliminary state of 
+planned topics. Some topics contain draft documentation and/or
+notes. Other topics are empty.
+This content should not be circulated outside Red Hat. 
+
+== Concepts
+
+This section presents concepts for anyone with an interest
+in {prodname}.
+
+include::integrators/concepts/product_overview.adoc[]
+
+include::integrators/concepts/term_definitions.adoc[]
+
+include::integrators/concepts/user_types.adoc[]
+
+include::integrators/concepts/workflow_overview.adoc[]
+
+== Integrator Tasks
+
+Citizen integrators are business users who typically do not have 
+programming experience. For some integration tasks, citizen integrators
+might need help from expert integrators, who have some 
+programming experience. 
+
+include::integrators/citizen_tasks.adoc[]
+
+include::integrators/expert_tasks.adoc[]
+
+== Developer Tasks
+
+include::developers/dev_tasks.adoc[]
+
+== Administrator Tasks
+
+include::admins/admin_tasks.adoc[]

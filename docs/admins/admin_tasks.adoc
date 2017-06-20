@@ -1,4 +1,5 @@
-This chapter describes typical administrative tasks and processes for the iPaaS administrator.
+This chapter describes typical administrative tasks and processes for the 
+{prodname} administrator.
 
 include::tasks/user_admin.adoc[]
 

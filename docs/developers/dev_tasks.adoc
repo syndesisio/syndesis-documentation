@@ -1,4 +1,4 @@
-This chapter describes the tasks performed by an iPaaS developer.
+This chapter describes developer tasks.
 
 include::tasks/git.adoc[]
 
@@ -7,3 +7,7 @@ include::tasks/create_connector_ide.adoc[]
 include::tasks/manage_environments.adoc[]
 
 include::tasks/build_pipeline.adoc[]
+
+include::tasks/integration_logs.adoc[]
+
+include::tasks/integration_metrics.adoc[]

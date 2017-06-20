@@ -1,2 +1,2 @@
-=== Manage Teams in iPaaS
+=== Manage {prodname} Teams 
 Add the topic contents here.

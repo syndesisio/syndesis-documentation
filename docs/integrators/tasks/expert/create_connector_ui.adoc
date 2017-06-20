@@ -1,2 +1,2 @@
-=== Create a New Connector Using the iPaaS Console
+=== Create a New Connector in {prodname} Console
 Add the topic contents here.

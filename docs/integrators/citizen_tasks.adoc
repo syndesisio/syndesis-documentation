@@ -1,4 +1,7 @@
-This chapter outlines the basic workflow for the iPaaS product.
+[[Citizen-Integrator-Tasks]]
+== Citizen Integrator Tasks
+
+This chapter outlines the basic workflow for {prodname}.
 
 include::tasks/citizen/log_in.adoc[]
 
@@ -7,6 +10,8 @@ include::tasks/citizen/explore_console.adoc[]
 include::tasks/citizen/create_integration_with_template.adoc[]
 
 include::tasks/citizen/create_integration_from_scratch.adoc[]
+
+include::tasks/citizen/filter_step.adoc[]
 
 include::tasks/citizen/test_in_editor.adoc[]
 
