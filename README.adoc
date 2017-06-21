@@ -11,21 +11,11 @@ The instructions below get you started with Asciidoc.
 
 _Q. I'm new to Asciidoc. How do I get this stuff to work?_
 
-Just follow these steps:
+This project is configured to build the docs using the `asciidoctor-maven-plugin`.
+Just run Maven from the top-level directory, as follows:
 
-. Install Asciidoctor. On Fedora, this is as easy as:
-+
 ----
-$ sudo yum install asciidoctor
-----
-+
-For other platforms, see http://asciidoctor.org/docs/install-toolchain/[Installing the Toolchain].
-
-. Build a book using `asciidoctor`. For example:
-+
-----
-$ cd citizen_users
-$ asciidoctor master.adoc
+mvn package
 ----
 
 _Q. Where can I learn about Asciidoc syntax?_
