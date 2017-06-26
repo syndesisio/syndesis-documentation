@@ -342,6 +342,28 @@ mvn archetype:generate \
   -DarchetypeVersion={archetype-version}
 ----
 
+[[style-gui]]
+== GUI Item Formatting
+
+Enclose GUI items in asterisks. This includes menu selections, 
+dialog titles, button labels, popup selections and any other text that 
+appears in a GUI. The asterisks make the item appear in bold font. 
+
+To format a sequence of selections, separate the items with a hyphen
+followed by a greater than symbol. For example:
+
+----
+Select *File* -> *Open* -> *New*
+----
+
+This renders as:
+
+Select *File* -> *Open* -> *New*
+
+
+
+
+
 [[style-images]]
 == Images and Figures
 
