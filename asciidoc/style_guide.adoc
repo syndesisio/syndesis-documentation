@@ -15,7 +15,6 @@ Contributors to JBoss Fuse user documentation follow these style conventions.
 * <<formatting-replaceables>>
 * <<style-images>>
 * <<style-linking>> 
-* <<style-structure>>
 
 [[style-headings]]
 == Headings and Anchor IDs
@@ -52,8 +51,17 @@ comment.
 [[style-blocks]]
 == Inserting Paragraphs and Lists
 
+* <<style-blocks-paras>>
+* <<style-blocks-itemized-list>>
+* <<style-blocks-ordered-list>>
+* <<style-blocks-variable-list>>
+
 [[style-blocks-paras]]
 === Inserting Paragraphs
+To enter a paragraph, just enter the text. 
+
+Insert a blank line before a subsequent paragraph. 
+
 
 [[style-blocks-itemized-list]]
 === Formatting Unordered Lists
@@ -190,6 +198,11 @@ $ vagrant service-manager install-cli docker
 
 [[style-code]]
 == Formatting Code
+* <<style-code-inline>> 
+* <<style-code-listing-notitle>>
+* <<style-code-listing-title>> 
+* <<style-code-callouts>>
+* <<style-code-listing-attribute-sub>>
 
 [[style-code-inline]]
 === Formatting Inline Code
