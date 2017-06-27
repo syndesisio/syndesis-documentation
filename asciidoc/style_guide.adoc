@@ -7,6 +7,16 @@
 
 Contributors to JBoss Fuse user documentation follow these style conventions. 
 
+* <<style-headings>> 
+* <<style-comments>>
+* <<style-blocks>> 
+* <<style-code>>
+* <<style-gui>> 
+* <<formatting-replaceables>>
+* <<style-images>>
+* <<style-linking>> 
+* <<style-structure>>
+
 [[style-headings]]
 == Headings and Anchor IDs
 The header for this subsection is defined as:
@@ -472,8 +482,11 @@ See <<style-code-xml-example>>
 See xref:style-code-xml-example[]
 ====
 
-If you want AsciiDoc to provide the link text automatically, you must be careful how you position the anchor ID at the target location.
-Make sure that the anchor ID appears just before the title of the item you are referencing. For example, this is the right way to add the anchor to a code example:
+If you want AsciiDoc to provide the link text automatically, you must be 
+careful how you position the anchor ID at the target location.
+Make sure that the anchor ID appears just before the title of the 
+item you are referencing. For example, this is the right way to add t
+he anchor to a code example:
 
 ....
 [[style-code-xml-example]]
