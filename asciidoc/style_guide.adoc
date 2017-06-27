@@ -5,8 +5,7 @@
 [[style]]
 = Style Guide for JBoss Fuse Documentation
 
-[[style-boilerplate]]
-== Boilerplate
+Contributors to JBoss Fuse user documentation follow these style conventions. 
 
 [[style-headings]]
 == Headings and Anchor IDs
@@ -20,10 +19,11 @@ The header for this subsection is defined as:
 <1> The anchor ID is defined between square brackets (making it possible to link to this section).
 <2> The header itself is defined using equals signs (where the number of signs indicates the depth).
 
-NOTE: Do _not_ use the `#` symbol for defining headers (supported only for the sake of backward compatibility with Markdown syntax).
+NOTE: Do _not_ use the `#` symbol for defining headers (supported only for 
+  the sake of backward compatibility with Markdown syntax).
 
 [[style-comments]]
-== Comments in AsciiDoc
+== Inserting Comments
 // This is a single line comment
 Single line comments start with a double forward slash, like this:
 ....
@@ -40,13 +40,13 @@ comment.
 ....
 
 [[style-blocks]]
-== Paragraphs and Lists
+== Inserting Paragraphs and Lists
 
 [[style-blocks-paras]]
-=== Paragraphs
+=== Inserting Paragraphs
 
 [[style-blocks-itemized-list]]
-=== Unordered List
+=== Formatting Unordered Lists
 A simple unordered list (bulleted list) is signalled by putting an asterisk at the start of each line, like this:
 
 ....
@@ -55,7 +55,7 @@ A simple unordered list (bulleted list) is signalled by putting an asterisk at t
 * Third bullet.
 ....
 
-Which renders as:
+This renders as:
 
 ====
 * First bullet.
@@ -103,7 +103,7 @@ $ vagrant halt
 ====
 
 [[style-blocks-ordered-list]]
-=== Ordered List
+=== Formatting Ordered Lists
 An ordered list (numbered list) is signaled by putting a dot, `.`, at the start of each line. Once again, to join content and keep it in the same numbered point, use a the `+` character.
 
 For example, consider the following ordered list:
@@ -143,7 +143,7 @@ $ oc project test
 ====
 
 [[style-blocks-variable-list]]
-=== Variable List
+=== Formatting Variable Lists
 The variable list is a great layout to use when you need to present a list of terms and associated descriptions (and is often a superior alternative to using a bulleted list).
 
 For example, consider the following variable list:
@@ -179,10 +179,10 @@ $ vagrant service-manager install-cli docker
 ====
 
 [[style-code]]
-== Code Formatting
+== Formatting Code
 
 [[style-code-inline]]
-=== Inline Code
+=== Formatting Inline Code
 Use backticks to enclose inline code.
 
 For example, to start the fuse container, enter the `./bin/fuse` command.
@@ -199,8 +199,9 @@ You can use `_underscores inside backticks_` or `*asterisks inside backticks*`. 
 
 
 [[style-code-listing-notitle]]
-=== Code Listing without Title
-You _could_ create a code listing by putting spaces at the start of each line of code, but _this approach is deprecated._
+=== Providing Code Blocks without Titles
+You _could_ create a code listing by putting spaces at the start of 
+each line of code, but _this approach is deprecated._
 
 It is much better to delimit a code block by putting a line with four hyphens `----` at the beginning and end of the listing, like this:
 
@@ -268,7 +269,7 @@ class FooBar {
 ====
 
 [[style-code-listing-title]]
-=== Code Listing with Title
+=== Adding Titles to Code Blocks
 To define a code listing with a title, precede it with a title line like `.This is a Code Example`.
 And if you are giving a code listing a title, it is generally a good idea to assign an anchor ID (between `[[` and `]]`) as well and to put it in a generic block (enclosed in `====` lines). For example:
 
@@ -306,16 +307,19 @@ And because you have given the listing an anchor ID, you can easily cross-refere
 
 
 [[style-code-callouts]]
-=== Code Listing That Has Callouts and Replaceables
+=== Formatting Code Blocks That Have Callouts and Replaceables
 Sometimes a code listing uses callouts and also italics for replaceables. 
 To be able to insert callouts and also preserve italics, 
 insert `[subs="+quotes"]` before the code listing. 
 
 [[style-code-listing-attribute-sub]]
-=== Attribute Substitution in Code Listings
-There are circumstances where it can be useful to substitutes attribute values inside code listings.
-By default, this is not possible because the curly braces, `{}`, are interpreted literally inside a code listing.
-But if you specify `[subs="attributes"]` at the start of the listing, attribute substitution _is_ performed. For example:
+=== Substituting Attributes in Code Blocks
+There are circumstances where it can be useful to substitutes attribute 
+values inside code listings.
+By default, this is not possible because the curly braces, `{}`, are 
+  interpreted literally inside a code listing.
+But if you specify `[subs="attributes"]` at the start of the listing, 
+attribute substitution _is_ performed. For example:
 
 ....
 [subs="attributes"]
@@ -343,7 +347,7 @@ mvn archetype:generate \
 ----
 
 [[style-gui]]
-== GUI Item Formatting
+== Formatting GUI Items
 
 Enclose GUI items in asterisks. This includes menu selections, 
 dialog titles, button labels, popup selections and any other text that 
@@ -371,7 +375,8 @@ replaceable with a valid value.
 [[formatting-references-to-fuse-installation-directory]]
 === Formatting References to Fuse Installation Directory
 
-References to the Fuse installation directory must be:
+References to the Fuse installation directory are often replaceables.
+Format them as follows:
 
 * All capitals
 * Italics
@@ -379,7 +384,7 @@ References to the Fuse installation directory must be:
 * Two words with an underscore between them
 * Without a dollar sign at the beginning
 
-To format references to the Fuse installation directory, enter
+To use a replaceable to reference the Fuse installation directory, enter
 the following:
 ----
 `_FUSE_HOME_`
@@ -393,14 +398,14 @@ To correctly format `_FUSE_HOME_` in a code block, insert
 
   [subs="+quotes"]
   ----
-  $ _FUSE_HOME_/bin/standalone.sh -c _CONFIG_FILE_.xml
+  $ _FUSE_HOME_/bin
   ----
 
 This renders as:
 
 [subs="+quotes"]
 ----
-$ _FUSE_HOME_/bin/standalone.sh -c _CONFIG_FILE_.xml
+$ _FUSE_HOME_/bin
 ----
 
 
