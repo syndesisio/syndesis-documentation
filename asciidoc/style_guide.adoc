@@ -416,21 +416,7 @@ This renders as:
 
 `_FUSE_HOME_`
 
-To correctly format `_FUSE_HOME_` in a code block, insert
-`subs="+quotes"` just before the code block. For example:
-
-  [subs="+quotes"]
-  ----
-  $ _FUSE_HOME_/bin
-  ----
-
-This renders as:
-
-[subs="+quotes"]
-----
-$ _FUSE_HOME_/bin
-----
-
+See also <<style-code-callouts>>.
 
 [[style-images]]
 == Images and Figures
