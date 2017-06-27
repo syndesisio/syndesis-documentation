@@ -306,8 +306,8 @@ And because you have given the listing an anchor ID, you can easily cross-refere
 
 
 [[style-code-callouts]]
-=== Code Listing That Has Callouts and Italics
-Sometimes a code listing uses callouts and also italics for placeholders. 
+=== Code Listing That Has Callouts and Replaceables
+Sometimes a code listing uses callouts and also italics for replaceables. 
 To be able to insert callouts and also preserve italics, 
 insert `[subs="+quotes"]` before the code listing. 
 
@@ -361,7 +361,47 @@ This renders as:
 Select *File* -> *Open* -> *New*
 
 
+[[formatting-replaceables]]
+== Formatting Replaceables
 
+A replaceable is a variable or placeholder in text, a 
+file path, a command or a code listing. The user must replace the 
+replaceable with a valid value. 
+
+[[formatting-references-to-fuse-installation-directory]]
+=== Formatting References to Fuse Installation Directory
+
+References to the Fuse installation directory must be:
+
+* All capitals
+* Italics
+* Monospace font
+* Two words with an underscore between them
+* Without a dollar sign at the beginning
+
+To format references to the Fuse installation directory, enter
+the following:
+----
+`_FUSE_HOME_`
+----
+This renders as:  
+
+`_FUSE_HOME_`
+
+To correctly format `_FUSE_HOME_` in a code block, insert
+`subs="+quotes"` just before the code block. For example:
+
+  [subs="+quotes"]
+  ----
+  $ _FUSE_HOME_/bin/standalone.sh -c _CONFIG_FILE_.xml
+  ----
+
+This renders as:
+
+[subs="+quotes"]
+----
+$ _FUSE_HOME_/bin/standalone.sh -c _CONFIG_FILE_.xml
+----
 
 
 [[style-images]]
