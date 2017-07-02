@@ -1,0 +1,18 @@
+[[Salesforce-to-DB]]
+= Implement a Salesforce to Database Sample Integration
+
+To implement a sample integration that obtains data from Salesforce and
+uses that data to call a stored procedure in an Oracle database,
+the main steps are:
+
+. <<Create-Salesforce-Connection>>. 
+. <<Create-Database-Connection>>. 
+. <<Create-SF-DB-Integration>>.
+. <<Deploy-SF-DB-Integration>>.
+. <<Monitor-Manage-SF-DB-Integration>>.
+
+include::../twitter_salesforce/create_salesforce_connection.adoc[leveloffset=+1]
+include::create_database_connection.adoc[leveloffset=+1]
+include::create_sf_db_integration.adoc[leveloffset=+1]
+include::deploy_sf_db.adoc[leveloffset=+1]
+include::monitor_manage_sf_db.adoc[leveloffset=+1]

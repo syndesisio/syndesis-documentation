@@ -1,0 +1,22 @@
+[[Three-APIs]]
+= Implement a Sample Integration of Three APIs
+
+To implement a sample integration that obtains data through an API, 
+uses that data to obtain additional data through a second API 
+and then uses the combined data to perform an action through 
+a third API, the main steps are:
+
+
+. <<Create-API1-Connection>>. 
+. <<Create-API2-Connection>>. 
+. <<Create-API3-Connection>>.
+. <<Create-3API-Integration>>.
+. <<Deploy-3API-Integration>>.
+. <<Monitor-Manage-3API-Integration>>.
+
+include::create_api1_connection.adoc[leveloffset=+1]
+include::create_api2_connection.adoc[leveloffset=+1]
+include::create_api3_connection.adoc[leveloffset=+1]
+include::create_3_api_integration.adoc[leveloffset=+1]
+include::deploy_3_api.adoc[leveloffset=+1]
+include::monitor_manage_3_api.adoc[leveloffset=+1]

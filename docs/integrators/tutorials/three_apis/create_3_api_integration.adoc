@@ -1,0 +1,13 @@
+[[Create-3API-Integration]]
+= Create an Integration That Connects to Three APIs
+
+To create an integration that uses the three API connections
+you just created:
+
+. Select the API1 connection to start the integration. 
+. Select the connection’s action.
+. Select the API3 connection to end the integration.
+. Select the connection’s action.
+. Add the connection to API2 in the middle.
+. Add other steps.
+. Give the integration a name. 

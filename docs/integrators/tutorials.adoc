@@ -1,0 +1,16 @@
+:prodname: Syndesis
+:prodversion: 1.0
+
+[[Tutorials]]
+= {prodname} Tutorials
+
+{prodname} tutorials walk you through the steps to implement
+sample integrations:
+
+* <<Twitter-to-Salesforce>>
+* <<Salesforce-to-DB>>
+* <<Three-APIs>>
+
+include::tutorials/twitter_salesforce/intro.adoc[leveloffset=+1]
+include::tutorials/salesforce_db/intro.adoc[leveloffset=+1]
+include::tutorials/three_apis/intro.adoc[leveloffset=+1]

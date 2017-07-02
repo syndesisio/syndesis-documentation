@@ -1,0 +1,9 @@
+[[Authorize-Salesforce]]
+= Authorize {prodname} Access to Salesforce
+
+To authorize {prodname} to access Salesforce:
+
+. In a new browser tab, go to `https//:TBA`. 
+. Log in to Salesforce if you are not already logged in.
+
+More steps TBA. 

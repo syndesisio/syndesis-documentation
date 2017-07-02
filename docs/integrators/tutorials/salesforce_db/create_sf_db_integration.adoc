@@ -1,0 +1,13 @@
+[[Create-SF-DB-Integration]]
+= Create a Salesforce to Database Integration
+
+To create an integration that uses the Saleforce and stored procedure
+connections
+you just created:
+
+. Select the Salesforce connection to start the integration. 
+. Select connection’s action.
+. Select the stored procedure connection as the end of the integration.
+. Select an action.
+. Add a data mapping step that ...
+. Give the integration a name. 

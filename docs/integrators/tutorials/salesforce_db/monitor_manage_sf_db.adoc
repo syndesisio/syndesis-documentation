@@ -1,0 +1,7 @@
+[[Monitor-Manage-SF-DB-Integration]]
+= Monitor and Manage Salesforce to Database Integration
+
+After you deploy the Salesforce to database sample integration,
+you can monitor it in the {prodname} console. 
+
+TBA

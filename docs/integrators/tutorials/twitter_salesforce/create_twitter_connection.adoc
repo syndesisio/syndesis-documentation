@@ -1,0 +1,27 @@
+[[Create-Twitter-Connection]]
+= Create a Twitter Connection
+
+A {prodname} connection to Twitter requires authorization for
+{prodname} to access Twitter.
+All {prodname} connections to Twitter can use the same authorization
+credentials. If you did not already authorize {prodname} to access 
+Twitter, see <<Authorize-Twitter>>. 
+
+After authorization for {prodname} to use Twitter is in place, follow
+these steps to create a Twitter connection:
+
+. In the left pane, click *Connections* to display available connections. 
+Initially, there are no connections. 
+. In the upper right corner, click *Create Connection* to display
+{prodname} connectors. You use the Twitter connector to create a 
+Twitter connection.
+. In the *Name* field, enter `*Twitter*`.
+. Select the *Twitter* connector. With authorization in place, the
+*Twitter* connector needs no additional configuration to create a
+Twitter connection.
+. In the *{prodname} Twitter Configuration* display, in the upper right corner, 
+click *Validate* to confirm that the connection works. 
+. In the upper right corner, click *Next*. 
+. In the *Connection Name* field, enter `*My First Twitter Connection*`.
+. In the upper right corner, click *Create*. This displays 
+*My First Twitter Connection* as an available connection. 

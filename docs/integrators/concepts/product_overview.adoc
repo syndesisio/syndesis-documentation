@@ -1,7 +1,7 @@
 :prodname: Syndesis
 :prodversion: 1.0
 
-[[Overview-For-All]]
+[[Introducing-Product-For-All]]
 === Introducing {prodname} 
 
 {prodname} is a platform that provides integration 

@@ -1,0 +1,19 @@
+[[Twitter-to-Salesforce]]
+= Implement a Twitter to Salesforce Sample Integration
+
+To implement a sample integration that obtains data from Twitter and
+uses that data in Salesforce, the main steps are:
+
+. <<Create-Twitter-Connection>>. 
+. <<Create-Salesforce-Connection>>. 
+. <<Create-Twitter-SF-Integration>>.
+. <<Deploy-Twitter-SF-Integration>>.
+. <<Monitor-Manage-Twitter-SF-Integration>>.
+
+include::create_twitter_connection.adoc[leveloffset=+1]
+include::create_salesforce_connection.adoc[leveloffset=+1]
+include::create_twitter_sf_integration.adoc[leveloffset=+1]
+include::deploy_twitter_sf_integration.adoc[leveloffset=+1]
+include::monitor_manage_twitter_sf.adoc[leveloffset=+1]
+include::authorize_twitter.adoc[leveloffset=+1]
+include::authorize_salesforce.adoc[leveloffset=+1]

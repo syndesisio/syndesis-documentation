@@ -1,0 +1,27 @@
+[[Authorize-Twitter]]
+= Authorize {prodname} Access to Twitter
+
+To authorize {prodname} to access Twitter:
+
+. In a new browser tab, go to `https//:apps.twitter.com`. 
+. Log in to Twitter if you are not already logged in.
+. Click *Create New App*. 
+. Return to the {prodname} tab and copy the {prodname} URL. 
+. Return to the Twitter *Create an application* tab and to perform these steps:
+.. Paste the {prodname} URL into the *Name*, *Website* and *Callback URL* 
+fields. 
+.. Click *Yes* to agree to the Twitter developer agreement.
+.. Click *Create your Twitter application*. 
+.. Click the *Keys and Access Tokens* tab. 
+.. Copy the *Consumer Key* and paste it into the *{prodname} Twitter 
+Configuration Consumer Key* field. 
+.. Copy the *Consumer Secret* and paste it into the *{prodname} Twitter 
+Configuration Consumer Secret* field. 
+.. In the Twitter *Keys and Access Tokens* tab, scroll down and
+click *Create my access tokens*. 
+.. Copy the *Access Token* and paste it in the *{prodname} Twitter 
+Configuration Access Token* field. 
+.. Copy the *Access Token Secret* and paste it in the *{prodname} Twitter 
+Configuration Access Token Secret* field. 
+
+Authorization for {prodname} to use Twitter is now in place. 

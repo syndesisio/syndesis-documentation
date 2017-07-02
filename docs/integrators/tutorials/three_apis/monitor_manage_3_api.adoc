@@ -1,0 +1,7 @@
+[[Monitor-Manage-3API-Integration]]
+= Monitor and Manage Integration of Three APIs
+
+After you deploy the sample integration of three APIs,
+you can monitor it in the {prodname} console. 
+
+TBA

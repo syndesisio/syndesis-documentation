@@ -1,0 +1,7 @@
+[[Monitor-Manage-Twitter-SF-Integration]]
+= Monitor and Manage Twitter to Salesforce Integration
+
+After you deploy the Twitter to Salesforce sample integration,
+you can monitor it in the {prodname} console. 
+
+TBA

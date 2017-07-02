@@ -1,0 +1,26 @@
+[[Create-Salesforce-Connection]]
+= Create a Salesforce Connection
+
+A {prodname} connection to Salesforce requires authorization for
+{prodname} to access Salesforce.
+All {prodname} connections to Salesforce can use the same authorization
+credentials. If you did not already authorize {prodname} to access 
+Salesforce, see <<Authorize-Salesforce>>. 
+
+After authorization for {prodname} to use Salesforce is in place, follow
+these steps to create a Salesforce connection:
+
+. In the left pane, click *Connections* to display available connections. 
+. In the upper right corner, click *Create Connection* to display
+{prodname} connectors. You use the Salesforce connector to create a 
+Salesforce connection.
+. In the *Name* field, enter `*Salesforce*`.
+. Select the *Salesforce* connector. With authorization in place, the
+*Salesforce* connector needs no additional configuration to create a
+Salesforce connection.
+. In the *{prodname} Salesforce Configuration* display, in the upper 
+right corner, click *Validate* to confirm that the connection works. 
+. In the upper right corner, click *Next*. 
+. In the *Connection Name* field, enter `*My First Salesforce Connection*`.
+. In the upper right corner, click *Create*. This displays 
+*My First Salesforce Connection* as an available connection. 
