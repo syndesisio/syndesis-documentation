@@ -1,7 +1,9 @@
-[[Authorize-Twitter]]
-= Authorize {prodname} Access to Twitter
+[[Register-With-Twitter]]
+= Register {prodname} for Access to Twitter
 
-To authorize {prodname} to access Twitter:
+You must register {prodname} with Twitter in order to create
+connections from {prodname} to Twitter that have authorization credentials. 
+To register {prodname} for access to Twitter:
 
 . In a new browser tab, go to `https//:apps.twitter.com`. 
 . Log in to Twitter if you are not already logged in.
@@ -23,5 +25,3 @@ click *Create my access tokens*.
 Configuration Access Token* field. 
 .. Copy the *Access Token Secret* and paste it in the *{prodname} Twitter 
 Configuration Access Token Secret* field. 
-
-Authorization for {prodname} to use Twitter is now in place. 

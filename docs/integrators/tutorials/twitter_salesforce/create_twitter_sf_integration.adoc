@@ -1,13 +1,20 @@
 [[Create-Twitter-SF-Integration]]
 = Create a Twitter to Salesforce Integration
 
-To create an integration that uses the Twitter and Saleforce connections
+To create an integration that uses the Twitter and Salesforce connections
 you just created:
 
-. Select the Twitter connection to start the integration. 
-. Select Twitter Mention as the connection’s action.
-. Select the Salesforce connection end of the integration.
-. Select Update or Insert as the connection’s action.
-. Add a filter step that checks for particular content and continues the integration only if that content is present. 
-. Add a data mapping step that correlates data from Twitter with Salesforce contact fields.
+. In the upper right, click *Create Integration*. 
+. Select the *Twitter* connection to start the integration. 
+. Select *Twitter Mention* as the connection’s action.
+. In the *{prodname} Twitter Configuration* display, in the upper right, 
+click *Validate* to confirm that the connection works. 
+. Select the Salesforce connection as the end destination of the integration.
+. Select *Update or Insert* as the connection’s action.
+. In the *{prodname} Salesforce Configuration* display, in the upper right, 
+click *Validate* to confirm that the connection works. 
+. Add a filter step that checks for particular content and continues 
+the integration only if that content is present. 
+. Add a data mapping step that correlates data from Twitter with 
+Salesforce contact fields.
 . Give the integration a name. 

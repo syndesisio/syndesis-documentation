@@ -1,0 +1,11 @@
+[[Register-With-Salesforce]]
+= Register {prodname} for Access to Salesforce
+
+You must register {prodname} with Salesforce in order to create
+connections from {prodname} to Salesforce that have authorization credentials. 
+To register {prodname} for access to Salesforce:
+
+. In a new browser tab, go to `https//:TBA`. 
+. Log in to Salesforce if you are not already logged in.
+
+More steps TBA. 
