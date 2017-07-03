@@ -17,6 +17,9 @@ Contributors to JBoss Fuse user documentation follow these style conventions.
 * <<style-images>>
 * <<style-linking>> 
 
+Additional style information is here:
+https://gitlab.cee.redhat.com/ccs-internal-documentation/documentation-reference-library/blob/master/asciidoc-reference-for-writers.adoc 
+
 [[style-headings]]
 == Headings and Anchor IDs
 The header for this subsection is defined as:
