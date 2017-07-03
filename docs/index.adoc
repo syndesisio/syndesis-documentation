@@ -21,6 +21,9 @@ include::integrators/concepts/user_types.adoc[]
 
 include::integrators/concepts/workflow_overview.adoc[]
 
+//== Tutorials
+include::integrators/tutorials.adoc[]
+
 == Integrator Tasks
 
 Citizen integrators are business users who typically do not have 

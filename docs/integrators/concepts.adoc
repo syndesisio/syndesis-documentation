@@ -1,8 +1,6 @@
 :prodname: Syndesis
 :prodversion: 1.0
 
-= {prodname} User Guide
-
 == Concepts
 
 This section presents concepts that are helpful for all {prodname} users

@@ -2,7 +2,7 @@
 :prodversion: 1.0
 
 [[Tutorials]]
-= {prodname} Tutorials
+== {prodname} Tutorials
 
 {prodname} tutorials walk you through the steps to implement
 sample integrations:

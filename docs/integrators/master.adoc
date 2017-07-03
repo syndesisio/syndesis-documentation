@@ -3,11 +3,14 @@
 
 = {prodname} User Guide
 
-== Concepts
+//== Concepts
 include::concepts.adoc[]
 
-== Basic Workflow
+//== Tutorials
+include::tutorials.adoc[]
+
+//== Basic Workflow
 include::citizen_tasks.adoc[]
 
-== Advanced Workflow
+//== Advanced Workflow
 include::expert_tasks.adoc[]
