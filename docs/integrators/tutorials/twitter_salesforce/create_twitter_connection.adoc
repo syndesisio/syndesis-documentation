@@ -11,14 +11,16 @@ these steps to create a Twitter connection:
 
 . In the left pane, click *Connections* to display available connections. 
 Initially, there are no connections. 
-. In the upper right corner, click *Create Connection* to display
+. In the upper right, click *Create Connection* to display
 {prodname} connectors. You use the Twitter connector to create a 
 Twitter connection.
 . In the *Name* field, enter `*Twitter*`.
-. Select the *Twitter* connector. With registration in place, the
-*Twitter* connector needs no additional configuration to create a
-Twitter connection.
-. In the upper right, click *Next*. 
+. Select the *Twitter* connector. 
+. In the *Consumer Name* field, enter your Twitter user name.
+. In the *Consumer Secret* field, enter your Twitter password.
+. Click *Validate* to confirm that {prodname} is authorized to 
+access your Twitter account.
+. After validation, click *Next*. 
 . In the *Connection Name* field, enter `*My First Twitter Connection*`.
 . In the upper right, click *Create*. This displays 
 *My First Twitter Connection* as an available connection. 

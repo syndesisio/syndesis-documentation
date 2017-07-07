@@ -1,0 +1,11 @@
+[[Salesforce-DB-Prerequisites]]
+= Prerequisites for Implementing Salesforce to Oracle Database Integration
+
+To implement a Salesforce to Oracle database sample integration,
+you must have the following:
+
+* A Salesforce account that is used for development and that contains
+dummy data
+* A way to trigger the {prodname} web hook that starts this instegration. 
+ 
+* The provided database available by .....TBA.

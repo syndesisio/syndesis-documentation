@@ -1,0 +1,6 @@
+[[Three-API-Prerequisites]]
+= Prerequisites for Implementing Three-API Integration
+
+To implement the sample integration of three APIs, for each API,
+you must know the location of the Swagger document that defines
+the API. 

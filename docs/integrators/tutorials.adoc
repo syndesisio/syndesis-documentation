@@ -11,6 +11,10 @@ sample integrations:
 * <<Salesforce-to-DB>>
 * <<Three-APIs>>
 
+You can create these sample integrations in any order. 
+
 include::tutorials/twitter_salesforce/intro.adoc[leveloffset=+1]
+
 include::tutorials/salesforce_db/intro.adoc[leveloffset=+1]
+
 include::tutorials/three_apis/intro.adoc[leveloffset=+1]

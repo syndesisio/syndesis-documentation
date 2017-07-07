@@ -1,0 +1,18 @@
+[[Twitter-Salesforce-Prerequisites]]
+= Prerequisites for Implementing Twitter to Salesforce Integration
+
+To implement a Twitter to Salesforce sample integration,
+you must have the following:
+
+* Access to two or more Twitter accounts:
+** The sample integration watches for tweets that mention a particular
+screen name. You need a Twitter account that uses this screen name.
+** To see that the integration is working, you need to send tweets from 
+two or more Twitter accounts that use other screen names.
+
+* A Salesforce account that is used for development and that contains
+dummy contacts. 
+
+* A Salesforce contact for at least one of the Twitter account users. 
+This lets you confirm that the integration updates a contact 
+you already have. 

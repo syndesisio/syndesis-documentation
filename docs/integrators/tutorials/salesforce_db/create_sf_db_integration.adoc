@@ -1,13 +1,27 @@
 [[Create-SF-DB-Integration]]
 = Create a Salesforce to Database Integration
 
-To create an integration that uses the Saleforce and stored procedure
-connections
-you just created:
+To create an integration that uses the Salesforce and stored procedure
+connections you just created:
 
-. Select the Salesforce connection to start the integration. 
-. Select connection’s action.
-. Select the stored procedure connection as the end of the integration.
-. Select an action.
-. Add a data mapping step that ...
-. Give the integration a name. 
+. In the upper right, click *Create Integration* to display 
+available connections.
+. Select the *Web Hook* connection to start the integration.
+. To configure the web hook connection .... TBA
+. Select the *Stored Procedure* connection as the end destination 
+of the integration.
+. Select the stored procedure to be executed.
+. Select *My First Salesforce Connection* as a middle connection
+in the integration. 
+. Select the *Search* action.
+. Select the Salesforce object to search for.  
+. Click *Add a Step* and select *Data Mapping*. 
+. In the data mapping step:
+.. Select the Salesforce 1 field and map it to the stored procedure
+A parameter. 
+.. Select the Salesforce 2 field and map it to the stored procedure
+B parameter.
+.. Click *Next*.
+. Click *Save*.    
+. In the *Integration Name* field, enter `*Salesforce to DB Sample*`. 
+. In the upper right corner, click *Publish*.

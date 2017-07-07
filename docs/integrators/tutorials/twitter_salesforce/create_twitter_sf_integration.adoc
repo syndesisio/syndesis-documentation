@@ -5,16 +5,32 @@ To create an integration that uses the Twitter and Salesforce connections
 you just created:
 
 . In the upper right, click *Create Integration*. 
-. Select the *Twitter* connection to start the integration. 
+. Select *My First Twitter Connection* to start the integration. 
 . Select *Twitter Mention* as the connection’s action.
-. In the *{prodname} Twitter Configuration* display, in the upper right, 
-click *Validate* to confirm that the connection works. 
-. Select the Salesforce connection as the end destination of the integration.
-. Select *Update or Insert* as the connection’s action.
-. In the *{prodname} Salesforce Configuration* display, in the upper right, 
-click *Validate* to confirm that the connection works. 
+. Select the *My First Salesforce Connection* as the end destination 
+of the integration.
+. Select *Create/Update Contact* as the connection’s action. 
 . Add a filter step that checks for particular content and continues 
-the integration only if that content is present. 
+the integration only if that content is present:
+.. Click *Add a step*.
+.. Select *Basic Filter*. 
+.. In the first field, accept the *StatusText* default, which contains
+the text of the tweet. This filter checks the content in
+the *StatusText* field. 
+.. Accept *Contains* as the condition to be met for the integration to
+continue. 
+.. In the last field, enter `*brilliant*`. A tweet must contain the word 
+"brilliant" for the integration to continue operating on this data.
+.. Click *Next* to complete the filter step.
 . Add a data mapping step that correlates data from Twitter with 
-Salesforce contact fields.
-. Give the integration a name. 
+Salesforce contact fields:
+.. Click *Add a Step*.
+.. Select *Data Mapping*.
+.. On the left, select the Twitter 1 field and drag it to the
+Salesforce A field. 
+.. Select the Twitter 2 field and drag it to the Salesforce B field to 
+complete data mapping.
+.. Click *Next*. 
+. Click *Save*.                                                                                                                                                                                                                                                                                                                             
+. In the *Integration Name* field, enter `*Twitter to Salesforce Sample*`.
+. In the upper right corner, click *Publish*. 

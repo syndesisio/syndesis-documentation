@@ -1,8 +1,30 @@
 [[Twitter-to-Salesforce]]
 = Implement a Twitter to Salesforce Sample Integration
 
-To implement a sample integration that obtains data from Twitter and
-uses that data in Salesforce, the main steps are:
+This sample integration watches Twitter for tweets that mention 
+the `ShadowMan`
+Twitter screen name. When the integration finds such tweets, it filters
+them so that only those tweets that contain the word *Brilliant* cause
+the integration to continue. 
+
+For *Brilliant* tweets, the integration maps
+data in Twitter fields to data in Salesforce contact fields. 
+The integration  
+uses these mappings to check whether the tweeter is 
+a Salesforce contact.
+
+When the tweeter is already a Salesforce contact then
+the integration compares the data it obtained from 
+Twitter with the Salesforce
+contact data and updates the Salesforce contact 
+for any mapped fields that differ.
+Otherwise, the integration creates a Salesforce contact and 
+populates its fields with values in the data obtained from Twitter. 
+
+Before you implement this sample integration, 
+see <<Twitter-Salesforce-Prerequisites>>.
+
+To implement this sample integration, the main steps are:
 
 . <<Create-Twitter-Connection>>. 
 . <<Create-Salesforce-Connection>>. 
@@ -10,10 +32,18 @@ uses that data in Salesforce, the main steps are:
 . <<Deploy-Twitter-SF-Integration>>.
 . <<Monitor-Manage-Twitter-SF-Integration>>.
 
+include::prerequisites.adoc[leveloffset=+1]
+
 include::create_twitter_connection.adoc[leveloffset=+1]
+
 include::create_salesforce_connection.adoc[leveloffset=+1]
+
 include::create_twitter_sf_integration.adoc[leveloffset=+1]
+
 include::deploy_twitter_sf_integration.adoc[leveloffset=+1]
+
 include::monitor_manage_twitter_sf.adoc[leveloffset=+1]
-include::authorize_twitter.adoc[leveloffset=+1]
-include::authorize_salesforce.adoc[leveloffset=+1]
+
+include::register_with_twitter.adoc[leveloffset=+1]
+
+include::register_with_salesforce.adoc[leveloffset=+1]

@@ -1,4 +1,21 @@
 [[Create-Database-Connection]]
 = Create a Stored Procedure Connection
 
-TBA
+To create a stored procedure connection:
+
+. In the left pane, click *Connections* to display available connections. 
+. In the upper right, click *Create Connection* to display
+{prodname} connectors. 
+. Select the *Stored Procedure* connector. You use the *Stored Procedure* 
+connector to create a 
+connection that uses a particular stored procedure to access the database.
+. Configure the stored procedure connection:
+.. Select the stored procedure you want to use.
+.. Specify connection parameters.
+.. Specify your login credentials for the database
+. Click *Validate* to confirm that {prodname} is authorized to 
+use your credentials to access the database.
+. After successful validation, click *Next*. 
+. In the *Connection Name* field, enter `*My Stored Procedure Connection*`.
+. In the upper right, click *Create*. This displays 
+*My Stored Procedure Connection* as an available connection. 

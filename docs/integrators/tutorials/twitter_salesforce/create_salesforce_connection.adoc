@@ -10,16 +10,18 @@ After registration for {prodname} to access Salesforce is in place, follow
 these steps to create a Salesforce connection:
 
 . In the left pane, click *Connections* to display available connections. 
-. In the upper right corner, click *Create Connection* to display
+. In the upper right, click *Create Connection* to display
 {prodname} connectors. You use the Salesforce connector to create a 
 Salesforce connection.
 . In the *Name* field, enter `*Salesforce*`.
-. Select the *Salesforce* connector. With registration in place, the
-*Salesforce* connector needs no additional configuration to create a
-Salesforce connection.
-. In the *{prodname} Salesforce Configuration* display, in the upper 
-right corner, click *Validate* to confirm that the connection works. 
-. In the upper right corner, click *Next*. 
+. Select the *Salesforce* connector.  
+. In the *Consumer Name* field, enter your Salesforce user name.
+. In the *Consumer Secret* field, enter your Salesforce password.
+. Click *Validate* to confirm that {prodname} is authorized to 
+access your Salesforce account.
+. After successful validation, click *Next*. 
 . In the *Connection Name* field, enter `*My First Salesforce Connection*`.
-. In the upper right corner, click *Create*. This displays 
+. In the upper right, click *Create*. This displays 
 *My First Salesforce Connection* as an available connection. 
+
+. 

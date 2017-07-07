@@ -1,7 +1,21 @@
 [[Monitor-Manage-SF-DB-Integration]]
 = Monitor and Manage Salesforce to Database Integration
 
-After you deploy the Salesforce to database sample integration,
-you can monitor it in the {prodname} console. 
+To monitor and manage the Salesforce to database integration:
 
-TBA
+. In the left pane, click *Dashboard* to see that  
+*Salesforce to Database Sample* is an *Active* integration, 
+which means that it is running. 
+. In Salesforce, trigger the integration by updating
+an object of the type that the integration
+operates on. 
+. In the sample database, check whether the sample integration
+updated the database according to the Salesforce object update.  
+. In the {prodname} dashboard, select the 
+*Salesforce to Database Sample* and click the three vertical
+dots to the right. 
+. Select *Deactivate* to stop running the integration. At any time,
+you can click the vertical dots and select *Activate*. 
+. After testing the integration, select it in the dashboard, click
+the three vertical dots and select *Delete*. In this release, only
+one active integration is allowed. 

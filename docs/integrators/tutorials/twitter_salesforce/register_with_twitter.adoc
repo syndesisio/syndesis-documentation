@@ -2,7 +2,7 @@
 = Register {prodname} for Access to Twitter
 
 You must register {prodname} with Twitter in order to create
-connections from {prodname} to Twitter that have authorization credentials. 
+connections from {prodname} to Twitter that have user authorization credentials. 
 To register {prodname} for access to Twitter:
 
 . In a new browser tab, go to `https//:apps.twitter.com`. 
