@@ -5,8 +5,8 @@ This sample integration captures updates in Salesforce and then
 calls a database stored procedure to synchronize the database
 with the Salesforce updates. 
 
-Before you implement this sample integration, 
-see <<Salesforce-DB-Prerequisites>>.
+Before you implement 
+this sample integration, see <<Salesforce-DB-Prerequisites>>. 
 
 To implement this sample integration,
 the main steps are:
@@ -16,6 +16,8 @@ the main steps are:
 . <<Create-SF-DB-Integration>>.
 . <<Deploy-SF-DB-Integration>>.
 . <<Monitor-Manage-SF-DB-Integration>>.
+
+include::prerequisites.adoc[leveloffset=+1]
 
 include::../twitter_salesforce/create_salesforce_connection.adoc[leveloffset=+1]
 

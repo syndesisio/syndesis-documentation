@@ -4,7 +4,7 @@
 [[Tutorials]]
 == {prodname} Tutorials
 
-{prodname} tutorials walk you through the steps to implement
+{prodname} tutorials provide instructions for implementing
 sample integrations:
 
 * <<Twitter-to-Salesforce>>

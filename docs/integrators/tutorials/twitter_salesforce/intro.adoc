@@ -46,4 +46,4 @@ include::monitor_manage_twitter_sf.adoc[leveloffset=+1]
 
 include::register_with_twitter.adoc[leveloffset=+1]
 
-include::register_with_salesforce.adoc[leveloffset=+1]
+include::register_with_sf.adoc[leveloffset=+1]

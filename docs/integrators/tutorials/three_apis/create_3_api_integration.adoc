@@ -1,5 +1,5 @@
 [[Create-3API-Integration]]
-= Create an Integration That Connects Three APIs
+= Create an Integration That Connects to Three APIs
 
 To create an integration that uses the three API connections
 you just created:

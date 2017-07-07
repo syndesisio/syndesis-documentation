@@ -1,5 +1,5 @@
 [[Salesforce-DB-Prerequisites]]
-= Prerequisites for Implementing Salesforce to Oracle Database Integration
+= Prerequisites for Implementing Salesforce to Database Integration
 
 To implement a Salesforce to Oracle database sample integration,
 you must have the following:
