@@ -4,6 +4,13 @@
 [[Tutorials]]
 == {prodname} Tutorials
 
+IMPORTANT: This is a work in progress that is not ready for review. The 
+audience for the tutorials is the citizen user who is completely new to
+{prodname} in the preview release. The purpose of the tutorials now
+(July 2017) is to capture information we know and also show how much
+information we need to provide to ensure successful implementation of 
+the sample scenarios. 
+
 {prodname} tutorials provide instructions for implementing
 sample integrations:
 
