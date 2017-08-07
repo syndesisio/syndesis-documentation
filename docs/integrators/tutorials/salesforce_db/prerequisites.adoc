@@ -6,6 +6,6 @@ you must have the following:
 
 * A Salesforce account that is used for development and that contains
 dummy data
-* A way to trigger the {prodname} web hook that starts this instegration. 
+* A way to trigger the {prodname} web hook that starts this integration. 
  
 * The provided database available by .....TBA.

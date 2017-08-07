@@ -9,7 +9,9 @@ audience for the tutorials is the citizen user who is completely new to
 {prodname} in the preview release. The purpose of the tutorials now
 (July 2017) is to capture information we know and also show how much
 information we need to provide to ensure successful implementation of 
-the sample scenarios. 
+the sample scenarios. If you think of information we will need to provide
+for PR1 and it is missing from this skeleton, please send an email to
+ipaas-dev to suggest what needs to be added. 
 
 {prodname} tutorials provide instructions for implementing
 sample integrations:
