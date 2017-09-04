@@ -1,0 +1,33 @@
+[[Confirm-Twitter-SF-Working]]
+= Confirm That the Integration Works 
+
+To confirm that the Twitter to Salesforce integration is working:
+
+. In the left pane, click *Integrations* to see that  
+*Twitter to Salesforce Sample* is an *Active* integration,
+which means that it is running. 
+. Confirm that the integration does not create a contact when a
+tweet does not contain the text you specified in the basic filter 
+step:
+.. In Twitter, send a tweet that does not contain the text you specified
+in the basic filter step. 
+.. Wait for the polling interval to elapse, which can be 30 - 60 seconds. 
+.. In Salesforce, confirm that a contact object with your Twitter
+screen name does not exist. 
+. Confirm that the integration creates a new contact when it should:
+.. In Twitter, send a tweet that contains `*is great*` or whatever text
+you specified in the basic filter text. 
+For example, `*{prodname} is great.*`
+.. Wait for the polling interval to elapse. 
+.. In Salesforce, locate a contact object that has your Twitter screen name,
+your first name, your last name and the text of your tweet in the
+contact's `description` field. 
+. Confirm that the integration updates a contact when it should:
+.. In Twitter, send a different tweet. This tweet should also 
+contain the text
+you specified in the basic filter step. 
+For example, `*Open source is great.*`
+.. Wait for the polling interval to elapse. 
+.. In Salesforce, locate the contact object that has your Twitter 
+screen name and confirm that the `description` field contains the 
+text from the more recent tweet. 

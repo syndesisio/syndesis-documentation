@@ -1,27 +1,35 @@
 [[Register-With-Twitter]]
-= Register {prodname} for Access to Twitter
+= Register {prodname} as an Application That Can Access Twitter
 
-You must register {prodname} with Twitter in order to create
-connections from {prodname} to Twitter that have user authorization credentials. 
-To register {prodname} for access to Twitter:
+You must register your installation of {prodname} as an application 
+that can access Twitter. 
+This lets you create a sample integration that connects
+to Twitter. Perform these steps:
 
-. In a new browser tab, go to `https//:apps.twitter.com`. 
-. Log in to Twitter if you are not already logged in.
-. Click *Create New App*. 
-. Return to the {prodname} tab and copy the {prodname} URL. 
-. Return to the Twitter *Create an application* tab and to perform these steps:
-.. Paste the {prodname} URL into the *Name*, *Website* and *Callback URL* 
-fields. 
+. Log in to your Syndesis installation.
+. Copy the Syndesis URL from the browser address bar.
+. In the left pane, click *Settings*.
+. In the *OAuth Client Management* page, to the left of *Twitter*,
+click *>* to display the *Client ID* and *Client Secret* fields.
+. In another browser tab, go  to `http://apps.twitter.com` and do
+the following:
+.. If you are not already logged in to Twitter, log in. 
+.. Click *Create New App*.
+.. Paste your Syndesis URL into the *Name*, *Website*, and 
+*Callback URL* fields.
+.. In the *Callback URL* field, append `/api/v1/credentials/callback`. 
+For example:
+`https://syndesis.192.123.45.6.nip.io/api/v1/credentials/callback`.
 .. Click *Yes* to agree to the Twitter developer agreement.
 .. Click *Create your Twitter application*. 
 .. Click the *Keys and Access Tokens* tab. 
-.. Copy the *Consumer Key* and paste it into the *{prodname} Twitter 
-Configuration Consumer Key* field. 
-.. Copy the *Consumer Secret* and paste it into the *{prodname} Twitter 
-Configuration Consumer Secret* field. 
-.. In the Twitter *Keys and Access Tokens* tab, scroll down and
-click *Create my access tokens*. 
-.. Copy the *Access Token* and paste it in the *{prodname} Twitter 
-Configuration Access Token* field. 
-.. Copy the *Access Token Secret* and paste it in the *{prodname} Twitter 
-Configuration Access Token Secret* field. 
+.. Copy the *Consumer Key*.
+. On your Syndesis installation *Settings* page, paste the Twitter 
+consumer key into the Twitter *Client ID* field. 
+. On the Twitter *Keys and Access Tokens* tab, copy the 
+*Consumer Secret* and paste it into the {prodname} Twitter 
+*Client Secret* field. 
+. Click *Save*.
+
+To create the sample Twitter to Salesforce integration, you also
+need to <<Register-With-Salesforce>>. 

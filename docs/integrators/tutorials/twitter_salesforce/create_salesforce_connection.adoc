@@ -1,4 +1,4 @@
-[[Create-Salesforce-Connection]]
+[[Create-SF-Connection]]
 = Create a Salesforce Connection
 
 A {prodname} connection to Salesforce requires registration of
@@ -6,22 +6,16 @@ A {prodname} connection to Salesforce requires registration of
 If you did not already register {prodname} for access to 
 Salesforce, see <<Register-With-Salesforce>>. 
 
-After registration for {prodname} to access Salesforce is in place, follow
-these steps to create a Salesforce connection:
+To create a Salesforce connection:
 
 . In the left pane, click *Connections* to display available connections. 
 . In the upper right, click *Create Connection* to display
-{prodname} connectors. You use the Salesforce connector to create a 
-Salesforce connection.
-. In the *Name* field, enter `*Salesforce*`.
-. Select the *Salesforce* connector.  
-. In the *Consumer Name* field, enter your Salesforce user name.
-. In the *Consumer Secret* field, enter your Salesforce password.
-. Click *Validate* to confirm that {prodname} is authorized to 
-access your Salesforce account.
-. After successful validation, click *Next*. 
-. In the *Connection Name* field, enter `*My First Salesforce Connection*`.
-. In the upper right, click *Create*. This displays 
-*My First Salesforce Connection* as an available connection. 
+{prodname} connection types. 
+. Click the *Salesforce* connection type. 
+. Click *Connect Salesforce* to display a Salesforce authorization page. 
+. Click *Authorize App* to return to {prodname}.
+. In the *Connection Name* field, enter `*Salesforce Connection 1*`.
+. In the upper right, click *Create* to see that 
+*Salesforce Connection 1* is now an available connection. 
 
-. 
+The next step is to <<Create-Twitter-SF-Integration>>. 

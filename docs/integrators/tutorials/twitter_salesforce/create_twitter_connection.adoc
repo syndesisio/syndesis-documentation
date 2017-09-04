@@ -6,21 +6,17 @@ A {prodname} connection to Twitter requires registration of
 If you did not already register {prodname} for access to
 Twitter, see <<Register-With-Twitter>>. 
 
-After registration for {prodname} to access Twitter is in place, follow
-these steps to create a Twitter connection:
+To create a Twitter connection:
 
 . In the left pane, click *Connections* to display available connections. 
 Initially, there are no connections. 
 . In the upper right, click *Create Connection* to display
-{prodname} connectors. You use the Twitter connector to create a 
-Twitter connection.
-. In the *Name* field, enter `*Twitter*`.
-. Select the *Twitter* connector. 
-. In the *Consumer Name* field, enter your Twitter user name.
-. In the *Consumer Secret* field, enter your Twitter password.
-. Click *Validate* to confirm that {prodname} is authorized to 
-access your Twitter account.
-. After validation, click *Next*. 
-. In the *Connection Name* field, enter `*My First Twitter Connection*`.
-. In the upper right, click *Create*. This displays 
-*My First Twitter Connection* as an available connection. 
+{prodname} connection types. 
+. Click the *Twitter* connection type. 
+. Click *Connect Twitter* to display a Twitter authorization page. 
+. Click *Authorize App* to return to {prodname}.
+. In the *Connection Name* field, enter `*Twitter Connection 1*`.
+. In the upper right, click *Create* to see that 
+*Twitter Connection 1* is now an available connection. 
+
+The next step is to <<Create-SF-Connection>>. 

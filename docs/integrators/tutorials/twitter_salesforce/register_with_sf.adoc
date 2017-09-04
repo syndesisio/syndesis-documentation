@@ -1,11 +1,33 @@
 [[Register-With-Salesforce]]
-= Register {prodname} for Access to Salesforce
+= Register {prodname} as an Application That Can Access Salesforce
 
-You must register {prodname} with Salesforce in order to create
-connections from {prodname} to Salesforce that have authorization credentials. 
-To register {prodname} for access to Salesforce:
+You must register your installation of {prodname} as an application 
+that can access Salesforce. 
+This lets you create a sample integration that connects
+to Salesforce. Perform these steps:
 
-. In a new browser tab, go to `https//:TBA`. 
-. Log in to Salesforce if you are not already logged in.
+. In {prodname}, in the left pane, click *Home*.
+. Copy the Syndesis URL from the browser address bar.
+. In the left pane, click *Settings*.
+. In the *OAuth Client Management* page, to the left of *Salesforce*,
+click *>* to display the *Client ID* and *Client Secret* fields.
+. In another browser tab, go  to 
+https://help.salesforce.com/articleView?id=connected_app_create.htm[Create a Connected App]
+ for information and instructions for registering {prodname} with Salesforce.
+The main steps you perform are:
+.. Log in to Salesforce.
+.. Use the *New Connected App* wizard. One of the wizard steps is to provide
+a callback URL. Enter your {prodname} URL and append `/api/v1/credentials/callback`. 
+For example: 
+`https://syndesis.192.123.45.6.nip.io/api/v1/credentials/callback`.
+.. Make a note of the consumer key and the consumer secret that the 
+*New Connected App* wizard provides. 
+. On your {prodname} installation *Settings* page, paste the Salesforce 
+consumer key into the Salesforce *Client ID* field. 
+. On your {prodname} installation *Settings* page, paste the Salesforce 
+consumer secret into the {prodname} Salesforce 
+*Client Secret* field. 
+. Click *Save*.
 
-More steps TBA. 
+When {prodname} is registered with both Twitter and Salesforce, you
+are ready to create {prodname} connections. See <<Create-Twitter-Connection>>.
