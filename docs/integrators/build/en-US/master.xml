@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!ENTITY % sgml.features "IGNORE">
+<!ENTITY % xml.features "INCLUDE">
+<!ENTITY % DOCBOOK_ENTS PUBLIC "-//OASIS//ENTITIES DocBook Character Entities V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/dbcentx.mod">
+%DOCBOOK_ENTS;
+]>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0">
+<info>
+<title>iPaaS User Guide</title>
+<date>2017-07-03</date>
+<productname>iPaaS</productname>
+<productnumber>1.0</productnumber>
+<subtitle>iPaaS 1.0 User Guide</subtitle>
+<abstract>
+ <para>User guide for iPaaS</para>
+</abstract>
+<authorgroup>
+  <org>
+    <orgname>JBoss Fuse Documentation Team</orgname>
+    <email>fuse-docs-support@redhat.com</email>
+  </org>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+</info>
+<chapter xml:id="_concepts">
+<title>Concepts</title>
+<simpara>This section presents concepts that are helpful for all Syndesis users
+to understand.</simpara>
+<section xml:id="Introducing-Product-For-All">
+<title>Introducing Syndesis</title>
+<simpara>Syndesis is a platform that provides integration
+capabilities as a service. With Syndesis, you can obtain data from an
+application or service, operate on that data if you need to, and then
+send the
+data to a completely different application or service.  No coding is
+required to accomplish this.</simpara>
+<section xml:id="_what_it_does">
+<title>What It Does</title>
+<simpara>Syndesis lets you connect to any application or service that your business uses.
+Connectors provided with Syndesis function as templates for defining connections
+to applications and services. For example, Syndesis provides a Salesforce connector
+for creating connections to Salesforce installations.</simpara>
+</section>
+<section xml:id="_how_it_works">
+<title>How It Works</title>
+<simpara>Connectors form the foundation of Syndesis. Each connector
+is an Apache Camel component with added metadata that
+enables the intuitive Syndesis interface. This metadata
+specifies:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Some connection settings</simpara>
+</listitem>
+<listitem>
+<simpara>Actions that can be performed and their
+properties and defaults</simpara>
+</listitem>
+<listitem>
+<simpara>What the input data and output data look like</simpara>
+</listitem>
+</itemizedlist>
+<simpara>Each connector</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Has a single purpose, for example, connect to a
+Salesforce application</simpara>
+</listitem>
+<listitem>
+<simpara>Hides component properties that are not relevant to that purpose</simpara>
+</listitem>
+</itemizedlist>
+<simpara>When an integration of different applications is ready to be deployed:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Syndesis creates a Spring Boot-based Camel project and a
+build configuration.</simpara>
+</listitem>
+<listitem>
+<simpara>Triggers the build, which produces a container image.</simpara>
+</listitem>
+<listitem>
+<simpara>Starts running the container image on OpenShift.</simpara>
+</listitem>
+</orderedlist>
+<simpara>In addition, Syndesis stores your integration’s implementation
+source code and configuration in a source control management system,
+such as GitHub. This enables you to look at it, change it and
+include it as a part of your DevOps pipeline.</simpara>
+</section>
+<section xml:id="_how_you_use_it">
+<title>How You Use It</title>
+<simpara>How you use Syndesis depends on whether you are integrating
+applications, creating connections for particular applications
+or services, or developing new connectors.</simpara>
+<simpara>Syndesis provides a web browser interface that lets anyone integrate
+two different applications
+or services. No coding is required regardless of the complexity of the
+integration. To deploy a simple integration, the main steps are to select a
+connection for the source application, select a connection for the destination
+application, respond to any prompts for configuration settings,
+and give the
+integration a name. You can then save the integration or immediately
+deploy it.</simpara>
+<simpara>The Syndesis dashboard lets you monitor and manage integrations. You can see
+which integrations are running, start and stop integrations, edit and remove
+integrations.</simpara>
+<simpara>There is also a web browser interface for creating connections. You
+select the connector for the application or service you want to
+connect to.  Syndesis prompts you to
+enter values for the parameters required to create the connection.
+You then verify that the connection works before making it available
+to be used in integrations.</simpara>
+<simpara>There are Syndesis APIs for creating additional connectors.</simpara>
+</section>
+<section xml:id="_benefits">
+<title>Benefits</title>
+<simpara>The benefits of Syndesis include:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>No coding required to share data between different applications or
+services.</simpara>
+</listitem>
+<listitem>
+<simpara>Deploy on the public cloud, a private cloud, or on-premise.</simpara>
+</listitem>
+<listitem>
+<simpara>Run Syndesis on OpenShift or Kubernetes.</simpara>
+</listitem>
+<listitem>
+<simpara>Connectors are based on Apache Camel components. If Syndesis does
+not provide a
+connector for an application or service you want to integrate then a
+developer can create the connector you need.</simpara>
+</listitem>
+<listitem>
+<simpara>All the benefits of open source software. You can extend features,
+customize interfaces or connectors, and create additional connectors.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+<section xml:id="Understanding-IPaaS-Terms">
+<title>Understanding Syndesis Terms</title>
+<simpara>Syndesis lets you enable data transfer between different applications. For example,
+each time a customer is mentioned in Twitter, you might want to capture that
+mention in your Salesforce account for that customer. Another example is a service
+that makes stock trade recommendations. You can capture recommendations of interest
+and forward them to a service that automates stock transfers.</simpara>
+<section xml:id="_integration">
+<title>Integration</title>
+<simpara>To set up data transfer between applications, you create an integration. When
+you create an integration you identify the source application and the target
+application by selecting from a set of connections.</simpara>
+</section>
+<section xml:id="_connection">
+<title>Connection</title>
+<simpara>A connection represents a specific application that you want to obtain data from
+or send data to. For example, the set of connections you can choose from might
+include a Twitter connection, a Salesforce connection, a Gmail connection, and so on.
+Each connection has been created and configured by someone in your organization.</simpara>
+<simpara>In any number of integrations, you can select the same connection. For example,
+in integration A you can select a Twitter connection and configure it to
+use <literal>JDoe</literal> as the Twitter screen name. In
+integration B, you can select that same Twitter connection and configure it
+to use <literal>KLee</literal> as the Twitter screen name. When multiple integrations
+use the same connection, and there is an update to that connection,
+Syndesis automatically updates all integrations that use
+that connection.</simpara>
+</section>
+<section xml:id="_action">
+<title>Action</title>
+<simpara>In an integration, each connection performs an action. For some
+connections, you choose the action. Other connections can perform
+only one action and you are not offered a choice when you create
+an integration that uses that connection. For example, when you create
+an integration that uses a Salesforce connection the possible
+actions include creating a Salesforce account, updating a Salesforce
+account, searching Salesforce, and more.</simpara>
+<simpara>Some actions require additional configuration and Syndesis
+prompts you for this information if it is needed.</simpara>
+</section>
+<section xml:id="_step">
+<title>Step</title>
+<simpara>In some integrations, obtaining data from one application and
+using it in another application is all you want to do. But in other
+integrations, you might need one or more steps between the data&#8217;s
+source and target applications. A step can be an interaction with
+another application or service or it can be an operation on the
+data. Operations are based on the Enterprise Integration
+Patterns, for example, steps can filter,
+split, map or log data.</simpara>
+</section>
+<section xml:id="_connector">
+<title>Connector</title>
+<simpara>Syndesis provides a set of connectors. Each connector provides the
+infrastructure for connecting to a particular application or service.
+For example, the Salesforce connector lets you connect
+to Salesforce.</simpara>
+<simpara>However, a connector does not provide everything needed to actually
+connect to an application or service, In an organization, an expert
+Syndesis user configures a connector with specific information,
+such as login credentials. A configured connector is referred to
+as a connection. A particular connector is a template for any
+number of connections. For example, you can use the Salesforce
+connector to create multiple Salesforce connections. Each Salesforce
+connection would have different configuration settings.</simpara>
+<simpara>To create an integration, end users select from available connections.
+Sometimes a connection needs additional configuration information.
+Sometimes, it does not.</simpara>
+<simpara>Under the covers, Syndesis connectors are Apache Camel components. This
+gives Syndesis the potential to connect to more than one hundred applications
+and services.</simpara>
+</section>
+</section>
+<section xml:id="User-Types">
+<title>About Syndesis Users</title>
+<simpara>Syndesis users are business experts in, for example,
+finance, human resources, or
+marketing. They do not have the programming experience
+typically required to share data between two different
+applications. Instead, their use of a
+variety of software-as-a-service (SaaS) applications gives them an
+understanding of business requirements, workflows and relevant data.</simpara>
+<simpara>Sometimes referred to as citizen integrators, these business users might
+be the only Syndesis users at a site. The Syndesis
+web interface lets them configure built-in connectors, and create,
+deploy and monitor integrations.</simpara>
+<simpara>At some sites, a citizen integrator might collaborate with more
+technical Syndesis users. These "expert" integrators have some programming
+experience. Although they are comfortable using scripts to add logic
+to applications, they do not work in integrated development
+environments (IDEs). Expert integrators have some familiarity with
+Camel enterprise integration patterns (EIPs) and they understand
+protocols such as REST and SOAP.</simpara>
+<simpara>Expert integrators can assist citizen integrators if the need arises.</simpara>
+<simpara>At some sites, there might be Syndesis developers. These users are
+programmers who are familiar with Apache Camel and Maven.
+Developers can use any Camel domain-specific language (DSL) to add
+additional capabilities to an integration created by a citizen user.
+Developers can create additional Syndesis connectors.</simpara>
+</section>
+<section xml:id="Overview-of-Creating-an-Integration">
+<title>Overview of Creating an Integration</title>
+<simpara>Before you create an integration, it is assumed that you have done
+some planning. You should know:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Which application you want to obtain data from</simpara>
+</listitem>
+<listitem>
+<simpara>What you want to do with that data</simpara>
+</listitem>
+<listitem>
+<simpara>Where you want to send that data</simpara>
+</listitem>
+</itemizedlist>
+<section xml:id="_prerequisites">
+<title>Prerequisites</title>
+<simpara>To create an integration, the following prerequisites
+must be met:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>An expert Syndesis user in your organization has created
+connections for the applications or services
+ you want to access in your integration.</simpara>
+</listitem>
+<listitem>
+<simpara>An administrative Syndesis user in your organization has
+provided you with login credentials for the Syndesis console.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_general_steps_for_creating_an_integration">
+<title>General Steps for Creating an Integration</title>
+<simpara>To create an integration, the general steps are:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Log in to the Syndesis console.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create Integration</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Select a source connection. This connection accesses the application
+you want to obtain data from.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the action you want the source connection to
+perform.</simpara>
+</listitem>
+<listitem>
+<simpara>Optionally, depending on the connection, enter some
+configuration information, such as login credentials.</simpara>
+</listitem>
+<listitem>
+<simpara>Select a destination connection. This connection accesses the
+application that uses the data from the source connection.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the action you want the destination connection to perform.</simpara>
+</listitem>
+<listitem>
+<simpara>Optionally, depending on the connection, enter some configuration
+details.</simpara>
+</listitem>
+<listitem>
+<simpara>Optionally, add one or more steps to be performed between the
+source application and the destination application. Possible steps
+include logging, filtering data, splitting data, mapping data, and
+more.</simpara>
+</listitem>
+<listitem>
+<simpara>Optionally, add a connection for an application you want to access
+after you obtain data from the source application and before
+you send data to the destination application.</simpara>
+</listitem>
+<listitem>
+<simpara>Publish your integration to run it.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</section>
+</chapter>
+<chapter xml:id="Tutorials">
+<title>Syndesis Tutorials</title>
+<simpara>Syndesis lets you obtain data from an
+application or service, operate on that data if you need to, and then send the
+data to a completely different application or service. You can do all this
+without writing code.</simpara>
+<important>
+<simpara>Syndesis is a Technology Preview feature only. Technology Preview features
+are not supported with Red Hat production service level agreements (SLAs), might
+not be functionally complete, and Red Hat does not recommend to use them for
+production. These features provide early access to upcoming product features,
+enabling customers to test functionality and provide feedback during the
+development process.
+For more information on Red Hat Technology Preview features support scope,
+see <link xl:href="https://access.redhat.com/support/offerings/techpreview/">https://access.redhat.com/support/offerings/techpreview/</link>.</simpara>
+</important>
+<simpara>Explore the Syndesis Technology Preview by creating two
+sample integrations. For instructions, see:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><xref linkend="Twitter-to-Salesforce"/></simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Salesforce-to-DB"/></simpara>
+</listitem>
+</itemizedlist>
+</chapter>
+<chapter xml:id="Twitter-to-Salesforce">
+<title>Implement a Twitter to Salesforce Sample Integration</title>
+<simpara>This sample integration watches Twitter for tweets from
+a particular Twitter user. When the integration finds such tweets,
+it filters
+them so that only those tweets that contain the text you specify cause
+the integration to continue.</simpara>
+<simpara>For tweets that contain the specified text, the integration compares
+the value of the Twitter <literal>screenName</literal> field with the value of the
+Salesforce <literal>TwitterScreenName_c</literal> field in each contact object
+in the Salesforce installation.</simpara>
+<simpara>If no match is found then the integration creates a new Salesforce
+contact object and populates its fields with data from Twitter.
+If a match exists then the integration updates the matching Salesforce
+contact object by using the values in the Twitter fields.</simpara>
+<simpara>To implement this sample integration, the main steps are:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara><xref linkend="Register-With-Twitter"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Register-With-Salesforce"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Create-Twitter-Connection"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Create-SF-Connection"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Create-Twitter-SF-Integration"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Confirm-Twitter-SF-Working"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Clean-Up"/>.</simpara>
+</listitem>
+</orderedlist>
+<simpara>Before you implement this sample integration,
+see <xref linkend="Twitter-Salesforce-Prerequisites"/>.</simpara>
+<section xml:id="Twitter-Salesforce-Prerequisites">
+<title>Prerequisites for Implementing Twitter to Salesforce Integration</title>
+<simpara>To implement a Twitter to Salesforce sample integration:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>You need a Twitter account.</simpara>
+</listitem>
+<listitem>
+<simpara>You need an account in a Salesforce installation that is used for development.</simpara>
+</listitem>
+<listitem>
+<simpara>Add the <literal>TwitterScreenName__c</literal> custom field to the Salesforce
+contact object. For details about how to do this, see TBA.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="Register-With-Twitter">
+<title>Register Syndesis as an Application That Can Access Twitter</title>
+<simpara>You must register your installation of Syndesis as an application
+that can access Twitter.
+This lets you create a sample integration that connects
+to Twitter. Perform these steps:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Log in to your Syndesis installation.</simpara>
+</listitem>
+<listitem>
+<simpara>Copy the Syndesis URL.</simpara>
+</listitem>
+<listitem>
+<simpara>In the left pane, click <emphasis role="strong">Settings</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">OAuth Client Management</emphasis> page, to the left of <emphasis role="strong">Twitter</emphasis>,
+click <emphasis role="strong">&gt;</emphasis> to display the <emphasis role="strong">Client ID</emphasis> and <emphasis role="strong">Client Secret</emphasis> fields.</simpara>
+</listitem>
+<listitem>
+<simpara>In another browser tab, go  to <literal><link xl:href="http://apps.twitter.com">http://apps.twitter.com</link></literal> and do
+the following:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>If you are not already logged in to Twitter, log in.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create New App</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Paste your Syndesis URL into the <emphasis role="strong">Name</emphasis>, <emphasis role="strong">Website</emphasis>, and
+<emphasis role="strong">Callback URL</emphasis> fields.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Callback URL</emphasis> field, append <literal>/api/v1/credentials/callback</literal>.
+For example:
+<literal><link xl:href="https://syndesis.192.123.45.6.nip.io/api/v1/credentials/callback">https://syndesis.192.123.45.6.nip.io/api/v1/credentials/callback</link></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Yes</emphasis> to agree to the Twitter developer agreement.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create your Twitter application</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Keys and Access Tokens</emphasis> tab.</simpara>
+</listitem>
+<listitem>
+<simpara>Copy the <emphasis role="strong">Consumer Key</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>On your Syndesis installation <emphasis role="strong">Settings</emphasis> page, paste the Twitter
+consumer key into the Twitter <emphasis role="strong">Client ID</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>On the Twitter <emphasis role="strong">Keys and Access Tokens</emphasis> tab, copy the
+<emphasis role="strong">Consumer Secret</emphasis> and paste it into the Syndesis Twitter
+<emphasis role="strong">Client Secret</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Save</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+<simpara>To create the sample Twitter to Salesforce integration, you also
+need to <xref linkend="Register-With-Salesforce"/>.</simpara>
+</section>
+<section xml:id="Register-With-Salesforce">
+<title>Register Syndesis as an Application That Can Access Salesforce</title>
+<simpara>You must register your installation of Syndesis as an application
+that can access Salesforce.
+This lets you create a sample integration that connects
+to Salesforce. Perform these steps:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In Syndesis, in the left pane, click <emphasis role="strong">Home</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Copy the Syndesis URL.</simpara>
+</listitem>
+<listitem>
+<simpara>In the left pane, click <emphasis role="strong">Settings</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">OAuth Client Management</emphasis> page, to the left of <emphasis role="strong">Salesforce</emphasis>,
+click <emphasis role="strong">&gt;</emphasis> to display the <emphasis role="strong">Client ID</emphasis> and <emphasis role="strong">Client Secret</emphasis> fields.</simpara>
+</listitem>
+<listitem>
+<simpara>In another browser tab, go  to
+<link xl:href="https://help.salesforce.com/articleView?id=connected_app_create.htm">Create a Connected App</link>
+ for information and instructions for registering Syndesis with Salesforce.
+The main steps you perform are:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Log in to Salesforce.</simpara>
+</listitem>
+<listitem>
+<simpara>Use the <emphasis role="strong">New Connected App</emphasis> wizard. One of the wizard steps is to provide
+a callback URL. Enter your Syndesis URL and append <literal>/api/v1/credentials/callback</literal>.
+For example:
+<literal><link xl:href="https://syndesis.192.123.45.6.nip.io/api/v1/credentials/callback">https://syndesis.192.123.45.6.nip.io/api/v1/credentials/callback</link></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>Make a note of the consumer key and the consumer secret that the
+<emphasis role="strong">New Connected App</emphasis> wizard provides.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>On your Syndesis installation <emphasis role="strong">Settings</emphasis> page, paste the Salesforce
+consumer key into the Salesforce <emphasis role="strong">Client ID</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>On your Syndesis installation <emphasis role="strong">Settings</emphasis> page, paste the Salesforce
+consumer secret into the Syndesis Salesforce
+<emphasis role="strong">Client Secret</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Save</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+<simpara>When Syndesis is registered with both Twitter and Salesforce, you
+are ready to create Syndesis connections. See <xref linkend="Create-Twitter-Connection"/>.</simpara>
+</section>
+<section xml:id="Create-Twitter-Connection">
+<title>Create a Twitter Connection</title>
+<simpara>A Syndesis connection to Twitter requires registration of
+Syndesis as an application that can access Twitter.
+If you did not already register Syndesis for access to
+Twitter, see <xref linkend="Register-With-Twitter"/>.</simpara>
+<simpara>To create a Twitter connection:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the left pane, click <emphasis role="strong">Connections</emphasis> to display available connections.
+Initially, there are no connections.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create Connection</emphasis> to display
+Syndesis connection types.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Twitter</emphasis> connection type.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Connect Twitter</emphasis> to display a Twitter authorization page.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Authorize App</emphasis> to return to Syndesis.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Connection Name</emphasis> field, enter <literal><emphasis role="strong">Twitter Connection 1</emphasis></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create</emphasis> to see that
+<emphasis role="strong">Twitter Connection 1</emphasis> is now an available connection.</simpara>
+</listitem>
+</orderedlist>
+<simpara>The next step is to <xref linkend="Create-SF-Connection"/>.</simpara>
+</section>
+<section xml:id="Create-SF-Connection">
+<title>Create a Salesforce Connection</title>
+<simpara>A Syndesis connection to Salesforce requires registration of
+Syndesis as an application that can access Salesforce.
+If you did not already register Syndesis for access to
+Salesforce, see <xref linkend="Register-With-Salesforce"/>.</simpara>
+<simpara>To create a Salesforce connection:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the left pane, click <emphasis role="strong">Connections</emphasis> to display available connections.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create Connection</emphasis> to display
+Syndesis connection types.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Salesforce</emphasis> connection type.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Connect Salesforce</emphasis> to display a Salesforce authorization page.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Authorize App</emphasis> to return to Syndesis.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Connection Name</emphasis> field, enter <literal><emphasis role="strong">Salesforce Connection 1</emphasis></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create</emphasis> to see that
+<emphasis role="strong">Salesforce Connection 1</emphasis> is now an available connection.</simpara>
+</listitem>
+</orderedlist>
+<simpara>The next step is to <xref linkend="Create-Twitter-SF-Integration"/>.</simpara>
+</section>
+<section xml:id="Create-Twitter-SF-Integration">
+<title>Create and Deploy Twitter to Salesforce Sample Integration</title>
+<simpara>To create and deploy an integration that uses the
+Twitter and Salesforce connections
+you just created, the main steps are:</simpara>
+<itemizedlist>
+<listitem>
+<simpara><xref linkend="Choose-Start-Connection"/></simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Choose-Finish-Connection"/></simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Add-Basic-Filter-Step"/></simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Add-Data-Mapping-Step"/></simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Name-And-Publish"/></simpara>
+</listitem>
+</itemizedlist>
+<section xml:id="Choose-Start-Connection">
+<title>Choose the Start Connection</title>
+<simpara>To choose the start connection:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create Integration</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>On the <emphasis role="strong">Choose a Start Connection</emphasis> page, click <emphasis role="strong">Twitter Connection 1</emphasis>.
+When the integration starts it uses the credentials defined in
+<emphasis role="strong">Twitter Connection 1</emphasis> to connect to Twitter.</simpara>
+</listitem>
+<listitem>
+<simpara>On the <emphasis role="strong">Choose an Action</emphasis> page, click <emphasis role="strong">Twitter Mention</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+<simpara>After
+connecting to Twitter, the integration monitors Twitter for mentions
+that include your Twitter screen name. A match triggers the
+first step in the integration. However, before you add steps to the integration,
+you choose the connection that the integration uses to finish its work.</simpara>
+</section>
+<section xml:id="Choose-Finish-Connection">
+<title>Choose the Finish Connection</title>
+<simpara>To add the finish connection to the integration:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>On the <emphasis role="strong">Choose a Finish Connection</emphasis> page, click <emphasis role="strong">Salesforce Connection 1</emphasis>.
+This integration
+will finish by using the credentials defined in <emphasis role="strong">Salesforce Connection 1</emphasis> to
+connect to Salesforce.</simpara>
+</listitem>
+<listitem>
+<simpara>On the <emphasis role="strong">Choose an Action</emphasis> page, click <emphasis role="strong">Create/Update Contact</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>On the next page accept <emphasis role="strong">TwitterScreenName_c</emphasis> as the
+Salesforce object ID name.</simpara>
+</listitem>
+</orderedlist>
+<simpara>The <emphasis role="strong">TwitterScreenName_c</emphasis> field is a custom field that the integration
+uses to determine
+whether creation of new Salesforce contact is required.
+If a Salesforce contact
+with this ID already exists then the integration updates that contact.
+Otherwise, the integration creates a new contact.</simpara>
+</section>
+<section xml:id="Add-Basic-Filter-Step">
+<title>Add a Basic Filter Step</title>
+<simpara>Add a basic filter step that checks your tweets for particular content and
+continues the integration only if that content is present:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <emphasis role="strong">Add a step</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Basic Filter</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the first field, enter <literal><emphasis role="strong">text</emphasis></literal> to indicate that the content to
+filter for is in the text of the tweet.</simpara>
+</listitem>
+<listitem>
+<simpara>Accept <emphasis role="strong">Contains</emphasis> as the condition to be met for the integration to
+continue.</simpara>
+</listitem>
+<listitem>
+<simpara>In the last field, enter <literal><emphasis role="strong">is great</emphasis></literal> or some other text you choose.
+A tweet must contain the text you enter here for the integration to continue
+operating on this data.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Next</emphasis> to complete the basic filter step.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="Add-Data-Mapping-Step">
+<title>Add a Data Mapping Step</title>
+<simpara>Add a data mapping step that correlates Twitter mention fields to
+Salesforce contact fields:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>Click <emphasis role="strong">Add a Step</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Data Mapping</emphasis> and wait a few moments for the data fields
+to appear.</simpara>
+</listitem>
+<listitem>
+<simpara>Map the Twitter <emphasis role="strong">screenName</emphasis> field to the Salesforce
+<emphasis role="strong">TwitterScreenName_c</emphasis> field:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>On the left, at the top of the list of source fields in Twitter, click
+the magnifying glass
+to display the search field and enter <literal><emphasis role="strong">screen</emphasis></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">screenName</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>On the right, at the top of the list of target fields in Salesforce,
+click the magnifying glass to display the search field and enter <literal><emphasis role="strong">Twitter</emphasis></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">TwitterScreenname_c</emphasis> field. The data mapper displays a line
+from the Twitter source field to the Salesforce target field.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Map the Twitter <emphasis role="strong">name</emphasis> field to the Salesforce
+<emphasis role="strong">FirstName</emphasis> and <emphasis role="strong">LastName</emphasis> fields:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In the <emphasis role="strong">Sources</emphasis> search field, enter <literal><emphasis role="strong">name</emphasis></literal> and then click the <emphasis role="strong">name</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Target</emphasis> search field, enter <literal><emphasis role="strong">First</emphasis></literal> and then click the
+<emphasis role="strong">FirstName</emphasis> field. The data mapper displays a line to show the mapping.</simpara>
+</listitem>
+<listitem>
+<simpara>In the list of Twitter source fields, click <emphasis role="strong">name</emphasis> again.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Target</emphasis> search field, enter <literal><emphasis role="strong">Last</emphasis></literal> and then click the
+<emphasis role="strong">LastName</emphasis> field. The data mapper displays another line from the Twitter
+<emphasis role="strong">name</emphasis> field, but this time it goes to the Salesforce <emphasis role="strong">LastName</emphasis> field.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Map the Twitter <emphasis role="strong">text</emphasis> field to the Salesforce
+<emphasis role="strong">description</emphasis> field:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In the <emphasis role="strong">Sources</emphasis> search field, enter <literal><emphasis role="strong">text</emphasis></literal> and then click the
+<emphasis role="strong">text</emphasis> field.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Target</emphasis> search field, enter <literal><emphasis role="strong">description</emphasis></literal> and then click the
+Salesforce <emphasis role="strong">description</emphasis> field to create the mapping.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right, click
+the grid icon
+to display the list of mappings.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Done</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="Name-And-Publish">
+<title>Give the Integration a Name and Deploy It</title>
+<simpara>The sample integration is complete. To deploy it:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Publish</emphasis> to give it a name.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Integration Name</emphasis> field, enter <literal><emphasis role="strong">Twitter to Salesforce Sample</emphasis></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right corner, click <emphasis role="strong">Publish</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</section>
+<section xml:id="Confirm-Twitter-SF-Working">
+<title>Confirm That the Integration Works</title>
+<simpara>To confirm that the Twitter to Salesforce integration is working:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the left pane, click <emphasis role="strong">Integrations</emphasis> to see that
+<emphasis role="strong">Twitter to Salesforce Sample</emphasis> is an <emphasis role="strong">Active</emphasis> integration,
+which means that it is running.</simpara>
+</listitem>
+<listitem>
+<simpara>Confirm that the integration does not create a contact when a
+tweet does not contain the text you specified in the basic filter
+step:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In Twitter, send a tweet that does not contain the text you specified
+in the basic filter step.</simpara>
+</listitem>
+<listitem>
+<simpara>Wait for the polling interval to elapse, which can be 30 - 60 seconds.</simpara>
+</listitem>
+<listitem>
+<simpara>In Salesforce, confirm that a contact object with your Twitter
+screen name does not exist.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Confirm that the integration creates a new contact when it should:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In Twitter, send a tweet that contains <literal><emphasis role="strong">is great</emphasis></literal> or whatever text
+you specified in the basic filter text.
+For example, <literal><emphasis role="strong">Syndesis is great.</emphasis></literal></simpara>
+</listitem>
+<listitem>
+<simpara>Wait for the polling interval to elapse.</simpara>
+</listitem>
+<listitem>
+<simpara>In Salesforce, locate a contact object that has your Twitter screen name,
+your first name, your last name and the text of your tweet in the
+contact&#8217;s <literal>description</literal> field.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Confirm that the integration updates a contact when it should:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In Twitter, send a different tweet. This tweet should also
+contain the text
+you specified in the basic filter step.
+For example, <literal><emphasis role="strong">Open source is great.</emphasis></literal></simpara>
+</listitem>
+<listitem>
+<simpara>Wait for the polling interval to elapse.</simpara>
+</listitem>
+<listitem>
+<simpara>In Salesforce, locate the contact object that has your Twitter
+screen name and confirm that the <literal>description</literal> field contains the
+text from the more recent tweet.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="Clean-Up">
+<title>Clean Up After Running the Sample Integration</title>
+<simpara>When you are done working with the sample integration:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>On the Syndesis home page, select the <emphasis role="strong">Twitter to Salesforce Sample</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the three vertical dots to the right.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Deactivate</emphasis> to stop running the integration.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the three vertical dots again.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Delete</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+<chapter xml:id="Salesforce-to-DB">
+<title>Implement a Salesforce to Database Sample Integration</title>
+<simpara>This sample integration captures updates in Salesforce and then
+calls a database stored procedure to synchronize the database
+with the Salesforce updates.</simpara>
+<simpara>Before you implement
+this sample integration, see <xref linkend="Salesforce-DB-Prerequisites"/>.</simpara>
+<simpara>To implement this sample integration,
+the main steps are:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara><xref linkend="Create-Salesforce-Connection"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Create-Database-Connection"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Create-SF-DB-Integration"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Deploy-SF-DB-Integration"/>.</simpara>
+</listitem>
+<listitem>
+<simpara><xref linkend="Monitor-Manage-SF-DB-Integration"/>.</simpara>
+</listitem>
+</orderedlist>
+<section xml:id="Salesforce-DB-Prerequisites">
+<title>Prerequisites for Implementing Salesforce to Database Integration</title>
+<simpara>To implement a Salesforce to Oracle database sample integration,
+you must have the following:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>A Salesforce account that is used for development and that contains
+dummy data</simpara>
+</listitem>
+<listitem>
+<simpara>A way to trigger the Syndesis web hook that starts this integration.</simpara>
+</listitem>
+<listitem>
+<simpara>The provided database available by &#8230;&#8203;..TBA.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="Create-SF-Connection">
+<title>Create a Salesforce Connection</title>
+<simpara>A Syndesis connection to Salesforce requires registration of
+Syndesis as an application that can access Salesforce.
+If you did not already register Syndesis for access to
+Salesforce, see <xref linkend="Register-With-Salesforce"/>.</simpara>
+<simpara>To create a Salesforce connection:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the left pane, click <emphasis role="strong">Connections</emphasis> to display available connections.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create Connection</emphasis> to display
+Syndesis connection types.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Salesforce</emphasis> connection type.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Connect Salesforce</emphasis> to display a Salesforce authorization page.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Authorize App</emphasis> to return to Syndesis.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Connection Name</emphasis> field, enter <literal><emphasis role="strong">Salesforce Connection 1</emphasis></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create</emphasis> to see that
+<emphasis role="strong">Salesforce Connection 1</emphasis> is now an available connection.</simpara>
+</listitem>
+</orderedlist>
+<simpara>The next step is to <xref linkend="Create-Twitter-SF-Integration"/>.</simpara>
+</section>
+<section xml:id="Create-Database-Connection">
+<title>Create an Oracle EBS Connection</title>
+<simpara>To create an Oracle Electronic Business Suite (EBS) connection:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the left pane, click <emphasis role="strong">Connections</emphasis> to display available connections.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create Connection</emphasis> to display
+Syndesis connectors.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">Oracle EBS</emphasis> connector. You use the <emphasis role="strong">Oracle EBS</emphasis>
+connector to create a
+connection that uses a particular stored procedure to access the database.</simpara>
+</listitem>
+<listitem>
+<simpara>Configure the stored procedure connection:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select the stored procedure you want to use.</simpara>
+</listitem>
+<listitem>
+<simpara>Specify connection parameters.</simpara>
+</listitem>
+<listitem>
+<simpara>Specify your login credentials for the database</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Validate</emphasis> to confirm that Syndesis is authorized to
+use your credentials to access the database.</simpara>
+</listitem>
+<listitem>
+<simpara>After successful validation, click <emphasis role="strong">Next</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Connection Name</emphasis> field, enter <literal><emphasis role="strong">Oracle EBS</emphasis></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create</emphasis>. This displays
+<emphasis role="strong">Oracle EBS</emphasis> as an available connection.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="Create-SF-DB-Integration">
+<title>Create a Salesforce to Oracle EBS Integration</title>
+<simpara>To create an integration that uses the Salesforce and Oracle EBS
+connections you created:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the upper right, click <emphasis role="strong">Create Integration</emphasis> to display
+available connections.</simpara>
+</listitem>
+<listitem>
+<simpara>Add the start connection to the integration:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select the <emphasis role="strong">Web Hook</emphasis> connection to start the integration.</simpara>
+</listitem>
+<listitem>
+<simpara>To configure the web hook connection &#8230;&#8203;. TBA</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Add the finish connection to the integration:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select the <emphasis role="strong">Oracle EBS</emphasis> connection to end the integration.</simpara>
+</listitem>
+<listitem>
+<simpara>Click the <emphasis role="strong">Call Oracle stored procedure</emphasis> action and click <emphasis role="strong">Next</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">TBA</emphasis> stored procedure. The integration uses this procedure
+to access the database.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Add a connection in the middle:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Click <emphasis role="strong">Add a connection</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">My First Salesforce Connection</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the <emphasis role="strong">Search</emphasis> action.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the Salesforce object to search for.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Add a data mapping step after the middle connection:</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>In the left panel, hover over the plus sign that is below the middle
+Salesforce connection and click <emphasis role="strong">Add a step</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Data Mapping</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the Salesforce 1 field and map it to the stored procedure
+A parameter.</simpara>
+</listitem>
+<listitem>
+<simpara>Select the Salesforce 2 field and map it to the stored procedure
+B parameter.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Next</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Save</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the <emphasis role="strong">Integration Name</emphasis> field, enter <literal><emphasis role="strong">Salesforce to Oracle ESB Sample</emphasis></literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>In the upper right corner, click <emphasis role="strong">Publish</emphasis>.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="Deploy-SF-DB-Integration">
+<title>Deploy the Salesforce to Database Integration</title>
+<simpara>To deploy the Salesforce to database sample integration that you just
+created:</simpara>
+<simpara>TBA</simpara>
+<simpara>This separate topic might not be needed if the integrator
+clicks Publish after giving the integration a name.
+This assumes everything works correctly.
+The Monitoring and Managing topic would provide steps for
+making sure the integration is running and doing what it is supposed to do.</simpara>
+<simpara>But if clicking Publish does not result in a running integration, then
+this topic might be needed for troubleshooting information.</simpara>
+</section>
+<section xml:id="Monitor-Manage-SF-DB-Integration">
+<title>Monitor and Manage Salesforce to Database Integration</title>
+<simpara>To monitor and manage the Salesforce to database integration:</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>In the left pane, click <emphasis role="strong">Dashboard</emphasis> to see that
+<emphasis role="strong">Salesforce to Database Sample</emphasis> is an <emphasis role="strong">Active</emphasis> integration,
+which means that it is running.</simpara>
+</listitem>
+<listitem>
+<simpara>In Salesforce, trigger the integration by updating
+an object of the type that the integration
+operates on.</simpara>
+</listitem>
+<listitem>
+<simpara>In the sample database, check whether the sample integration
+updated the database according to the Salesforce object update.</simpara>
+</listitem>
+<listitem>
+<simpara>In the Syndesis dashboard, select the
+<emphasis role="strong">Salesforce to Database Sample</emphasis> and click the three vertical
+dots to the right.</simpara>
+</listitem>
+<listitem>
+<simpara>Select <emphasis role="strong">Deactivate</emphasis> to stop running the integration. At any time,
+you can click the vertical dots and select <emphasis role="strong">Activate</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>After testing the integration, select it in the dashboard, click
+the three vertical dots and select <emphasis role="strong">Delete</emphasis>. In this release, only
+one active integration is allowed.</simpara>
+</listitem>
+</orderedlist>
+</section>
+</chapter>
+<chapter xml:id="Citizen-Integrator-Tasks">
+<title>Citizen Integrator Tasks</title>
+<simpara>This chapter outlines the basic workflow for Syndesis.</simpara>
+<section xml:id="Log-In-to-the-Portal">
+<title>Log In to the Syndesis Portal</title>
+<section xml:id="_log_in_to_an_syndesis_cluster_using_openshift_s_local_authentication">
+<title>Log In to an Syndesis Cluster using OpenShift&#8217;s local Authentication.</title>
+<simpara>To log in to a cluster that uses local Authentication provided by OpenShift, you are automatically redirected to the OpenShift log in screen.</simpara>
+<section xml:id="_first_time_log_in">
+<title>First Time Log In</title>
+<simpara>The first time you log in using OpenShift&#8217;s local Authentication, you are prompted to provide the following credentials:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>Email address</simpara>
+</listitem>
+<listitem>
+<simpara>First name</simpara>
+</listitem>
+<listitem>
+<simpara>Last name</simpara>
+</listitem>
+</itemizedlist>
+<simpara>The next time you log in you are prompted for the usual log in credentials.</simpara>
+</section>
+</section>
+<section xml:id="_log_in_to_syndesis_cluster_using_github_authentication">
+<title>Log In to Syndesis Cluster Using GitHub Authentication</title>
+<simpara>If you are logging in to a cluster that uses GitHub Authentication, there are two scenarios.</simpara>
+<itemizedlist>
+<listitem>
+<simpara>If you are already signed in to GitHub then GitHub&#8217;s Single Sign On facility
+forwards you to Syndesis.</simpara>
+</listitem>
+<listitem>
+<simpara>If you are not signed in to GitHub then the GitHub sign on screen appears.
+you will be redirected to the GitHub sign on screen where you can enter your credentials.</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</section>
+<section xml:id="_explore_the_syndesis_console">
+<title>Explore the Syndesis Console</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+<section xml:id="_create_a_new_integration_using_a_template">
+<title>Create a New Integration Using a Template</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+<section xml:id="Create-an-Integration">
+<title>Create an Integration</title>
+<simpara>You must have a connection type set up as a template for the type of connection you want to create.
+For example, if you want to create a new Twitter connection, a Twitter connection must be available to be used as a template.</simpara>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>On the Syndesis home page, click the <emphasis role="strong">Connections</emphasis> tab.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Create</emphasis></simpara>
+</listitem>
+<listitem>
+<simpara>Provide a name for the Integration.</simpara>
+</listitem>
+<listitem>
+<simpara>Select source Connection.</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select the type of connection from the list of pre-defined connections. Supply connection credentials for the source Connection if requested. The properties required are specific to each individual Connection.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Enter a <emphasis role="strong">Name</emphasis> and optional <emphasis role="strong">Description</emphasis> for the connection.</simpara>
+</listitem>
+<listitem>
+<simpara>Select destination Connection.</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara>Select the type of connection from the list of pre-defined connections.&#8201;&#8212;&#8201;Supply connection credentials for the source Connection if requested. The properties required are specific to each individual Connection.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Enter a <emphasis role="strong">Name</emphasis> and optional <emphasis role="strong">Description</emphasis> for the connection.</simpara>
+</listitem>
+<listitem>
+<simpara>You can add further steps or connections if required, by clicking <emphasis role="strong">Add a step</emphasis> or <emphasis role="strong">Add a connection</emphasis>.</simpara>
+<orderedlist numeration="loweralpha">
+<listitem>
+<simpara><emphasis role="strong">Add a step</emphasis>   You can add some functionality to your Integration by adding a log entry, a filter, or by adding a data mapper.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Add a connection</emphasis>   You can add further connections to the Integration.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Next</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>Enter a <emphasis role="strong">Name</emphasis> and optional <emphasis role="strong">Description</emphasis> for the Integration.</simpara>
+</listitem>
+<listitem>
+<simpara>Click <emphasis role="strong">Publish</emphasis>.</simpara>
+</listitem>
+<listitem>
+<simpara>View Integration on the <emphasis role="strong">Integrations</emphasis> page.</simpara>
+</listitem>
+</orderedlist>
+</section>
+<section xml:id="Filtering-Data-an-Integration-Works-With">
+<title>Filtering Data an Integration Works With</title>
+<simpara>You can add a step to an integration to filter the data that the
+integration operates on. In a filter step, Syndesis inspects the
+data and continues the integraton only if the content meets
+criteria that you define. For example, in an integration that
+obtains data from Twitter, you can specify that you want to
+operate on data only when the tweet contains "Red Hat".</simpara>
+</section>
+<section xml:id="_test_an_integration_in_the_editor">
+<title>Test an Integration in the Editor</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+<section xml:id="_deploy_an_integration_using_a_pipeline">
+<title>Deploy an Integration Using a Pipeline</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+<section xml:id="_trace_data_in_a_running_integration">
+<title>Trace Data in a Running Integration</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+</chapter>
+<chapter xml:id="Expert-Integrator-Tasks">
+<title>Expert Integrator Tasks</title>
+<simpara>This chapter describes some advanced tasks that you can perform from the Syndesis console.</simpara>
+<section xml:id="_create_a_new_connector_in_syndesis_console">
+<title>Create a New Connector in Syndesis Console</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+<section xml:id="_verify_a_new_connection">
+<title>Verify a New Connection</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+<section xml:id="_create_a_new_integration_template">
+<title>Create a New Integration Template</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+<section xml:id="_define_a_data_mapping_using_the_data_mapper_tool">
+<title>Define a Data Mapping Using the Data Mapper Tool</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+<section xml:id="_expose_rest_apis_using_the_api_designer">
+<title>Expose REST APIs Using the API Designer</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+<section xml:id="_integrate_rest_connections_with_api_management">
+<title>Integrate REST Connections with API Management</title>
+<simpara>Add the topic contents here.</simpara>
+</section>
+</chapter>
+</book>

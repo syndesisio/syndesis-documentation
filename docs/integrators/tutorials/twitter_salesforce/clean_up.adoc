@@ -1,0 +1,10 @@
+[[Clean-Up]]
+= Clean Up After Running the Sample Integration
+
+When you are done working with the sample integration:
+
+. On the {prodname} home page, select the *Twitter to Salesforce Sample*. 
+. Click the three vertical dots to the right. 
+. Select *Deactivate* to stop running the integration. 
+. Click the three vertical dots again. 
+. Select *Delete*. 
