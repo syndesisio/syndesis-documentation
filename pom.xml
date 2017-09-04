@@ -23,7 +23,7 @@
 
     <name>Syndesis :: Docs</name>
 
-    <groupId>org.syndesis</groupId>
+    <groupId>io.syndesis</groupId>
     <artifactId>syndesis-docs</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
@@ -75,5 +75,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>
