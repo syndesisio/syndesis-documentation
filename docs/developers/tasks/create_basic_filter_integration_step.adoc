@@ -1,12 +1,10 @@
-=== Add an integration step
-[Add an integration step]
-==== Add an integration step
-After you have created integration connections, you can add functionality to your integration by adding steps between the connections. These steps can filter the information, map data or send a message to the log.
+= Add an Integration Step
+After you have created integration connections, you can add functionality to your integration by adding steps between the connections. These steps filter the information, map data or send a message to the log.
 
-====== Add a basic filter step
-A filter will determine which data from the input connection will reach the output connection. 
+== Add a Basic Filter Step
+A filter determines which data from the input connection will reach the output connection. 
 
-. On the *Create an Integration* page, click *STEP*
+. On the *Create an Integration* page, click *Add a Step*
 
 . Select *Basic Filter* from the *Add a Step* page. 
 
@@ -16,9 +14,8 @@ A filter will determine which data from the input connection will reach the outp
 .. Select from the dropdown to select whether to continue if the incoming data matches *all* of the filters defined below, or *any* of them. 
 
 .. Next, select the field you want to use to control the filter. You can define the field in the following ways:
-... Select the default provided in the data name field.
 ... Start typing. The data name field has a typeahead feature that will provide a list of possible completions for you in a pop-up box. Select the correct one from the box. 
-... Click *Browse*. A window will appear with a list of available fields. Use the *Search* box to search for a field name, or scroll through the list. Select the correct name from the list.
+... Click on the *text* field. A dropdown box will appear with a list of available fields. Select the field you require from the list.
 
 .. Select an operation from the dropdown box. The setting defaults to *Contains*
 
@@ -26,13 +23,15 @@ A filter will determine which data from the input connection will reach the outp
 
 . After you have completed your filter, you have an option to create another. Click on *+ Add another rule* to add another entry to your filter list. 
 . You can delete an entry by clicking the trash can icon next to the entry. 
-. 
-When you have completed your filter, you can give it a name by clicking on the new *Step* item in the Integration diagram pane. It will allow you to enter a name.
 
-===== Add an Advanced filter
-On the *Create an Integration* page, click *STEP*
+When you have completed your filter, click *Next >*.
+
+== Add an Advanced filter
+. On the *Create an Integration* page, click *Add a Step*
 
 . Select *Advanced Filter* from the *Add a Step* page. 
 
 The Advanced filter uses Camel Simple language. You can enter Simple scripts in the edit box provided. 
 For more information about Camel Simple lanugage see http://camel.apache.org/simple.html.
+
+When you have completed your filter, click *Next >*.
