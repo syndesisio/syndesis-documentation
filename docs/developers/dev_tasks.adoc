@@ -13,3 +13,5 @@ include::tasks/integration_logs.adoc[]
 include::tasks/integration_metrics.adoc[]
 
 include::tasks/create_basic_filter_integration_step.adoc[leveloffset=+1]
+
+include::tasks/create_advanced_filter.adoc[leveloffset=+1]
