@@ -26,12 +26,3 @@ A filter determines which data from the input connection will reach the output c
 
 When you have completed your filter, click *Next >*.
 
-== Add an Advanced filter
-. On the *Create an Integration* page, click *Add a Step*
-
-. Select *Advanced Filter* from the *Add a Step* page. 
-
-The Advanced filter uses Camel Simple language. You can enter Simple scripts in the edit box provided. 
-For more information about Camel Simple lanugage see http://camel.apache.org/simple.html.
-
-When you have completed your filter, click *Next >*.
