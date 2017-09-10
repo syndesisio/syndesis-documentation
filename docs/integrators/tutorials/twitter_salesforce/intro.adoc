@@ -1,7 +1,7 @@
 [[Twitter-to-Salesforce]]
 = Implement a Twitter to Salesforce Sample Integration
 
-This sample integration watches Twitter for tweets from
+This sample integration watches Twitter for tweets that mention
 a particular Twitter user. When the integration finds such tweets, 
 it filters
 them so that only those tweets that contain the text you specify cause
