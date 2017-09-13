@@ -1,8 +1,8 @@
-:prodname: Syndesis
-:prodversion: 1.0
+:prodname: Fuse Ignite
+:prodversion: 0.1
 
 [[Tutorials]]
-== {prodname} Tutorials
+== {prodname} Sample Integration Tutorial
 
 {prodname} lets you obtain data from an
 application or service, operate on that data if you need to, and then send the 

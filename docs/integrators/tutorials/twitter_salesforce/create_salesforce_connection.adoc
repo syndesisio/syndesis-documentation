@@ -1,4 +1,4 @@
-[[Create-SF-Connection]]
+[id='Create-SF-Connection-{reuse}']
 = Create a Salesforce Connection
 
 A {prodname} connection to Salesforce requires registration of

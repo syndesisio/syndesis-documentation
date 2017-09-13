@@ -1,6 +1,7 @@
 [[Twitter-to-Salesforce]]
 = Implement a Twitter to Salesforce Sample Integration
 
+:reuse: t2sf
 This sample integration watches Twitter for tweets that mention
 a particular Twitter user. When the integration finds such tweets, 
 it filters
@@ -23,7 +24,7 @@ To implement this sample integration, the main steps are:
 . <<Register-With-Twitter>>.
 . <<Register-With-Salesforce>>.
 . <<Create-Twitter-Connection>>. 
-. <<Create-SF-Connection>>. 
+. <<Create-SF-Connection-{reuse}>>. 
 . <<Create-Twitter-SF-Integration>>.
 . <<Confirm-Twitter-SF-Working>>.
 . <<Clean-Up>>.

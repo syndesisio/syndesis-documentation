@@ -3,6 +3,8 @@
 
 This chapter outlines the basic workflow for {prodname}.
 
+include::tasks/citizen/manage_authorization.adoc[]
+
 include::tasks/citizen/log_in.adoc[]
 
 include::tasks/citizen/explore_console.adoc[]

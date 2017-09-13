@@ -1,6 +1,7 @@
 [[Salesforce-to-DB]]
 = Implement a Salesforce to Database Sample Integration
 
+:reuse: sf2db
 This sample integration captures updates in Salesforce and then 
 calls a database stored procedure to synchronize the database
 with the Salesforce updates. 
@@ -11,7 +12,7 @@ this sample integration, see <<Salesforce-DB-Prerequisites>>.
 To implement this sample integration,
 the main steps are:
 
-. <<Create-Salesforce-Connection>>. 
+. <<Create-SF-Connection-{reuse}>>. 
 . <<Create-Database-Connection>>. 
 . <<Create-SF-DB-Integration>>.
 . <<Deploy-SF-DB-Integration>>.

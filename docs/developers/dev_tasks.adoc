@@ -1,3 +1,6 @@
+[[Developer-Tasks]]
+== Developer Tasks
+
 This chapter describes developer tasks.
 
 include::tasks/git.adoc[]

@@ -1,8 +1,8 @@
-<productname>iPaaS</productname>
+<productname>Red Hat Fuse Ignite</productname>
 <productnumber>1.0</productnumber>
-<subtitle>iPaaS 1.0 User Guide</subtitle>
+<subtitle>Tutorial</subtitle>
 <abstract>
- <para>User guide for iPaaS</para>
+ <para>Instructions for creating and deploying a sample integration</para>
 </abstract>
 <authorgroup>
   <org>

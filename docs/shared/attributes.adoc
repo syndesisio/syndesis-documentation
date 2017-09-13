@@ -1,2 +1,3 @@
-:prodname: Syndesis
-:prodversion: 1.0
+:prodname: Fuse Ignite
+:prodversion: 0.1
+:imagesdir: images
