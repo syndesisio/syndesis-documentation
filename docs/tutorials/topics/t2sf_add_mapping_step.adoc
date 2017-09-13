@@ -10,7 +10,9 @@ to appear.
 . Map the Twitter *screenName* field to the Salesforce
 *TwitterScreenName_c* field:
 .. On the left, at the top of the list of source fields in Twitter, click
-the magnifying glass image:../../../shared/images/magnifying-glass.png[title="Search"] to display the search field and enter `*screen*`. 
+the magnifying glass 
+image:images/magnifying-glass.png[title="Search"] to 
+display the search field and enter `*screen*`. 
 .. Click the *screenName* field.
 .. On the right, at the top of the list of target fields in Salesforce,
 click the magnifying glass to display the search field and enter `*Twitter*`. 
@@ -32,6 +34,6 @@ from the Twitter source field to the Salesforce target field.
 .. In the *Target* search field, enter `*description*` and then click the
 Salesforce *description* field to create the mapping. 
 .. In the upper right, click 
-the grid icon image:../../../shared/images/grid.png[title="Grid"] to
+the grid icon image:images/grid.png[title="Grid"] to
 display the list of mappings. 
 . In the upper right, click *Done*.

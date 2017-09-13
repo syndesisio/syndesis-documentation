@@ -1,5 +1,6 @@
 :prodname: Fuse Ignite
 :prodversion: 0.1
+:imagesdir: topics
 
 [[Tutorials]]
 == {prodname} Sample Integration Tutorial
@@ -30,8 +31,8 @@ sample integrations. For instructions, see:
 
 // You can create these sample integrations in any order. 
 
-include::tutorials/twitter_salesforce/intro.adoc[leveloffset=+1]
+include::topics/t2sf_intro.adoc[leveloffset=+1]
 
-include::tutorials/salesforce_db/intro.adoc[leveloffset=+1]
+include::topics/sf2db_intro.adoc[leveloffset=+1]
 
-// include::tutorials/three_apis/intro.adoc[leveloffset=+1]
+// include::topicss/3api_intro.adoc[leveloffset=+1]

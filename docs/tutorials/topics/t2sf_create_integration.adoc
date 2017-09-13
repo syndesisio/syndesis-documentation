@@ -11,12 +11,12 @@ you just created, the main steps are:
 * <<Add-Data-Mapping-Step>>
 * <<Name-And-Publish>>
 
-include::choose_start_connection.adoc[leveloffset=+1]
+include::t2sf_choose_start.adoc[leveloffset=+1]
 
-include::choose_finish_connection.adoc[leveloffset=+1]
+include::t2sf_choose_finish.adoc[leveloffset=+1]
 
-include::add_basic_filter_step.adoc[leveloffset=+1]
+include::t2sf_add_filter_step.adoc[leveloffset=+1]
 
-include::add_data_mapping_step.adoc[leveloffset=+1]
+include::t2sf_add_mapping_step.adoc[leveloffset=+1]
 
-include::name_and_publish.adoc[leveloffset=+1]
+include::t2sf_name_and_publish.adoc[leveloffset=+1]

@@ -32,18 +32,18 @@ To implement this sample integration, the main steps are:
 Before you implement this sample integration, 
 see <<Twitter-Salesforce-Prerequisites>>.
 
-include::prerequisites.adoc[leveloffset=+1]
+include::t2sf_prereqs.adoc[leveloffset=+1]
 
-include::register_with_twitter.adoc[leveloffset=+1]
+include::t2sf_twitter_registration.adoc[leveloffset=+1]
 
-include::register_with_sf.adoc[leveloffset=+1]
+include::t2sf_sf_registration.adoc[leveloffset=+1]
 
-include::create_twitter_connection.adoc[leveloffset=+1]
+include::t2sf_create_twitter_conn.adoc[leveloffset=+1]
 
-include::create_salesforce_connection.adoc[leveloffset=+1]
+include::t2sf_create_sf_conn.adoc[leveloffset=+1]
 
-include::create_twitter_sf_integration.adoc[leveloffset=+1]
+include::t2sf_create_integration.adoc[leveloffset=+1]
 
-include::confirm_twitter_sf_working.adoc[leveloffset=+1]
+include::t2sf_confirm_working.adoc[leveloffset=+1]
 
-include::clean_up.adoc[leveloffset=+1]
+include::t2sf_clean_up.adoc[leveloffset=+1]
