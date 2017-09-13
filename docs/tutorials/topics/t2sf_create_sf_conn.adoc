@@ -17,5 +17,3 @@ To create a Salesforce connection:
 . In the *Connection Name* field, enter `*Salesforce Connection 1*`.
 . In the upper right, click *Create* to see that 
 *Salesforce Connection 1* is now an available connection. 
-
-The next step is to <<Create-Twitter-SF-Integration>>. 

@@ -1,6 +1,6 @@
 :prodname: Fuse Ignite
 :prodversion: 0.1
-:imagesdir: topics
+:imagesdir: images
 
 [[Tutorials]]
 == {prodname} Sample Integration Tutorial

@@ -1,5 +1,5 @@
-[[Deploy-SF-DB-Integration]]
-= Deploy the Salesforce to Database Integration
+[[Confirm-SF-DB-Integration-Works]]
+= Confirm that the Salesforce to Database Integration Works
 
 To deploy the Salesforce to database sample integration that you just
 created:
