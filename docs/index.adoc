@@ -1,5 +1,5 @@
-:prodname: Syndesis
-:prodversion: 1.0
+:prodname: Fuse Ignite
+:prodversion: 0.1
 
 = Skeleton for {prodname} User Documentation 
 
@@ -17,7 +17,7 @@ include::integrators/concepts/product_overview.adoc[]
 
 include::integrators/concepts/term_definitions.adoc[]
 
-include::integrators/concepts/user_types.adoc[]
+// include::integrators/concepts/user_types.adoc[]
 
 include::integrators/concepts/workflow_overview.adoc[]
 
