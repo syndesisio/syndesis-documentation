@@ -1,5 +1,5 @@
-[[Monitor-Manage-3API-Integration]]
-= Monitor and Manage Integration of Three APIs
+[[Clean-Up-3API-Integration]]
+= Clean Up After Running the Three-API Sample Integration
 
 To monitor and manage the three-API integration:
 
