@@ -1,6 +1,5 @@
 [[Add-Data-Mapping-Step]]
 = Add a Data Mapping Step
-:imagesdir: topics
 
 Add a data mapping step that correlates Twitter mention fields to 
 Salesforce contact fields:
@@ -12,7 +11,7 @@ to appear.
 *TwitterScreenName_c* field:
 .. On the left, at the top of the list of source fields in Twitter, click
 the magnifying glass 
-image:magnifying-glass.png[title="Search"] to 
+image:images/magnifying-glass.png[title="Search"] to 
 display the search field and enter `*screen*`. 
 .. Click the *screenName* field.
 .. On the right, at the top of the list of target fields in Salesforce,

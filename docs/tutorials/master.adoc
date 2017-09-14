@@ -1,9 +1,9 @@
 :prodname: Fuse Ignite
 :prodversion: 0.1
-:imagesdir: images
+:imagesdir: topics
 
 [[Tutorials]]
-== {prodname} Sample Integration Tutorial
+= {prodname} Sample Integration Tutorial
 
 {prodname} lets you obtain data from an
 application or service, operate on that data if you need to, and then send the 
