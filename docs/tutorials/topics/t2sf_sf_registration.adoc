@@ -3,8 +3,11 @@
 
 You must register your installation of {prodname} as an application 
 that can access Salesforce. 
-This lets you create a sample integration that connects
-to Salesforce. Perform these steps:
+This lets you create any number of integrations that connect
+to Salesforce. In other words, you need to register {prodname}
+with Salesforce only once. 
+
+Perform these steps:
 
 . In {prodname}, in the left pane, click *Home*.
 . Copy the Syndesis URL from the browser address bar.
@@ -28,6 +31,3 @@ consumer key into the Salesforce *Client ID* field.
 consumer secret into the {prodname} Salesforce 
 *Client Secret* field. 
 . Click *Save*.
-
-When {prodname} is registered with both Twitter and Salesforce, you
-are ready to create {prodname} connections. See <<Create-Twitter-Connection>>.

@@ -4,16 +4,17 @@
 To add the finish connection to the integration:
 
 . On the *Choose a Finish Connection* page, click *Salesforce Connection 1*. 
-This integration
-will finish by using the credentials defined in *Salesforce Connection 1* to 
+This integration finishes by using the credentials 
+defined in *Salesforce Connection 1* to 
 connect to Salesforce. 
 . On the *Choose an Action* page, click *Create/Update Contact*.
 . On the next page accept *TwitterScreenName_c* as the
 Salesforce object ID name. 
+. Click *Done* to add the finish connection to the integration. 
 
 The *TwitterScreenName_c* field is a custom field that the integration
 uses to determine
-whether creation of new Salesforce contact is required. 
+whether creation of a new Salesforce contact is required. 
 If a Salesforce contact
 with this ID already exists then the integration updates that contact. 
 Otherwise, the integration creates a new contact.

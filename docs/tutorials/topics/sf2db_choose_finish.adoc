@@ -1,0 +1,12 @@
+[[SFDB-Choose-Finish-Connection]]
+= Choose the Finish Connection
+
+To add the finish connection to the integration:
+
+. On the *Choose a Finish Connection* page, click *Oracle EBS*. 
+This integration finishes by using the credentials 
+defined in *Oracle EBS* to connect to an Oracle database. 
+. On the *Choose an Action* page, click *Invoke SQL stored procedure*, 
+which passes data to a stored procedure.
+. On the next page select the *?????* stored procedure. 
+. Click *Done* to add the finish connection to the integration. 

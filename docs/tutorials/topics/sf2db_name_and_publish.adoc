@@ -1,0 +1,8 @@
+[[SFDB-Name-And-Publish]]
+= Give the Integration a Name and Deploy It
+
+The sample integration is complete. To deploy it:
+
+. In the upper right, click *Publish* to give it a name.                                                                                                                                                                                                                                                                                                                             
+. In the *Integration Name* field, enter `*Salesforce to Oracle EBS Sample*`.
+. In the upper right corner, click *Publish*. 

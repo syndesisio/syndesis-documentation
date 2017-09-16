@@ -1,16 +1,13 @@
 [[Confirm-SF-DB-Integration-Works]]
-= Confirm that the Salesforce to Database Integration Works
+= Confirm that the Salesforce to Oracle EBS Integration Works
 
-To deploy the Salesforce to database sample integration that you just
-created:
+To confirm that the Salesforce to Oracle EBS integration is working:
 
-TBA
+. In the left pane, click *Integrations* to see that  
+*Salesforce to Oracle EBS Sample* is an *Active* integration,
+which means that it is running. 
+. Confirm that the integration does x:
+. Confirm that the integration does y: 
+. Confirm that the integration does z:
 
-This separate topic might not be needed if the integrator
-clicks Publish after giving the integration a name. 
-This assumes everything works correctly. 
-The Monitoring and Managing topic would provide steps for
-making sure the integration is running and doing what it is supposed to do. 
-
-But if clicking Publish does not result in a running integration, then
-this topic might be needed for troubleshooting information. 
+ 

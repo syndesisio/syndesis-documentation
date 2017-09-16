@@ -1,11 +1,18 @@
 [[Salesforce-DB-Prerequisites]]
 = Prerequisites for Implementing Salesforce to Database Integration
 
-To implement a Salesforce to Oracle database sample integration,
-you must have the following:
+To implement a Salesforce to Oracle database sample integration:
+
+* In your GitHub account, you must have registered and authorized 
+{prodname}. If you did not already do this, visit 
+https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/registering-oauth-apps/[Registering OAuth Apps].
+Save the client ID and client secret in an easily accessible place or
+keep the registered app tab open to easily obtain those values. 
 
 * A Salesforce account that is used for development and that contains
 dummy data
-* A way to trigger the {prodname} web hook that starts this integration. 
+
+* A way to trigger an event that starts this integration. 
  
-* The provided database available by .....TBA.
+* A Postgresql (and internally Oracle) database that you can experiment in or
+the Red Hat provided database available by .....TBA.

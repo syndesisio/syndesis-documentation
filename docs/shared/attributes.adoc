@@ -1,3 +1,3 @@
 :prodname: Fuse Ignite
-:prodversion: 0.1
-:imagesdir: images
+:prodversion: 7.0-TP1
+:imagesdir: topics

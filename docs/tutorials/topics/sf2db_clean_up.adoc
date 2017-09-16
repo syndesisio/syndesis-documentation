@@ -1,4 +1,11 @@
 [[Clean-Up-SF2DB]]
-= Clean Up Salesforce to Database Integration
+= Clean Up Salesforce to Oracle EBS Integration
 
-To clean up after the Salesforce to database integration:
+When you are done working with the sample integration:
+
+. In the left panel, click *Integrations*. 
+. At the far right of the *Salesforce to Oracle EBS Sample* entry, 
+click the three vertical dots. 
+. Select *Deactivate* and then click *OK* to stop running the integration. 
+. Click the three vertical dots again. 
+. Select *Delete* and then click *OK* to confirm. 

@@ -1,33 +1,21 @@
 [[Create-SF-DB-Integration]]
-= Create a Salesforce to Oracle EBS Integration
+= Create and Deploy Salesforce to Oracle EBS Sample Integration
 
-To create an integration that uses the Salesforce and Oracle EBS
-connections you created:
+To create and deploy an integration that uses the Web Hook and Oracle EBS
+connections you created, the main steps are:
 
-. In the upper right, click *Create Integration* to display 
-available connections.
-. Add the start connection to the integration:
-.. Select the *Web Hook* connection to start the integration.
-.. To configure the web hook connection .... TBA
-. Add the finish connection to the integration:
-.. Select the *Oracle EBS* connection to end the integration. 
-.. Click the *Call Oracle stored procedure* action and click *Next*.
-.. Select the *TBA* stored procedure. The integration uses this procedure 
-to access the database. 
-. Add a connection in the middle:
-.. Click *Add a connection*.
-.. Select *My First Salesforce Connection*. 
-.. Select the *Search* action.
-.. Select the Salesforce object to search for.  
-. Add a data mapping step after the middle connection:
-.. In the left panel, hover over the plus sign that is below the middle
-Salesforce connection and click *Add a step*.
-.. Select *Data Mapping*. 
-.. Select the Salesforce 1 field and map it to the stored procedure
-A parameter. 
-.. Select the Salesforce 2 field and map it to the stored procedure
-B parameter.
-.. Click *Next*.
-. Click *Save*.    
-. In the *Integration Name* field, enter `*Salesforce to Oracle ESB Sample*`. 
-. In the upper right corner, click *Publish*.
+* <<SFDB-Choose-Start-Connection>>
+* <<SFDB-Choose-Finish-Connection>>
+* <<SFDB-Add-SF-Connection>>
+* <<SFDB-Add-Data-Mapping-Step>>
+* <<SFDB-Name-And-Publish>>
+
+include::sf2db_choose_start.adoc[leveloffset=+1]
+
+include::sf2db_choose_finish.adoc[leveloffset=+1]
+
+include::sf2db_add_sf_connection.adoc[leveloffset=+1]
+
+include::sf2db_add_mapping_step.adoc[leveloffset=+1]
+
+include::sf2db_name_and_publish.adoc[leveloffset=+1]

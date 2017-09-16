@@ -1,0 +1,36 @@
+[[SFDB-Add-Data-Mapping-Step]]
+= Add a Data Mapping Step
+
+Add a data mapping step that correlates Salesforce fields to 
+SQL stored procedure parameters:
+
+. Click *Add a Step*.
+. Click *Data Mapping* and wait a few moments for the data fields
+to appear.
+. Map the Salesforce *?????* field to the stored procedure
+*?????* parameter:
+.. On the left, at the top of the list of source fields in Salesforce, click
+the magnifying glass 
+image:images/magnifying-glass.png[title="Search"] to 
+display the search field and enter `*?????*`. 
+.. Click the *?????* field.
+.. On the right, at the top of the list of target fields in the
+stored procedure,
+click the magnifying glass to display the search field and enter `*?????*`. 
+.. Click the *?????* field. The data mapper displays a line 
+from the Salesforce source field to the stored procedure target field. 
+. Map the Salesforce *?????* field to the stored procedure
+*?????* parameter:
+.. In the *Sources* search field, enter `*?????*` and then click the *?????* field.
+.. In the *Target* search field, enter `*?????*` and then click the
+*?????* field. The data mapper displays a line to show the mapping. 
+. Map the Salesforce *?????* field to the stored procedure
+*?????* parameter:
+.. In the *Sources* search field, enter `*?????*` and then click the 
+*?????* field. 
+.. In the *Target* search field, enter `*?????*` and then click the
+stored procedure *?????* parameter to create the mapping. 
+.. In the upper right, click 
+the grid icon image:images/grid.png[title="Grid"] to
+display the list of mappings. 
+. In the upper right, click *Done*.

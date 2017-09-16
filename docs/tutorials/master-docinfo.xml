@@ -1,8 +1,8 @@
 <productname>Red Hat JBoss Fuse</productname>
 <productnumber>7.0-TP</productnumber>
-<subtitle>Tutorials for Creating Sample Integrations</subtitle>
+<subtitle>Instructions for Creating Sample Integrations</subtitle>
 <abstract>
- <para>Instructions for creating and deploying a sample integration</para>
+ <para>Follow step-by-step instructions for using Fuse Ignite Technology Preview to create, deploy and test sample integrations. </para>
 </abstract>
 <authorgroup>
   <org>

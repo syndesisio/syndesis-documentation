@@ -6,6 +6,9 @@ A {prodname} connection to Salesforce requires registration of
 If you did not already register {prodname} for access to 
 Salesforce, see <<Register-With-Salesforce>>. 
 
+If you already created a Salesforce connection, you can use the same
+connection in both sample applications.
+
 To create a Salesforce connection:
 
 . In the left pane, click *Connections* to display available connections. 

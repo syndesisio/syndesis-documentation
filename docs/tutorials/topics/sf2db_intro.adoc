@@ -1,16 +1,18 @@
 [[Salesforce-to-DB]]
-= Implement a Salesforce to Database Sample Integration
+= Implement a Salesforce to Oracle EBS Sample Integration
 
 :reuse: sf2db
+
 This sample integration captures updates in Salesforce and then 
-calls a database stored procedure to synchronize the database
+calls an Oracle Electronic Business Suite (EBS) 
+stored procedure to synchronize the database
 with the Salesforce updates. 
 
 To implement this sample integration,
 the main steps are:
 
 . <<Create-SF-Connection-{reuse}>>. 
-. <<Create-Database-Connection>>. 
+. <<SFDB-Create-Database-Connection>>. 
 . <<Create-SF-DB-Integration>>.
 . <<Confirm-SF-DB-Integration-Works>>.
 . <<Clean-Up-SF2DB>>.

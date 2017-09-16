@@ -1,0 +1,12 @@
+[[SFDB-Choose-Start-Connection]]
+= Choose the Start Connection
+
+To choose the start connection:
+
+. On the left, click *Integrations*. 
+. In the upper right, click *Create Integration*. 
+. On the *Choose a Start Connection* page, click *Salesforce Connection 1*.
+. On the *Choose an Action* page, click *Dynamic*. 
+. In the list of options, choose the event that triggers the integration. 
+
+TBA - add a description of what the start connection does. 
