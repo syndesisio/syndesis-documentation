@@ -1,11 +1,12 @@
-[[add-basic-filter-step]]
+[[t2sf-add-basic-filter-step]]
 = Add a basic filter step
 
 Add a basic filter step that checks your tweets for particular content and 
 continues the integration only if that content is present:
 
-. Click *Add a step*.
-. Select *Basic Filter*. 
+. In the left pane, hover over the plus sign between the start 
+and finish connections to display a pop-up and then click *Add a step*. 
+. Click *Basic Filter*. 
 . In the first field, enter ``*text*`` to indicate that the content to
 filter for is in the text of the tweet. 
 . Accept *Contains* as the condition to be met for the integration to

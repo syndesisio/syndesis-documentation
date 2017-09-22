@@ -1,14 +1,10 @@
-[[create_stored_proc_connection]]
+[[create-stored-proc-connection]]
 
 = Create a stored procedure connection
 
 A stored procedure connection lets {prodname} connect to a SQL
 database and run a stored procedure. The Salesforce to Oracle EBS
 sample integration requires a stored procedure connection. 
-
-If you already created Twitter and Salesforce connections and you
-want to create the Twitter to Salesforce sample integration, 
-see <<twitter-to-salesforce>>.
 
 To create a stored procedure connection:
 
@@ -18,5 +14,3 @@ To create a stored procedure connection:
 . Click the *Stored Procedure* connection type. 
 . Click
 . In the upper right, click *Create* to see that 
-
-See <<create-sf-db-integration>>. 

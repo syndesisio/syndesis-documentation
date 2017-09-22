@@ -18,10 +18,6 @@ this sample integration, see <<sf2db-prerequisites>>.
 
 include::sf2db_prereqs.adoc[leveloffset=+1]
 
-include::t2sf_create_sf_conn.adoc[leveloffset=+1]
-
-include::sf2db_create_db_connection.adoc[leveloffset=+1]
-
 include::sf2db_create_integration.adoc[leveloffset=+1]
 
 include::sf2db_confirm_works.adoc[leveloffset=+1]

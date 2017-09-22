@@ -3,8 +3,7 @@
 
 A {prodname} connection to Twitter requires registration of
 {prodname} as an application that can access Twitter.
-If you did not already register {prodname} as a
-Twitter client, see <<register-with-twitter>>. 
+If you did not already register {prodname}, see <<register-with-twitter>>. 
 
 To create a Twitter connection:
 
@@ -15,8 +14,8 @@ Initially, there are no connections.
 . Click the *Twitter* connection type. 
 . Click *Connect Twitter* to display a Twitter authorization page. 
 . Click *Authorize App* to return to {prodname}.
-. In the *Connection Name* field, enter `*Twitter Connection 1*`.
+. In the *Connection Name* field, enter `*Twitter Connect 1*`.
+. In the *Description* field, enter `*Sample Twitter connection
+that uses my Twitter log-in credentials.*`
 . In the upper right, click *Create* to see that 
-*Twitter Connection 1* is now an available connection. 
-
-The next step is to <<create-sf-connection>>. 
+*Twitter Connect 1* is now an available connection. 

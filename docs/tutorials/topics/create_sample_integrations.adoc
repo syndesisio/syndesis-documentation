@@ -1,12 +1,13 @@
 [[create-sample-integrations]]
 = Create sample integrations
 
-After you create at least two connections, you can create and 
-deploy an integration. The following topics provide instructions
-for creating the connections to use in the sample integrations.
+After you register {prodname} with Twitter and with Salesforce, and
+after you create a Twitter connection and a Salesforce connection, 
+you can <<twitter-to-salesforce>>.
 
-* <<twitter-to-salesforce>>
-* <<salesforce-to-db>>
+After you register {prodname} with Salesforce and after you
+create a Salesforce connection and a stored procedure connection, 
+you can <<salesforce-to-db>>
 
 include::t2sf_intro.adoc[leveloffset=+1]
 

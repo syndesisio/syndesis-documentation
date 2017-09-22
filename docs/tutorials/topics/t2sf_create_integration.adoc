@@ -3,13 +3,13 @@
 
 To create and deploy an integration that uses the 
 Twitter and Salesforce connections
-you just created, the main steps are:
+you created, the main steps are:
 
 * <<t2sf-choose-start-connection>>
 * <<t2sf-choose-finish-connection>>
 * <<t2sf-add-basic-filter-step>>
 * <<t2sf-add-data-mapping-step>>
-* <<t2s-name-and-publish>>
+* <<t2sf-name-and-publish>>
 
 include::t2sf_choose_start.adoc[leveloffset=+1]
 

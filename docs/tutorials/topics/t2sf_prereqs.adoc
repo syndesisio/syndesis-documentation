@@ -23,7 +23,7 @@ for details, or follow these instructions:
 . In *Contact Custom Fields & Relationships*, click *New* and add a 
 field with these attributes:
 .. *Data Type* is *Text*.
-.. *Field Label* is *`TwitterScreenName_c`*.
+.. *Field Label* is *`TwitterScreenName__c`*.
 .. *Field Length* is `15`.
 .. *Uniqueness* is *Do not allow duplicate values*.
 .. Set: *Set this field as the unique record identifier from an external system.*

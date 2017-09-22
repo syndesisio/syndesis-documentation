@@ -3,8 +3,7 @@
 
 A {prodname} connection to Salesforce requires registration of
 {prodname} as an application that can access Salesforce.
-If you did not already register {prodname} as a
-Salesforce client, see <<register-with-sf>>. 
+If you did not already register {prodname}, see <<register-with-sf>>. 
 
 After you create a Salesforce connection, you can use it
 in both sample applications.
@@ -17,6 +16,8 @@ To create a Salesforce connection:
 . Click the *Salesforce* connection type. 
 . Click *Connect Salesforce* to display a Salesforce authorization page. 
 . Click *Authorize App* to return to {prodname}.
-. In the *Connection Name* field, enter `*Salesforce Connection 1*`.
+. In the *Connection Name* field, enter `*SF Connect 1*`.
+In the *Description* field, enter `*Sample Salesforce connection
+that uses my Salesforce log-in credentials.*`
 . In the upper right, click *Create* to see that 
-*Salesforce Connection 1* is now an available connection. 
+*SF Connect 1* is now an available connection. 

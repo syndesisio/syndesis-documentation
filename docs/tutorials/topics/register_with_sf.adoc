@@ -30,4 +30,4 @@ consumer key into the Salesforce *Client ID* field.
 . On your {prodname} installation *Settings* page, paste the Salesforce 
 consumer secret into the {prodname} Salesforce 
 *Client Secret* field. 
-. Click *Save*.
+. Click *Ok*.

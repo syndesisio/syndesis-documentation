@@ -1,16 +1,16 @@
-[[Choose-Finish-Connection]]
-= Choose the Finish Connection
+[[t2sf-choose-finish-connection]]
+= Choose the finish connection
 
 To add the finish connection to the integration:
 
-. On the *Choose a Finish Connection* page, click *Salesforce Connection 1*. 
+. On the *Choose a Finish Connection* page, click *SF Connect 1*. 
 This integration finishes by using the credentials 
-defined in *Salesforce Connection 1* to 
+defined in *SF Connect 1* to 
 connect to Salesforce. 
 . On the *Choose an Action* page, click *Create/Update Salesforce object*.
 . On the next page, accept *Contact* as the
 Salesforce object to create or update and click *Next*.
-. On the next page, enter `*TwitterScreenName_c*` as the field
+. On the next page, enter `*TwitterScreenName__c*` as the field
 that holds the identifying value. The
 connection uses the value in this custom field to determine 
 whether creation of
