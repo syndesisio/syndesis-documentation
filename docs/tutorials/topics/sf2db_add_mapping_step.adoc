@@ -1,5 +1,5 @@
-[[SFDB-Add-Data-Mapping-Step]]
-= Add a Data Mapping Step
+[[sf2db-add-data-mapping-step]]
+= Add a data mapping step
 
 Add a data mapping step that correlates Salesforce fields to 
 SQL stored procedure parameters:

@@ -3,14 +3,14 @@
 
 This chapter describes some advanced tasks that you can perform from the {prodname} console.
 
-include::tasks/expert/create_connector_ui.adoc[]
+include::create_connector_ui.adoc[]
 
-include::tasks/expert/verify_connection.adoc[]
+include::verify_connection.adoc[]
 
-include::tasks/expert/create_template.adoc[]
+include::create_template.adoc[]
 
-include::tasks/expert/data_mapper.adoc[]
+include::data_mapper.adoc[]
 
-include::tasks/expert/expose_rest.adoc[]
+include::expose_rest.adoc[]
 
-include::tasks/expert/api_management.adoc[]
+include::api_management.adoc[]

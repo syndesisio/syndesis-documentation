@@ -1,22 +1,22 @@
 [[Citizen-Integrator-Tasks]]
 == Citizen Integrator Tasks
 
-This chapter outlines the basic workflow for {prodname}.
+This chapter outlines the basic workflow for citizen integrators.
 
-include::tasks/citizen/manage_authorization.adoc[]
+include::manage_authorization.adoc[]
 
-include::tasks/citizen/log_in.adoc[]
+include::log_in.adoc[]
 
-include::tasks/citizen/explore_console.adoc[]
+include::explore_console.adoc[]
 
-include::tasks/citizen/create_integration_with_template.adoc[]
+include::create_integration_with_template.adoc[]
 
-include::tasks/citizen/create_integration_from_scratch.adoc[]
+include::create_integration_from_scratch.adoc[]
 
-include::tasks/citizen/filter_step.adoc[]
+include::filter_step.adoc[]
 
-include::tasks/citizen/test_in_editor.adoc[]
+include::test_in_editor.adoc[]
 
-include::tasks/citizen/deploy_integration.adoc[]
+include::deploy_integration.adoc[]
 
-include::tasks/citizen/trace_data.adoc[]
+include::trace_data.adoc[]

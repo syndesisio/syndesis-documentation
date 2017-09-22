@@ -1,5 +1,5 @@
-[[Twitter-Salesforce-Prerequisites]]
-= Prerequisites for Implementing Twitter to Salesforce Integration
+[[t2sf-prerequisites]]
+= Prerequisites for implementing Twitter to Salesforce integration
 
 To implement a Twitter to Salesforce sample integration:
 

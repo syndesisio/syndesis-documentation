@@ -1,5 +1,5 @@
-[[Create-API3-Connection]]
-= Create a Connection to the Third API
+[[create-api3-connection]]
+= Create a connection to the third API
 
 To create a connection for the third API: 
 

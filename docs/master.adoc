@@ -22,7 +22,7 @@ include::integrators/concepts/term_definitions.adoc[]
 include::integrators/concepts/workflow_overview.adoc[]
 
 //== Tutorials
-include::integrators/tutorials.adoc[]
+include::tutorials/master.adoc[leveloffset=+1]
 
 == Integrator Tasks
 
@@ -31,9 +31,9 @@ programming experience. For some integration tasks, citizen integrators
 might need help from expert integrators, who have some 
 programming experience. 
 
-include::integrators/citizen_tasks.adoc[]
+include::integrators/tasks/citizen/citizen_tasks.adoc[]
 
-include::integrators/expert_tasks.adoc[]
+include::integrators/tasks/expert/expert_tasks.adoc[]
 
 == Developer Tasks
 

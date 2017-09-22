@@ -1,5 +1,5 @@
-[[SFDB-Create-Database-Connection]]
-= Create an Oracle EBS Connection
+[[sfdb-create-database-connection]]
+= Create an Oracle EBS connection
 
 To create an Oracle EBS connection:
 

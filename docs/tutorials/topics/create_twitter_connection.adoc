@@ -1,11 +1,10 @@
-[[Create-Twitter-Connection]]
-= Create a Twitter Connection
+[[create-twitter-connection]]
+= Create a Twitter connection
 
-:reuse: t2sf
 A {prodname} connection to Twitter requires registration of
 {prodname} as an application that can access Twitter.
-If you did not already register {prodname} for access to
-Twitter, see <<Register-With-Twitter>>. 
+If you did not already register {prodname} as a
+Twitter client, see <<register-with-twitter>>. 
 
 To create a Twitter connection:
 
@@ -20,4 +19,4 @@ Initially, there are no connections.
 . In the upper right, click *Create* to see that 
 *Twitter Connection 1* is now an available connection. 
 
-The next step is to <<Create-SF-Connection-{reuse}>>. 
+The next step is to <<create-sf-connection>>. 

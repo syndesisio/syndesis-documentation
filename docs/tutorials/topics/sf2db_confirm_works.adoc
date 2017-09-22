@@ -1,5 +1,5 @@
-[[Confirm-SF-DB-Integration-Works]]
-= Confirm that the Salesforce to Oracle EBS Integration Works
+[[sf2db-confirm-works]]
+= Confirm that the Salesforce to Oracle EBS integration works
 
 To confirm that the Salesforce to Oracle EBS integration is working:
 

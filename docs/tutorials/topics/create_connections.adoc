@@ -1,0 +1,17 @@
+[[create-connections]]
+= Create connections for {prodname} 
+
+You create a {prodname} connection for each application that you
+to integrate. After creating at least two connections, you can
+create an integration that uses those connections to integrate
+your applications. See the following topics:
+
+* <<create-twitter-connection>>
+* <<create-sf-connection>>
+* <<create-stored-proc-connection>>
+
+include::create_twitter_connection.adoc[leveloffset=+1]
+
+include::create_sf_connection.adoc[leveloffset=+1]
+
+include::create_stored_proc_connection.adoc[leveloffset=+1]

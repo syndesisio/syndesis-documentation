@@ -1,5 +1,5 @@
-[[Name-And-Publish]]
-= Give the Integration a Name and Deploy It
+[[t2sf-name-and-publish]]
+= Give the integration a name and deploy it
 
 The sample integration is complete. To deploy it:
 

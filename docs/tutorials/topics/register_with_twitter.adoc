@@ -1,13 +1,13 @@
-[[Register-With-Twitter]]
-= Register {prodname} as an Application That Can Access Twitter
+[[register-with-twitter]]
+= Register {prodname} as a Twitter client
 
 You must register your installation of {prodname} as an application 
 that can access Twitter. 
 This lets you create a sample integration that connects
 to Twitter. Perform these steps:
 
-. Log in to your Syndesis installation.
-. Copy the Syndesis URL from the browser address bar.
+. Log in to your {prodname} installation.
+. Copy the {prodname} URL from the browser address bar.
 . In the left pane, click *Settings*.
 . In the *OAuth Client Management* page, to the left of *Twitter*,
 click *>* to display the *Client ID* and *Client Secret* fields.
@@ -15,21 +15,18 @@ click *>* to display the *Client ID* and *Client Secret* fields.
 the following:
 .. If you are not already logged in to Twitter, log in. 
 .. Click *Create New App*.
-.. Paste your Syndesis URL into the *Name*, *Website*, and 
+.. Paste your {prodname} URL into the *Name*, *Website*, and 
 *Callback URL* fields.
 .. In the *Callback URL* field, append `/api/v1/credentials/callback`. 
 For example:
-`https://syndesis.192.123.45.6.nip.io/api/v1/credentials/callback`.
+`https://{prodnameinurl}.192.123.45.6.nip.io/api/v1/credentials/callback`.
 .. Click *Yes* to agree to the Twitter developer agreement.
 .. Click *Create your Twitter application*. 
 .. Click the *Keys and Access Tokens* tab. 
 .. Copy the *Consumer Key*.
-. On your Syndesis installation *Settings* page, paste the Twitter 
+. On your {prodname} installation *Settings* page, paste the Twitter 
 consumer key into the Twitter *Client ID* field. 
 . On the Twitter *Keys and Access Tokens* tab, copy the 
 *Consumer Secret* and paste it into the {prodname} Twitter 
 *Client Secret* field. 
 . Click *Save*.
-
-To create the sample Twitter to Salesforce integration, you also
-need to <<Register-With-Salesforce>>. 

@@ -1,5 +1,5 @@
-[[Salesforce-DB-Prerequisites]]
-= Prerequisites for Implementing Salesforce to Database Integration
+[[sf2db-prerequisites]]
+= Prerequisites for implementing salesforce to database integration
 
 To implement a Salesforce to Oracle database sample integration:
 

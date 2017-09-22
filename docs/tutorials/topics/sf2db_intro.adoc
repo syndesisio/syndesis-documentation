@@ -1,7 +1,5 @@
-[[Salesforce-to-DB]]
-= Implement a Salesforce to Oracle EBS Sample Integration
-
-:reuse: sf2db
+[[salesforce-to-db]]
+= Implement a Salesforce to Oracle EBS sample integration
 
 This sample integration captures updates in Salesforce and then 
 calls an Oracle Electronic Business Suite (EBS) 
@@ -11,14 +9,12 @@ with the Salesforce updates.
 To implement this sample integration,
 the main steps are:
 
-. <<Create-SF-Connection-{reuse}>>. 
-. <<SFDB-Create-Database-Connection>>. 
-. <<Create-SF-DB-Integration>>.
-. <<Confirm-SF-DB-Integration-Works>>.
-. <<Clean-Up-SF2DB>>.
+. <<create-sf-db-integration>>.
+. <<sf2db-confirm-works>>.
+. <<sf2db-clean-up>>.
 
 Before you implement 
-this sample integration, see <<Salesforce-DB-Prerequisites>>. 
+this sample integration, see <<sf2db-prerequisites>>. 
 
 include::sf2db_prereqs.adoc[leveloffset=+1]
 

@@ -1,7 +1,6 @@
-[[Twitter-to-Salesforce]]
-= Implement a Twitter to Salesforce Sample Integration
+[[twitter-to-salesforce]]
+= Implement a Twitter to Salesforce sample integration
 
-:reuse: t2sf
 This sample integration watches Twitter for tweets that mention
 a particular Twitter user. When the integration finds such tweets, 
 it filters
@@ -19,28 +18,16 @@ contact object and populates its fields with data from Twitter.
 If a match exists then the integration updates the matching Salesforce
 contact object by using the values in the Twitter fields. 
 
-To implement this sample integration, the main steps are:
+To implement, deploy and test this sample integration, the main steps are:
 
-. <<Register-With-Twitter>>.
-. <<Register-With-Salesforce>>.
-. <<Create-Twitter-Connection>>. 
-. <<Create-SF-Connection-{reuse}>>. 
-. <<Create-Twitter-SF-Integration>>.
-. <<Confirm-Twitter-SF-Working>>.
-. <<Clean-Up>>.
+. <<create-twitter-sf-integration>>.
+. <<confirm-twitter-sf-working>>.
+. <<clean-up>>.
 
 Before you implement this sample integration, 
-see <<Twitter-Salesforce-Prerequisites>>.
+see <<twitter-salesforce-prerequisites>>.
 
 include::t2sf_prereqs.adoc[leveloffset=+1]
-
-include::t2sf_twitter_registration.adoc[leveloffset=+1]
-
-include::t2sf_sf_registration.adoc[leveloffset=+1]
-
-include::t2sf_create_twitter_conn.adoc[leveloffset=+1]
-
-include::t2sf_create_sf_conn.adoc[leveloffset=+1]
 
 include::t2sf_create_integration.adoc[leveloffset=+1]
 

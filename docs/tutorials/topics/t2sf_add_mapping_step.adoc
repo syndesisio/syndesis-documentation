@@ -1,5 +1,5 @@
-[[Add-Data-Mapping-Step]]
-= Add a Data Mapping Step
+[[t2sf-add-data-mapping-step]]
+= Add a data mapping step
 
 Add a data mapping step that correlates Twitter mention fields to 
 Salesforce contact fields:

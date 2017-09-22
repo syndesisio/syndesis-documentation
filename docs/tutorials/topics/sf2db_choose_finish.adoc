@@ -1,5 +1,5 @@
-[[SFDB-Choose-Finish-Connection]]
-= Choose the Finish Connection
+[[sf2db-choose-finish-connection]]
+= Choose the finish connection
 
 To add the finish connection to the integration:
 

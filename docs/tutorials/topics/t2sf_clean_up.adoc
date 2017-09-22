@@ -1,5 +1,5 @@
-[[Clean-Up]]
-= Clean Up After Running the Sample Integration
+[[t2sf-clean-up]]
+= Clean up after running the sample integration
 
 When you are done working with the sample integration:
 

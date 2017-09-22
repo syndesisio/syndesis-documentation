@@ -1,5 +1,5 @@
-[[SFDB-Name-And-Publish]]
-= Give the Integration a Name and Deploy It
+[[sf2db-name-and-publish]]
+= Give the integration a name and deploy it
 
 The sample integration is complete. To deploy it:
 

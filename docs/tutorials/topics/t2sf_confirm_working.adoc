@@ -1,5 +1,5 @@
-[[Confirm-Twitter-SF-Working]]
-= Confirm That the Integration Works 
+[[t2sf-confirm-works]]
+= Confirm that the integration works 
 
 To confirm that the Twitter to Salesforce integration is working:
 

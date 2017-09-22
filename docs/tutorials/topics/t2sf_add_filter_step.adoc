@@ -1,5 +1,5 @@
-[[Add-Basic-Filter-Step]]
-= Add a Basic Filter Step
+[[add-basic-filter-step]]
+= Add a basic filter step
 
 Add a basic filter step that checks your tweets for particular content and 
 continues the integration only if that content is present:

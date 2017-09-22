@@ -1,5 +1,5 @@
-[[SFDB-Add-SF-Connection]]
-= Add a Salesforce Connection
+[[sf2db-add-sf-connection]]
+= Add a Salesforce connection
 
 Add a Salesforce connection between the start and finish connections:
 

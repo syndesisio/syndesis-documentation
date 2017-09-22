@@ -1,5 +1,5 @@
-[[Clean-Up-3API-Integration]]
-= Clean Up After Running the Three-API Sample Integration
+[[clean-up-3api]]
+= Clean up after running the three-API sample integration
 
 To monitor and manage the three-API integration:
 

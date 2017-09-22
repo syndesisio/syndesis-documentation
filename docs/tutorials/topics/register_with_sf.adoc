@@ -1,5 +1,5 @@
-[[Register-With-Salesforce]]
-= Register {prodname} as an Application That Can Access Salesforce
+[[register-with-sf]]
+= Register {prodname} as a Salesforce client
 
 You must register your installation of {prodname} as an application 
 that can access Salesforce. 
@@ -10,7 +10,7 @@ with Salesforce only once.
 Perform these steps:
 
 . In {prodname}, in the left pane, click *Home*.
-. Copy the Syndesis URL from the browser address bar.
+. Copy the {prodname} URL from the browser address bar.
 . In the left pane, click *Settings*.
 . In the *OAuth Client Management* page, to the left of *Salesforce*,
 click *>* to display the *Client ID* and *Client Secret* fields.
@@ -22,7 +22,7 @@ The main steps you perform are:
 .. Use the *New Connected App* wizard. One of the wizard steps is to provide
 a callback URL. Enter your {prodname} URL and append `/api/v1/credentials/callback`. 
 For example: 
-`https://syndesis.192.123.45.6.nip.io/api/v1/credentials/callback`.
+`https://{prodnameinurl}.192.123.45.6.nip.io/api/v1/credentials/callback`.
 .. Make a note of the consumer key and the consumer secret that the 
 *New Connected App* wizard provides. 
 . On your {prodname} installation *Settings* page, paste the Salesforce 

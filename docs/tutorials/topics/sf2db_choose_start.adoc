@@ -1,5 +1,5 @@
-[[SFDB-Choose-Start-Connection]]
-= Choose the Start Connection
+[[sf2db-choose-start-connection]]
+= Choose the start connection
 
 To choose the start connection:
 

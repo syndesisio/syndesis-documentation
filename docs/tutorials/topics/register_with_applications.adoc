@@ -1,0 +1,13 @@
+[[register-with-applications]]
+= Register {prodname} with applications you want to integrate
+
+Registering {prodname} as a client is a requirement for integrating
+certain applications. The specific registration steps vary for each
+application. See the following topics:
+
+* <<register-with-twitter>>
+* <<register-with-sf>>
+
+include::register_with_twitter.adoc[leveloffset=+1]
+
+include::register_with_sf.adoc[leveloffset=+1]

@@ -1,13 +1,13 @@
-[id='Create-SF-Connection-{reuse}']
-= Create a Salesforce Connection
+[[create-sf-connection]]
+= Create a Salesforce connection
 
 A {prodname} connection to Salesforce requires registration of
 {prodname} as an application that can access Salesforce.
-If you did not already register {prodname} for access to 
-Salesforce, see <<Register-With-Salesforce>>. 
+If you did not already register {prodname} as a
+Salesforce client, see <<register-with-sf>>. 
 
-If you already created a Salesforce connection, you can use the same
-connection in both sample applications.
+After you create a Salesforce connection, you can use it
+in both sample applications.
 
 To create a Salesforce connection:
 

@@ -1,5 +1,5 @@
-[[Clean-Up-SF2DB]]
-= Clean Up Salesforce to Oracle EBS Integration
+[[sf2db-clean-up]]
+= Clean up Salesforce to Oracle EBS integration
 
 When you are done working with the sample integration:
 

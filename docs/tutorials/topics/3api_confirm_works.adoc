@@ -1,5 +1,5 @@
-[[Confirm-3API-Integration]]
-= Confirm That the Three-API Integration Works
+[[confirm-3api-works]]
+= Confirm that the three-API integration works
 
 To deploy the integration of three APIs:
 

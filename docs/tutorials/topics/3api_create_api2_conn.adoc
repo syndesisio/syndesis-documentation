@@ -1,5 +1,5 @@
-[[Create-API2-Connection]]
-= Create a Connection to the Second API
+[[create-api2-connection]]
+= Create a connection to the second API
 
 To create a connection for the second API: 
 
