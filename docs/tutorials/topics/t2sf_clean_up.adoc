@@ -1,5 +1,5 @@
 [[t2sf-clean-up]]
-= Clean up after running the sample integration
+= Clean up Twitter to Salesforce sample integration
 
 When you are done working with the sample integration:
 

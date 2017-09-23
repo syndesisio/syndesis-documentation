@@ -24,14 +24,11 @@ see https://access.redhat.com/support/offerings/techpreview/.
 ====
 
 Explore the {prodname} Technology Preview by creating 
-sample integrations. The main tasks are:
+sample integrations:
 
-. <<register-with-applications>>
-. <<create-connections>>
-. <<create-sample-integrations>>
+* <<twitter-to-salesforce>>
+* <<salesforce-to-db>>
 
-include::topics/register_with_applications.adoc[leveloffset=+1]
+include::topics/t2sf_intro.adoc[leveloffset=+1]
 
-include::topics/create_connections.adoc[leveloffset=+1]
-
-include::topics/create_sample_integrations.adoc[leveloffset=+1]
+include::topics/sf2db_intro.adoc[leveloffset=+1]

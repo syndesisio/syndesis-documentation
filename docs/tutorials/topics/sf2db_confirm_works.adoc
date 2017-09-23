@@ -6,8 +6,11 @@ To confirm that the Salesforce to Oracle EBS integration is working:
 . In the left pane, click *Integrations* to see that  
 *Salesforce to Oracle EBS Sample* is an *Active* integration,
 which means that it is running. 
-. Confirm that the integration does x:
-. Confirm that the integration does y: 
-. Confirm that the integration does z:
+
+. In your Salesforce installation, create a new order. 
+
+. In the database that the integration connects to, check for the
+new order. 
+
 
  

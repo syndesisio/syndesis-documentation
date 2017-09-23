@@ -1,4 +1,4 @@
-[[register-with-sf]]
+[[register-with-salesforce]]
 = Register {prodname} as a Salesforce client
 
 You must register your installation of {prodname} as an application 

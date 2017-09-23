@@ -1,12 +1,12 @@
-[[create-sf-connection]]
+[[create-salesforce-connection]]
 = Create a Salesforce connection
 
 A {prodname} connection to Salesforce requires registration of
 {prodname} as an application that can access Salesforce.
-If you did not already register {prodname}, see <<register-with-sf>>. 
+If you did not already register {prodname}, see <<register-with-salesforce>>. 
 
 After you create a Salesforce connection, you can use it
-in both sample applications.
+in each sample application.
 
 To create a Salesforce connection:
 
@@ -21,3 +21,9 @@ In the *Description* field, enter `*Sample Salesforce connection
 that uses my Salesforce log-in credentials.*`
 . In the upper right, click *Create* to see that 
 *SF Connect 1* is now an available connection. 
+
+If you are implementing the Twitter to Salesforce integration, see
+<<create-twitter-sf-integration>>. 
+
+If you are implementing the Salesforce to Oracle EBS integration, see
+<<create-sf-db-integration>>. 

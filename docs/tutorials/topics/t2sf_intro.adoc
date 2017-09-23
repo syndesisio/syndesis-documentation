@@ -10,7 +10,7 @@ the integration to continue.
 For tweets that contain the specified text, the integration compares
 the value of the Twitter `screenName` field, which is the Twitter
 handle of the user who tweeted, with the value of the
-Salesforce `TwitterScreenName_c` field in each contact object
+Salesforce `TwitterScreenName__c` field in each contact object
 in the Salesforce installation. 
 
 If no match is found then the integration creates a new Salesforce
@@ -20,15 +20,27 @@ contact object by using the values in the Twitter fields.
 
 To implement, deploy and test this sample integration, the main steps are:
 
+. <<register-with-twitter>>.
+. <<create-twitter-connection>>.
+. <<register-with-salesforce>>.
+. <<create-salesforce-connection>>.
 . <<create-twitter-sf-integration>>.
 . <<t2sf-confirm-works>>.
 . <<t2sf-clean-up>>.
 
 Before you implement this sample integration, 
-see <<twitter-salesforce-prerequisites>>.
+see <<t2sf-prerequisites>>.
 
 include::t2sf_prereqs.adoc[leveloffset=+1]
 
+include::register_with_twitter.adoc[leveloffset=+1]
+
+include::create_twitter_connection.adoc[leveloffset=+1]
+
+include::register_with_sf.adoc[leveloffset=+1]
+
+include::create_sf_connection.adoc[leveloffset=+1]
+ 
 include::t2sf_create_integration.adoc[leveloffset=+1]
 
 include::t2sf_confirm_working.adoc[leveloffset=+1]

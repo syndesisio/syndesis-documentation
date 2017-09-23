@@ -3,10 +3,18 @@
 
 To add the finish connection to the integration:
 
-. On the *Choose a Finish Connection* page, click *Oracle EBS*. 
+. On the *Choose a Finish Connection* page, click *EBS Connect 1*. 
 This integration finishes by using the credentials 
-defined in *Oracle EBS* to connect to an Oracle database. 
+defined in *EBS Connect 1* to connect to an Oracle database. 
+
 . On the *Choose an Action* page, click *Invoke SQL stored procedure*, 
 which passes data to a stored procedure.
-. On the next page select the *?????* stored procedure. 
+
+. Select the stored procedure that you want the connection to run.
+The procedure you select determines the details for subsequent
+steps in the integration, for example, which Salesforce fields
+need to be mapped to which database fields. 
++
+For this sample integration, select `*CREATE_ORDER*`. 
+
 . Click *Done* to add the finish connection to the integration. 
