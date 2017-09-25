@@ -19,10 +19,23 @@ https://help.salesforce.com/articleView?id=connected_app_create.htm[Create a Con
  for information and instructions for registering {prodname} with Salesforce.
 The main steps you perform are:
 .. Log in to Salesforce.
-.. Use the *New Connected App* wizard. One of the wizard steps is to provide
-a callback URL. Enter your {prodname} URL and append `/api/v1/credentials/callback`. 
-For example: 
+.. Use the *New Connected App* wizard. Before you start, consider the following:
++
+* One of the wizard steps is to provide a callback URL. Enter your 
+{prodname} URL and append `*/api/v1/credentials/callback*`. For example: 
 `https://{prodnameinurl}.192.123.45.6.nip.io/api/v1/credentials/callback`.
+
+* The connected app requires the following permissions for access to your 
+Salesforce account:
++
+** Allow access to your unique identifier         
+** Perform requests on your behalf at any time
+** Access and manage your data
++
+* Be sure to select these options:
+** Include ID token
+** Include Standard Claim
+
 .. Make a note of the consumer key and the consumer secret that the 
 *New Connected App* wizard provides. 
 . On your {prodname} installation *Settings* page, paste the Salesforce 
