@@ -23,12 +23,12 @@ For more information on Red Hat Technology Preview features support scope,
 see https://access.redhat.com/support/offerings/techpreview/. 
 ====
 
-Explore the {prodname} Technology Preview by creating 
-sample integrations:
+Explore the {prodname} Technology Preview by creating a
+sample integration:
 
 * <<twitter-to-salesforce>>
-* <<salesforce-to-db>>
+// * <<salesforce-to-db>>
 
 include::topics/t2sf_intro.adoc[leveloffset=+1]
 
-include::topics/sf2db_intro.adoc[leveloffset=+1]
+// include::topics/sf2db_intro.adoc[leveloffset=+1]

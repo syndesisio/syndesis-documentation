@@ -1,12 +1,20 @@
-[[create-salesforce-connection]]
+// Reused in 
+// "t2sf_intro.adoc", "sf2db_intro.adoc"
+[#create-salesforce-connection-{context}]
 = Create a Salesforce connection
 
 A {prodname} connection to Salesforce requires registration of
 {prodname} as an application that can access Salesforce.
-If you did not already register {prodname}, see <<register-with-salesforce>>. 
+ifeval::["{context}" == "t2sf"]
+If you did not already register {prodname} see <<register-with-salesforce-{context}>>.
+endif::[]
+
+ifeval::["{context}" == "sf2db"]
+If you did not aready register {prodname}, see <<register-with-salesforce-{context}>>.
+endif::[]
 
 After you create a Salesforce connection, you can use it
-in each sample application.
+in multiple integrations.
 
 To create a Salesforce connection:
 
@@ -17,13 +25,7 @@ To create a Salesforce connection:
 . Click *Connect Salesforce* to display a Salesforce authorization page. 
 . Click *Authorize App* to return to {prodname}.
 . In the *Connection Name* field, enter `*SF Connect 1*`.
-In the *Description* field, enter `*Sample Salesforce connection
+. In the *Description* field, enter `*Sample Salesforce connection
 that uses my Salesforce log-in credentials.*`
 . In the upper right, click *Create* to see that 
 *SF Connect 1* is now an available connection. 
-
-If you are implementing the Twitter to Salesforce integration, see
-<<create-twitter-sf-integration>>. 
-
-If you are implementing the Salesforce to Oracle EBS integration, see
-<<create-sf-db-integration>>. 

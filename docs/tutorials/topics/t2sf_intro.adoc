@@ -1,6 +1,7 @@
 [[twitter-to-salesforce]]
 = Implement a Twitter to Salesforce sample integration
 
+:context: t2sf
 This sample integration watches Twitter for tweets that mention
 a particular Twitter user. When the integration finds such tweets, 
 it filters
@@ -22,8 +23,8 @@ To implement, deploy and test this sample integration, the main steps are:
 
 . <<register-with-twitter>>.
 . <<create-twitter-connection>>.
-. <<register-with-salesforce>>.
-. <<create-salesforce-connection>>.
+. <<register-with-salesforce-{context}>>.
+. <<create-salesforce-connection-{context}>>.
 . <<create-twitter-sf-integration>>.
 . <<t2sf-confirm-works>>.
 . <<t2sf-clean-up>>.

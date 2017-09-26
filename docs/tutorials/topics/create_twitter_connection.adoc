@@ -5,6 +5,8 @@ A {prodname} connection to Twitter requires registration of
 {prodname} as an application that can access Twitter.
 If you did not already register {prodname}, see <<register-with-twitter>>. 
 
+After you create a Twitter connection, you can use it in multiple integrations.  
+
 To create a Twitter connection:
 
 . In the left pane, click *Connections* to display available connections. 
