@@ -25,7 +25,7 @@ The main steps you perform are:
 +
 * One of the wizard steps is to provide a callback URL. Enter your 
 {prodname} URL and append `*/api/v1/credentials/callback*`. For example: 
-`https://{prodnameinurl}.192.123.45.6.nip.io/api/v1/credentials/callback`.
+`https://app-proj9128.7b63.{prodnameinurl}.openshiftapps.com/api/v1/credentials/callback`.
 
 * The connected app requires the following permissions for access to your 
 Salesforce account:

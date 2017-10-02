@@ -23,7 +23,7 @@ When you log in to {prodname} you enter these values when prompted.
 
 * You need an account in a Salesforce installation that is used for development.
 
-* Add the `TwitterScreenName__c` custom field to the Salesforce 
+* Add the `TwitterScreenName` custom field to the Salesforce 
 contact object. See the 
 https://help.salesforce.com/articleView?id=adding_fields.htm[Salesforce documentation] 
 for details, or follow these instructions:
@@ -33,7 +33,7 @@ for details, or follow these instructions:
 . In *Contact Custom Fields & Relationships*, click *New* and add a 
 field with these attributes:
 .. *Data Type* is *Text*.
-.. *Field Label* is *`TwitterScreenName__c`*.
+.. *Field Label* is *`TwitterScreenName`*.
 .. *Field Length* is `15`.
 .. *Uniqueness* is *Do not allow duplicate values*.
 .. Set: *Set this field as the unique record identifier from an external system.*

@@ -18,11 +18,12 @@ display the search field and enter `*screen*`.
 .. Click the *screenName* field.
 .. On the right, at the top of the list of target fields in Salesforce,
 click the magnifying glass to display the search field and enter `*Twitter*`. 
-.. Click the *TwitterScreenname__c* field. The data mapper displays a line 
+.. Click the *TwitterScreenName__c* field. The data mapper displays a line 
 from the Twitter source field to the Salesforce target field. 
 . Map the Twitter `name` field to the Salesforce
 `FirstName` and `LastName` fields:
-.. In the *Sources* search field, enter `*name*` and then click the *name* field.
+.. In the *Sources* panel, scroll down to the *user* field, expand
+it and click the *name* field.
 .. On the right, in the *Mapping Details* panel, under *Action*, click 
 the down caret and select *Separate*. 
 .. In the *Target* search field, enter `*name*` and then click the
