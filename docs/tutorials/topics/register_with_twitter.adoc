@@ -22,7 +22,7 @@ the following:
 *Callback URL* fields.
 .. In the *Callback URL* field, append `/api/v1/credentials/callback`. 
 For example:
-`https://{prodnameinurl}.192.123.45.6.nip.io/api/v1/credentials/callback`.
+`https://app-proj9128.7b63.{prodnameinurl}.openshiftapps.com/api/v1/credentials/callback`.
 .. Click *Yes* to agree to the Twitter developer agreement.
 .. Click *Create your Twitter application*. 
 .. Click the *Keys and Access Tokens* tab. 
