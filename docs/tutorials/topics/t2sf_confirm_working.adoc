@@ -4,7 +4,7 @@
 To confirm that the Twitter to Salesforce integration is working:
 
 . In the left pane, click *Integrations* to see that  
-*Twitter to Salesforce Sample* is an *Active* integration,
+*Twitter-to-Salesforce-Sample* is an *Active* integration,
 which means that it is running. 
 . Confirm that the integration does not create a contact when a
 tweet does not contain the text you specified in the basic filter 
