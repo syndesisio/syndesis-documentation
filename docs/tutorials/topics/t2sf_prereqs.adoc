@@ -30,8 +30,8 @@ for details, or follow these instructions:
 
 . In Salesforce, go to *Build* > *Customize* > *Contact*. 
 . Choose *Fields*. 
-. In *Contact Custom Fields & Relationships*, click *New* and add a 
-field with these attributes:
+. In *Contact Custom Fields & Relationships*, click *New* and add the
+`TwitterScreenName` field with these attributes:
 .. *Data Type* is *Text*.
 .. *Field Label* is *`TwitterScreenName`*.
 .. *Field Length* is `15`.
