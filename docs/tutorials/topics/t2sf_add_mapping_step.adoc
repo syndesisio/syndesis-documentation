@@ -23,7 +23,9 @@ from the Twitter source field to the Salesforce target field.
 . Map the Twitter `name` field to the Salesforce
 `FirstName` and `LastName` fields:
 .. In the *Sources* panel, scroll down to the *user* field, expand
-it and click the *name* field.
+it and click the *name* field. (The ability to search directly for the *name* field is expected to be 
+available in a future release.)
+
 .. On the right, in the *Mapping Details* panel, under *Action*, click 
 the down caret and select *Separate*. 
 .. In the *Target* search field, enter `*name*` and then click the
