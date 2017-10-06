@@ -1,11 +1,12 @@
 [[t2sf-confirm-works]]
 = Confirm that the Twitter to Salesforce integration works 
 
-To confirm that the Twitter to Salesforce integration is working:
+To confirm that the Twitter to Salesforce sample integration is working:
 
-. In the left pane, click *Integrations* to see that  
-*Twitter-to-Salesforce-Sample* is an *Active* integration,
-which means that it is running. 
+. In the left pane, click *Integrations* to see that the integration you
+created is an *Active* integration,
+which means that it is running. If you entered the example name, you
+would see that *Twitter to Salesforce Sample* is running. 
 . Confirm that the integration does not create a contact when a
 tweet does not contain the text you specified in the basic filter 
 step:

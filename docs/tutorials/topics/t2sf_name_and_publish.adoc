@@ -2,7 +2,8 @@
 = Give the integration a name and deploy it
 
 The sample integration is complete. To deploy it:
-
-. In the upper right, click *Publish* to give it a name.                                                                                                                                                                                                                                                                                                                             
-. In the *Integration Name* field, enter `*Twitter-to-Salesforce-Sample*`.
+                                                                                                                                                                                                                                                                                                                           
+. At the top of the left panel, in the *Integration Name* field, 
+enter a name of your choice that distinguishes this integration
+from any other integration. For example: `*Twitter to Salesforce Sample*`.
 . In the upper right corner, click *Publish*. 

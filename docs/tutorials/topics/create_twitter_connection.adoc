@@ -16,8 +16,13 @@ Initially, there are no connections.
 . Click the *Twitter* connection type. 
 . Click *Connect Twitter* to display a Twitter authorization page. 
 . Click *Authorize App* to return to {prodname}.
-. In the *Connection Name* field, enter `*Twitter Connect 1*`.
-. In the *Description* field, enter `*Sample Twitter connection
+. In the *Connection Name* field, enter your choice of a name that
+helps you distinguish this connection from any other connection. 
+For example, enter `*Twitter Connect 1*`.
+. In the *Description* field, optionally enter any information that
+is helpful to know about this connection. For example,
+enter `*Sample Twitter connection
 that uses my Twitter log-in credentials.*`
-. In the upper right, click *Create* to see that 
-*Twitter Connect 1* is now an available connection. 
+. In the upper right, click *Create* to see that the connection you 
+created is now available. If you entered the example name, you would 
+see that *Twitter Connect 1* is now available. 

@@ -3,10 +3,11 @@
 
 To add the finish connection to the integration:
 
-. On the *Choose a Finish Connection* page, click *SF Connect 1*. 
+. On the *Choose a Finish Connection* page, click the Salesforce
+connection you created. If you gave it the example name, you
+would click *SF Connect 1*. 
 This integration finishes by using the credentials 
-defined in *SF Connect 1* to 
-connect to Salesforce. 
+defined in this connection to connect to Salesforce. 
 . On the *Choose an Action* page, click *Create/Update Salesforce object*.
 . On the next page, accept *Contact* as the
 Salesforce object to create or update and click *Next*.
