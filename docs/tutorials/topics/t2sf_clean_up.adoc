@@ -4,7 +4,7 @@
 When you are done working with the sample integration:
 
 . In the left panel, click *Integrations*. 
-. At the far right of the *Twitter-to-Salesforce-Sample* entry, 
+. At the far right of the *Twitter to Salesforce Sample* entry, 
 click the three vertical dots. 
 . Select *Deactivate* and then click *OK* to stop running the integration. 
 . Click the three vertical dots again. 
