@@ -24,9 +24,10 @@ see https://access.redhat.com/support/offerings/techpreview/.
 ====
 
 Explore the {prodname} Technology Preview by creating a
-sample integration:
+sample integration. See the instructions in <<twitter-to-salesforce>>. 
 
-* <<twitter-to-salesforce>>
+In this release, exactly one integration at a time can be running. 
+
 // * <<salesforce-to-db>>
 
 include::topics/t2sf_intro.adoc[leveloffset=+1]

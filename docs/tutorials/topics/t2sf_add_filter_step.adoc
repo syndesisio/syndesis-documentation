@@ -14,7 +14,7 @@ and finish connections to display a pop-up in which you click *Add a step*.
 filter for is in the text of the tweet. 
 . Accept *Contains* as the condition to be met for the integration to
 continue. 
-. In the last field, enter `*is great*` or some other text you choose. 
+. In the last field, enter `*#redhatisgreat*` or some other text you choose. 
 A tweet that mentions you must contain the text you enter here for 
 the integration to continue operating on this data.
 . Click *Next* to complete the basic filter step.
