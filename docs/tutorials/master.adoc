@@ -26,7 +26,8 @@ see https://access.redhat.com/support/offerings/techpreview/.
 Explore the {prodname} Technology Preview by creating a
 sample integration. See the instructions in <<twitter-to-salesforce>>. 
 
-In this release, exactly one integration at a time can be running. 
+In this Technology Preview release, exactly one integration at a time can 
+be running. If you create another integration, it is automatically inactive. 
 
 // * <<salesforce-to-db>>
 

@@ -36,3 +36,6 @@ For example, `*@Aslan loves #opensource and thinks #RedHatIsGreat.*`
 .. In Salesforce, locate the contact record that has your Twitter 
 screen name and confirm that the `description` field contains the 
 text from the more recent tweet. 
+
+In this Technology Preview release, exactly one integration at a time can be 
+running. If you create another integration, it is automatically inactive. 
