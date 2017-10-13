@@ -11,16 +11,19 @@ Perform these steps:
 
 . Log in to your {prodname} installation.
 . Copy the {prodname} URL from the browser address bar.
-. In the left pane, click *Settings*.
-. In the *OAuth Client Management* page, to the left of *Twitter*,
+. In {prodname}, in the left pane, click *Settings*.
+. In the *OAuth Application Management* page, to the left of *Twitter*,
 click *>* to display the *Client ID* and *Client Secret* fields.
 . In another browser tab, go  to `http://apps.twitter.com` and do
 the following:
 .. If you are not already logged in to Twitter, log in. 
 .. Click *Create New App*.
-.. Paste your {prodname} URL into the *Name*, *Website*, and 
+.. In the *Name* field, enter a name for your new app. For example, you
+might enter `{prodnameinurl}`.
+.. Paste your {prodname} URL into the *Website* and 
 *Callback URL* fields.
-.. In the *Callback URL* field, append `/api/v1/credentials/callback`. 
+.. In the *Callback URL* field, remove `/dashboard` from the end
+of the URL and append `/api/v1/credentials/callback`. 
 For example:
 `https://app-proj9128.7b63.{prodnameinurl}.openshiftapps.com/api/v1/credentials/callback`.
 .. Click *Yes* to agree to the Twitter developer agreement.
@@ -32,4 +35,4 @@ consumer key into the Twitter *Client ID* field.
 . On the Twitter *Keys and Access Tokens* tab, copy the 
 *Consumer Secret* and paste it into the {prodname} Twitter 
 *Client Secret* field. 
-. Click *Ok*.
+. Click *Save* and then click *Ok*.

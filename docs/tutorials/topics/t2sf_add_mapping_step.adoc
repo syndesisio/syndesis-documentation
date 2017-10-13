@@ -10,14 +10,14 @@ you click *Add a Step*.
 . Click *Data Mapping* and wait a few moments for the data fields
 to appear.
 . Map the Twitter `screenName` field to the Salesforce
-`TwitterScreenName__c` field:
+_TBA_ field:
 .. On the left, at the top of the list of source fields in Twitter, 
-scroll down to see the *user* field, expand it and click 
+scroll down to see the *user* field. Expand it and click 
 the *screenName* field. (The ability to search directly for
 *screenName* is expected to be available in a future release.)
 .. On the right, at the top of the list of target fields in Salesforce,
 click the magnifying glass to display the search field and enter `*Twitter*`. 
-.. Click the *TwitterScreenName__c* field. The data mapper displays a line 
+.. Click the _TBA_ field. The data mapper displays a line 
 from the Twitter source field to the Salesforce target field. 
 . Map the Twitter `name` field to the Salesforce
 `FirstName` and `LastName` fields:
