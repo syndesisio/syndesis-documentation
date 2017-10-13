@@ -9,9 +9,8 @@ them so that only those tweets that contain the text you specify cause
 the integration to continue. 
 
 For tweets that contain the specified text, the integration passes
-the Twitter data, including the Twitter user name, to Salesforce. 
-Depending on whether that user name already exists as a Salesforce
-contact, Salesforce either updates or creates a contact. 
+data related to the tweet, including the Twitter user name, to Salesforce
+and Salesforce creates a new contact. 
 
 To implement, deploy and test this sample integration, the main steps are:
 

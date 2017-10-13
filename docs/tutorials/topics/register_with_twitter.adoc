@@ -20,10 +20,12 @@ the following:
 .. Click *Create New App*.
 .. In the *Name* field, enter a name for your new app. For example, you
 might enter `{prodnameinurl}`.
+.. In the *Description* field, enter helpful information.
+Twitter requires some input in this field. 
 .. Paste your {prodname} URL into the *Website* and 
 *Callback URL* fields.
-.. In the *Callback URL* field, remove `/dashboard` from the end
-of the URL and append `/api/v1/credentials/callback`. 
+.. In the *Callback URL* field, remove `dashboard` from the end
+of the URL and append `api/v1/credentials/callback`. 
 For example:
 `https://app-proj9128.7b63.{prodnameinurl}.openshiftapps.com/api/v1/credentials/callback`.
 .. Click *Yes* to agree to the Twitter developer agreement.

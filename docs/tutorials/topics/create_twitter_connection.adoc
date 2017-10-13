@@ -9,13 +9,14 @@ After you create a Twitter connection, you can use it in multiple integrations.
 
 To create a Twitter connection:
 
-. In the left pane, click *Connections* to display available connections. 
+. In {prodname}, in the left pane, click *Connections* to 
+display available connections. 
 Initially, there are no connections. 
 . In the upper right, click *Create Connection* to display
 {prodname} connection types. 
 . Click the *Twitter* connection type. 
 . Click *Connect Twitter* to display a Twitter authorization page. 
-. Click *Authorize App* to return to {prodname}.
+. Click *Authorize app* to return to {prodname}.
 . In the *Connection Name* field, enter your choice of a name that
 helps you distinguish this connection from any other connection. 
 For example, enter `*Twitter Connect 1*`.
