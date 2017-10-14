@@ -30,8 +30,8 @@ the left pane expand *Apps* and click *App Manager*.
 .. In the upper right, click *New Connected App*. 
 .. Enter the required information and select *Enable OAuth Settings*.
 .. In the *Callback URL* field, paste your 
-{prodname} URL, which you copied in step 2, 
-remove `dashboard` from the end of the URL
+{prodname} URL, which you copied in step 2.
+Remove `dashboard` from the end of the URL
 and append `api/v1/credentials/callback`. For example: 
 `https://app-proj9128.7b63.{prodnameinurl}.openshiftapps.com/api/v1/credentials/callback`.
 .. For *OAuth Scopes*, add:

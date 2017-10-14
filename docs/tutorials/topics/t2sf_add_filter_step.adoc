@@ -7,14 +7,13 @@ continues only if that content is present.
 
 To add a basic filter step:
 
-. In the left pane, hover over the plus sign between the start 
-and finish connections to display a pop-up in which you click *Add a step*. 
+. In the main pane, click *Add a step*. 
 . Click *Basic Filter*. 
 . In the first field, enter ``*text*`` to indicate that the content to
 filter for is in the text of the tweet. 
 . Accept *Contains* as the condition to be met for the integration to
 continue. 
-. In the last field, enter `*#redhatisgreat*` or some other text you choose. 
+. In the last field, enter `*#RedHatIsGreat*` or some other text you choose. 
 A tweet that mentions you must contain the text you enter here for 
 the integration to continue operating on this data.
 . Click *Next* to complete the basic filter step.

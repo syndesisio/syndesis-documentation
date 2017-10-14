@@ -4,7 +4,7 @@
 To choose the start connection:
 
 . On the left, click *Integrations*. 
-. In the upper right, click *Create Integration*. 
+. Click *Create Integration*. 
 . On the *Choose a Start Connection* page, click *SF Connect 1*.
 . On the *Choose an Action* page, click *On object Created*. 
 . In the object name field, enter *Order*. 
