@@ -41,7 +41,7 @@ The blue line indicates the current focus.
 .. In the *Sources* search field, enter `*text*` and under 
 *Status*, click the *text* field. 
 .. In the *Target* search field, enter `*description*` and then click the
-Salesforce *description* field to create the mapping. 
+Salesforce *Description* field to create the mapping. 
 .. In the upper right, click 
 the grid icon image:images/grid.png[title="Grid"] to
 display the list of mappings, which should look like this: 

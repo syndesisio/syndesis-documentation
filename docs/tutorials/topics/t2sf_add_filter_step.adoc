@@ -10,8 +10,8 @@ To add a basic filter step:
 . In the main pane, click *Add a step*. 
 . Click *Basic Filter*. 
 . In the first field, enter ``*text*`` to indicate that the content to
-filter for is in the text of the tweet. 
-. Accept *Contains* as the condition to be met for the integration to
+filter for is in the `text` field, which contains the text of the tweet. 
+. Accept *contains* as the condition to be met for the integration to
 continue. 
 . In the last field, enter `*#RedHatIsGreat*` or some other text you choose. 
 A tweet that mentions you must contain the text you enter here for 

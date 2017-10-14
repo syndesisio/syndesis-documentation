@@ -14,7 +14,7 @@ step:
 * Mentions your Twitter handle
 * Does not contain the text you specified in the basic filter step
 +
-For example: `*@myTwitterName #likesRedHat*`.
+For example: `*@Aslan #likesRedHat*`
 .. Wait for the polling interval to elapse, which can be 30 - 60 seconds. 
 .. In Salesforce, confirm that a contact record with your Twitter
 screen name does not exist. 
@@ -24,18 +24,10 @@ contains `*#RedHatIsGreat*` or whatever text
 you specified in the basic filter step. 
 For example, `*@Aslan thinks #RedHatIsGreat.*`
 .. Wait for the polling interval to elapse. 
-.. In Salesforce, locate a contact record that has your Twitter screen name,
-your first name, your last name and the text of your tweet in the
-contact's `description` field. 
-. Confirm that the integration updates a contact when it should:
-.. In Twitter, send a different tweet. This tweet should also 
-mention your Twitter handle and contain the text
-you specified in the basic filter step. 
-For example, `*@Aslan loves #opensource and thinks #RedHatIsGreat.*`
-.. Wait for the polling interval to elapse. 
-.. In Salesforce, locate the contact record that has your Twitter 
-screen name and confirm that the `description` field contains the 
-text from the more recent tweet. 
+.. In Salesforce, locate a contact record that has 
+your first name, your last name, the text of your tweet in the
+`Description` field, and your Twitter screen name
+in the `Title` field.
 
 In this Technology Preview release, exactly one integration at a time can be 
 running. If you create another integration, it is automatically inactive. 
