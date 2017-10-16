@@ -7,7 +7,6 @@ connection and the stored procedure connection,
  
 * <<sf2db-choose-start-connection>>
 * <<sf2db-choose-finish-connection>>
-* <<sf2db-add-sf-connection>>
 * <<sf2db-add-data-mapping-step>>
 * <<sf2db-add-another-mapping-step>>
 * <<sf2db-name-and-publish>>
@@ -15,8 +14,6 @@ connection and the stored procedure connection,
 include::sf2db_choose_start.adoc[leveloffset=+1]
 
 include::sf2db_choose_finish.adoc[leveloffset=+1]
-
-include::sf2db_add_sf_connection.adoc[leveloffset=+1]
 
 include::sf2db_add_mapping_step.adoc[leveloffset=+1]
 

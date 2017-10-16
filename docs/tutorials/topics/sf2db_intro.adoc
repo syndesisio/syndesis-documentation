@@ -4,14 +4,13 @@
 :context: sf2db
 This sample integration captures updates in Salesforce and then 
 calls an Oracle Electronic Business Suite (EBS) 
-stored procedure to synchronize the database
+stored procedure, which synchronizes the database
 with the Salesforce updates. 
 
 To implement, deploy and test this sample integration, the main steps are:
 
 . <<register-with-salesforce-{context}>>.
 . <<create-salesforce-connection-{context}>>.
-. <<create-stored-proc-connection>>
 . <<create-sf-db-integration>>.
 . <<sf2db-confirm-works>>.
 . <<sf2db-clean-up>>.
@@ -36,8 +35,6 @@ include::sf2db_prereqs.adoc[leveloffset=+1]
 include::register_with_sf.adoc[leveloffset=+1]
 
 include::create_sf_connection.adoc[leveloffset=+1]
-
-include::create_stored_proc_connection.adoc[leveloffset=+1]
 
 include::sf2db_create_integration.adoc[leveloffset=+1]
 

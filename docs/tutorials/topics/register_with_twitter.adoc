@@ -18,8 +18,8 @@ click *>* to display the *Client ID* and *Client Secret* fields.
 the following:
 .. If you are not already logged in to Twitter, log in. 
 .. Click *Create New App*.
-.. In the *Name* field, enter a name for your new app. For example, you
-might enter `{prodnameinurl}`.
+.. In the *Name* field, enter a name for your new app. This name
+must be unique among all names of apps registered with Twitter. 
 .. In the *Description* field, enter helpful information.
 Twitter requires some input in this field. 
 .. Paste your {prodname} URL into the *Website* and 

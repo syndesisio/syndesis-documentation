@@ -1,6 +1,11 @@
 [[create-stored-proc-connection]]
 
 = Create a stored procedure connection
+ 
+// There are no files that include this file.
+// This task was eliminated for the SF2DB scenario.
+// But this content might be helpful when it is time to
+// document creation of a generic stored procedure connection.
 
 A stored procedure connection lets {prodname} connect to a SQL
 database. When you add a stored procedure connection to
@@ -36,10 +41,3 @@ connecting to your own database.
 Oracle EBS database in a sample integration.*`
 . In the upper right, click *Create* to see that the 
 *EBS Connect 1* connection is now available for use in an integration. 
-
-If you already registered {prodname} as a Salesforce client and created
-a Salesforce connection, see <<create-sf-db-integration>>. 
-
-If you have not yet registered {prodname} as a Salesforce client, 
-see <<register-with-salesforce>>. After that, see 
-<<create-salesforce-connection>>. 

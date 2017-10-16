@@ -5,16 +5,18 @@ To choose the start connection:
 
 . On the left, click *Integrations*. 
 . Click *Create Integration*. 
-. On the *Choose a Start Connection* page, click *SF Connect 1*.
-. On the *Choose an Action* page, click *On object Created*. 
-. In the object name field, enter *Order*. 
+. On the *Choose a Start Connection* page, click your 
+Salesforce connection. If you gave the example name, 
+you would click *SF Connect 1*.
+. On the *Choose an Action* page, click *On create*. 
+. In the object name field, enter *Lead*. 
 . Click *Next*.
 
 After connecting to Salesforce, the integration watches for 
-notifications that a Salesforce *Order* 
+notifications that a Salesforce *Lead* 
 object was created. 
 When the integration finds such a notification, it passes the created
-object's ID to the next step in the integration. 
+lead's ID to the next step in the integration. 
 
 However, before you can add the next step, you must choose the
 integration's finish connection. 

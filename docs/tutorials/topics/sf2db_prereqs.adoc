@@ -3,30 +3,12 @@
 
 To implement a Salesforce to Oracle EBS sample integration:
 
-* In your GitHub account, you must have registered and authorized 
-{prodname}. 
-+
-If you logged in to {prodname} before reading this document, then
-you most likely did this when you were prompted to as part of 
-logging in to {prodname}. 
-+
-If you are reading this document before logging in to {prodname},
-then you can do one of the following:
-+
-** Log in to {prodname} and configure your GitHub account when prompted.
-** https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/registering-oauth-apps/[Configure your GitHub account now.]
-Be sure to save the client ID and client secret in an easily accessible place or
-keep the registered app tab open to easily obtain those values. 
-When you log in to {prodname} you enter these values when prompted.
-
-* A Salesforce account that is used for development and that contains
-dummy data
+* You need an account in a Salesforce installation that is used for development. 
+This account must have Salesforce API access, which is available in a 
+Salesforce Enterprise account or a Salesforce Developer account. To obtain
+a free developer account, visit https://developer.salesforce.com/signup. 
  
-* A PostgreSQL (and internally Oracle) database that you can experiment in or
-the sample database available for use with {prodname}. To obtain
-`sampledb` TBA.
-+
-To obtain the password for connecting to `sampledb`, invoke the following
-command:
-+
-`oc get dc syndesis-db -o yaml | grep -A 1 POSTGRESQL_SAMPLEDB_PASSWORD`
+* A PostgreSQL (and internally Oracle) database that you can experiment
+in or the sample database available for use with {prodname}. Your 
+installation of {prodnam} provides the PostgresDB connection,
+which you use to connect to the sample database. 
