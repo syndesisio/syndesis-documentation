@@ -6,7 +6,6 @@
 This document contains the very preliminary state of 
 planned topics. Some topics contain draft documentation and/or
 notes. Other topics are empty.
-This content should not be circulated outside Red Hat. 
 
 == Concepts
 

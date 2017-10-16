@@ -1,8 +1,8 @@
 [[sf2db-add-data-mapping-step]]
 = Add a data mapping step
 
-Add a data mapping step between the start connection and the 
-second Salesforce connection:
+Add a step that maps Salesforce fields to fields in the 
+database:
 
 . In the left panel, hover over the plus sign immediately after the
 start connection to display a pop-up in which you click *Add a Step*.
@@ -10,17 +10,33 @@ start connection to display a pop-up in which you click *Add a Step*.
 . Click *Data Mapping* and wait a few moments for the data fields
 to appear.
 
-. Map the source `AnyObject.Id` field to the 
-target `ExternalIdToGet.Id` field:
-.. On the left, at the top of the list of source fields, click
-the magnifying glass 
-image:images/magnifying-glass.png[title="Search"] to 
-display the search field and enter `*AnyObject*`. 
-.. Click the *AnyObject.Id* field.
-.. On the right, at the top of the list of target fields,
-click the magnifying glass to display the search field and 
-enter `*ExternalIdToGet*`.
-.. Click the *ExternalIdToGet.Id* field. The data mapper displays a line
+. Map the source `Company` field to the 
+target `company` field:
+.. On the left, scroll down and click *Company*.
+.. On the right, click *company*. 
+The data mapper displays a line
 from the source field to the target field. 
+. Map the Salesforce `Email` field to the database `email` field. 
+. Map two Salesforce fields (`FirstName` and `LastName`) to the database
+`first_and_last_name` field:
+.. In the *Sources* panel, click *FirstName*.
+.. In the *Target* panel, click *first_and_last_name*. 
+.. In the *Mapping Details* panel, under *Action*, select *Combine*.
+.. Just below that, click *Add Source*. 
+.. Under *Source*, highlight *`[None]`* and start to type
+`*LastName*`. When *LastName* appears below the field, click it.
+The data mapper displays a line from the Salesforce *LastName* field to the
+database *first_and_last_name* field. 
+. Add the following mappings:  
++
+[options="header"]
+|=======================
+|Map This Salesforce Field |To This Database Field     
+|`LeadSource`    |`lead_source`    
+|`Status`    |`lead_status`    
+|`Phone`    |`phone`    
+|`Rating`    |`rating`
+|=======================
+
 
 . In the upper right, click *Done*.

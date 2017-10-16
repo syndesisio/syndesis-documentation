@@ -1,16 +1,18 @@
-[[sf2db-confirm-works]]
+[[sf2db-confirm-working]]
 = Confirm that the Salesforce to Oracle EBS integration works
 
 To confirm that the Salesforce to Oracle EBS integration is working:
 
-. In the left pane, click *Integrations* to see that  
-*Salesforce to Oracle EBS Sample* is an *Active* integration,
-which means that it is running. 
+. In the left pane, click *Integrations* to see that your sample
+integration is an *Active* integration,
+which means that it is running. If you used the example name, you would 
+see that 
+*Salesforce to Oracle EBS Sample Integration* is *Active*.
 
-. In your Salesforce installation, create a new order. 
+. In your Salesforce installation, create a new lead. 
 
 . In the database that the integration connects to, check for the
-new order. 
+new lead. 
 
 
  

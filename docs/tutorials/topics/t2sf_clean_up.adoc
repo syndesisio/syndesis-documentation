@@ -1,4 +1,4 @@
-[[t2sf-clean-up]]
+[[t2sf-clean-it-up]]
 = Clean up Twitter to Salesforce sample integration
 
 When you are done working with the sample integration:

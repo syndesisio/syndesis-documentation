@@ -6,15 +6,15 @@ To choose the start connection:
 . On the left, click *Integrations*. 
 . Click *Create Integration*. 
 . On the *Choose a Start Connection* page, click your 
-Salesforce connection. If you gave the example name, 
+Salesforce connection. If you specified the example name, 
 you would click *SF Connect 1*.
 . On the *Choose an Action* page, click *On create*. 
-. In the object name field, enter *Lead*. 
-. Click *Next*.
+. In the *Object name* field, enter *Lead*. 
+. Click *Done* to add the start connection to the integration. 
 
 After connecting to Salesforce, the integration watches for 
 notifications that a Salesforce *Lead* 
-object was created. 
+record was created. 
 When the integration finds such a notification, it passes the created
 lead's ID to the next step in the integration. 
 

@@ -4,5 +4,6 @@
 The sample integration is complete. To deploy it:
 
 . In the upper right, click *Publish* to give it a name.                                                                                                                                                                                                                                                                                                                             
-. In the *Integration Name* field, enter `*Salesforce to Oracle EBS Sample*`.
+. In the *Integration Name* field, enter a name for the 
+integration. For example, `*Salesforce to Oracle EBS Sample Integration*`.
 . In the upper right corner, click *Publish*. 

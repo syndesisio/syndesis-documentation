@@ -2,13 +2,12 @@
 = Create and deploy Salesforce to Oracle EBS sample integration
 
 To create and deploy an integration that uses the Salesforce
-connection and the stored procedure connection, 
+connection and the database stored procedure connection, 
  the main steps are:
  
 * <<sf2db-choose-start-connection>>
 * <<sf2db-choose-finish-connection>>
 * <<sf2db-add-data-mapping-step>>
-* <<sf2db-add-another-mapping-step>>
 * <<sf2db-name-and-publish>>
 
 include::sf2db_choose_start.adoc[leveloffset=+1]
@@ -16,7 +15,5 @@ include::sf2db_choose_start.adoc[leveloffset=+1]
 include::sf2db_choose_finish.adoc[leveloffset=+1]
 
 include::sf2db_add_mapping_step.adoc[leveloffset=+1]
-
-include::sf2db_add_another_mapping_step.adoc[leveloffset=+1]
 
 include::sf2db_name_and_publish.adoc[leveloffset=+1]

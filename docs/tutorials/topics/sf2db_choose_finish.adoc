@@ -12,8 +12,9 @@ defined in the database connection to connect to an Oracle database.
 . On the *Choose an Action* page, click *Invoke SQL stored procedure*, 
 which passes data to a stored procedure.
 
-. Select *add_lead* as the stored procedure to run in the database.
-The procedure you select determines the requirements for 
+. In the *Procedure Name* field, click and select *add_lead*, which is the
+provided stored procedure to run in the database. 
+The selected procedure determines the requirements for 
 steps in the integration, for example, which Salesforce fields
 need to be mapped to which database fields. 
 

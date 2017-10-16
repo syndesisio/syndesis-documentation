@@ -12,8 +12,8 @@ To implement, deploy and test this sample integration, the main steps are:
 . <<register-with-salesforce-{context}>>.
 . <<create-salesforce-connection-{context}>>.
 . <<create-sf-db-integration>>.
-. <<sf2db-confirm-works>>.
-. <<sf2db-clean-up>>.
+. <<sf2db-confirm-working>>.
+. <<sf2db-cleanup>>.
 
 If you already created the Twitter to Salesforce sample integration:
 

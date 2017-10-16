@@ -8,7 +8,7 @@ This account must have Salesforce API access, which is available in a
 Salesforce Enterprise account or a Salesforce Developer account. To obtain
 a free developer account, visit https://developer.salesforce.com/signup. 
  
-* A PostgreSQL (and internally Oracle) database that you can experiment
+* You need a PostgreSQL (and internally Oracle) database that you can experiment
 in or the sample database available for use with {prodname}. Your 
-installation of {prodnam} provides the PostgresDB connection,
+installation of {prodnam} provides the `PostgresDB` connection,
 which you use to connect to the sample database. 

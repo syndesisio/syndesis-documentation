@@ -10,7 +10,7 @@ If you did not already register {prodname} see <<register-with-salesforce-{conte
 endif::[]
 
 ifeval::["{context}" == "sf2db"]
-If you did not aready register {prodname}, see <<register-with-salesforce-{context}>>.
+If you did not already register {prodname}, see <<register-with-salesforce-{context}>>.
 endif::[]
 
 After you create a Salesforce connection, you can use it
