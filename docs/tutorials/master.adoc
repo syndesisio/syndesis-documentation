@@ -4,7 +4,7 @@
 :prodnameinurl: fuse-ignite
 
 [[Tutorials]]
-= {prodname} Sample Integration Tutorials
+= {prodname} Sample Integration Tutorial
 
 {prodname} lets you obtain data from an
 application or service, operate on that data if you need to, and then send the 
