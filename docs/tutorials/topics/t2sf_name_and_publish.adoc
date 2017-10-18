@@ -10,5 +10,4 @@ example: `*Twitter to Salesforce Sample Integration*`.
 . In the upper right corner, click *Publish*. 
 
 {prodname} starts to deploy your integration immediately. 
-Deployment takes
-a few moments. 
+Deployment takes a few moments. 
