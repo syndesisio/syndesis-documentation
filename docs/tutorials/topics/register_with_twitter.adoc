@@ -27,7 +27,7 @@ Twitter requires some input in this field.
 .. In the *Callback URL* field, remove `dashboard` from the end
 of the URL and append `api/v1/credentials/callback`. 
 For example:
-`https://app-proj9128.7b63.{prodnameinurl}.openshiftapps.com/api/v1/credentials/callback`.
+`\https://app-proj9128.7b63.{prodnameinurl}.openshiftapps.com/api/v1/credentials/callback`.
 .. Click *Yes* to agree to the Twitter developer agreement.
 .. Click *Create your Twitter application*. 
 .. Click the *Keys and Access Tokens* tab. 

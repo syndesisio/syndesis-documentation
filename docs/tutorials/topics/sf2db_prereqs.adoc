@@ -1,7 +1,7 @@
 [[sf2db-prerequisites]]
-= Prerequisites for implementing Salesforce to Oracle EBS integration
+= Prerequisites for implementing Salesforce to database integration
 
-To implement a Salesforce to Oracle EBS sample integration, 
+To implement a Salesforce to database sample integration, 
 you need an account in a Salesforce installation that is used for development. 
 This account must have Salesforce API access, which is available in a 
 Salesforce Enterprise account or a Salesforce Developer account. To obtain

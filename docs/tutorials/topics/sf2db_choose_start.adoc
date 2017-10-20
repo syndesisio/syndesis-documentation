@@ -15,8 +15,8 @@ you would click *SF Connect 1*.
 After connecting to Salesforce, the integration watches for 
 notifications that a Salesforce *Lead* 
 record was created. 
-When the integration finds such a notification, it passes the created
-lead's ID to the next step in the integration. 
+When the integration finds such a notification, it passes the new
+lead's data to the next step in the integration. 
 
 However, before you can add the next step, you must choose the
 integration's finish connection. 
