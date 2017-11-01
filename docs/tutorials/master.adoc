@@ -23,7 +23,10 @@ For more information on Red Hat Technology Preview features support scope,
 see https://access.redhat.com/support/offerings/techpreview/. 
 ====
 
-In this Technology Preview release, only one integration at a time can 
+In this Technology Preview, consider the names Red Hat Fuse Online and 
+Fuse Ignite as interchangeable. 
+
+In this Technology Preview, only one integration at a time can 
 be running. If you create another integration, it is automatically inactive. 
 
 Explore the {prodname} Technology Preview by creating these
