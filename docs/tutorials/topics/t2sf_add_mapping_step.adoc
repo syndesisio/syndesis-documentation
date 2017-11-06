@@ -7,7 +7,7 @@ Salesforce contact fields:
 . In the left pane, hover over the plus sign between the filter
 step and the finish connection to display a pop-up in which
 you click *Add a Step*.
-. Click *Data Mapping* and wait a few moments for the data fields
+. Click *Data Mapper* and wait a few moments for the data fields
 to appear.
 . Map the Twitter `name` field to the Salesforce
 `FirstName` and `LastName` fields:
@@ -15,7 +15,7 @@ to appear.
 Expand it and scroll down to click 
 the *name* field. (The ability to search directly for
 *name* is expected to be available in a future release.)
-.. On the right, in the *Mapping Details* panel, under *Action*, click 
+.. In the *Mapping Details* panel, under *Action*, click 
 the down caret and select *Separate*. 
 .. Below that, under *Targets*, highlight *`[None]`* and start to type
 `*FirstName*`. When *FirstName* appears below the field, click it.

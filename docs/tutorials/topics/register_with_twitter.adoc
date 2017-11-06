@@ -12,8 +12,8 @@ Perform these steps:
 . Log in to your {prodname} installation.
 . Copy the {prodname} URL from the browser address bar.
 . In {prodname}, in the left pane, click *Settings*.
-. In the *OAuth Application Management* page, to the left of *Twitter*,
-click *>* to display the *Client ID* and *Client Secret* fields.
+. In the *OAuth Application Management* page, to the right of *Twitter*,
+click *Register* to display the *Client ID* and *Client Secret* fields.
 . In another browser tab, go  to `http://apps.twitter.com` and do
 the following:
 .. If you are not already logged in to Twitter, log in. 

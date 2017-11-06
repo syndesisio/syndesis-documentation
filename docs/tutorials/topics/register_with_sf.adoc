@@ -25,8 +25,8 @@ Perform these steps to register {prodname} as a Salesforce client:
 . In {prodname}, in the left pane, click *Home*.
 . Copy the {prodname} URL from the browser address bar.
 . In {prodname}, in the left pane, click *Settings*.
-. In the *OAuth Application Management* page, to the left of *Salesforce*,
-click *>* to display the *Client ID* and *Client Secret* fields.
+. In the *OAuth Application Management* page, to the right of *Salesforce*,
+click *Register* to display the *Client ID* and *Client Secret* fields.
 . In another browser tab, log in to your Salesforce account and 
 follow the steps below to create a connected app. 
 These instructions assume that you are
@@ -36,7 +36,7 @@ Salesforce Lightning Experience interface, click your profile icon and select
 For additional information, see the Salesforce documentation for 
 https://help.salesforce.com/articleView?id=connected_app_create.htm[Create a Connected App]. 
 .. In Salesforce, in the upper right, click *Setup*.
-.. In the left panel, select *Build* > *Create* > *App*.
+.. In the left panel, select *Build* > *Create* > *Apps*.
 .. Scroll down to *Connected Apps* and click *New*. 
 .. Enter the required information and select *Enable OAuth Settings*.
 .. In the *Callback URL* field, paste your 
