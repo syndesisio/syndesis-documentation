@@ -1,2 +1,0 @@
-=== Manage {prodname} Teams 
-Add the topic contents here.

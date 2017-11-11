@@ -1,2 +1,0 @@
-=== Manage {prodname} Environments
-Add the topic contents here.

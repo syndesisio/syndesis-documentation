@@ -1,8 +1,8 @@
-<productname>iPaaS</productname>
-<productnumber>1.0</productnumber>
-<subtitle>iPaaS 1.0 Administrator Guide</subtitle>
+<productname>Red Hat JBoss Fuse</productname>
+<productnumber>7.0-TP</productnumber>
+<subtitle>Managing Ignite Environments</subtitle>
 <abstract>
- <para>Administrator guide for iPaaS</para>
+ <para>Managing accounts, resources, integration versions and upgrades</para>
 </abstract>
 <authorgroup>
   <org>

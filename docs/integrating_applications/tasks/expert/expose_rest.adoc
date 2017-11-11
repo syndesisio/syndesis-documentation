@@ -1,2 +1,0 @@
-=== Expose REST APIs Using the API Designer
-Add the topic contents here.

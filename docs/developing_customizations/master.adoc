@@ -1,7 +1,2 @@
-:prodname: iPaaS
-:prodversion: 1.0
-
-= {prodname} Developer Guide
-
-== Developer Tasks
-include::dev_tasks.adoc[]
+[[developing_customizations]]
+= Developing {prodname} Customizations

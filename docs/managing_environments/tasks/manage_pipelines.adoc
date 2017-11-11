@@ -1,2 +1,0 @@
-=== Manage and Monitor {prodname} Pipelines
-Add the topic contents here.

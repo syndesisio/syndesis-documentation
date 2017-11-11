@@ -1,2 +1,0 @@
-=== Access Project Source Code through Git
-Add the topic contents here.

@@ -1,8 +1,9 @@
-<productname>iPaaS</productname>
-<productnumber>1.0</productnumber>
-<subtitle>iPaaS 1.0 Developer Guide</subtitle>
+<productname>Red Hat JBoss Fuse</productname>
+<productnumber>7.0-TP</productnumber>
+<subtitle>Developing Ignite Customizations</subtitle>
 <abstract>
- <para>Developer guide for iPaaS</para>
+ <para>Information and instructions for developing technical extensions
+ and connectors</para>
 </abstract>
 <authorgroup>
   <org>

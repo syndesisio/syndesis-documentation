@@ -1,2 +1,0 @@
-=== Manage {prodname} Users
-Add the topic contents here.

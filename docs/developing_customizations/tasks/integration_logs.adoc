@@ -1,2 +1,0 @@
-=== Access Integration Logs
-Add the topic contents here.

@@ -1,2 +1,0 @@
-=== Create a New Connector Using an IDE
-Add the topic contents here.
