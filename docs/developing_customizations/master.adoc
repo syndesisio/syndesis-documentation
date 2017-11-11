@@ -1,2 +1,7 @@
+:prodname: Fuse Ignite
+:prodversion: 7.0-TP
+:imagesdir: topics
+:prodnameinurl: fuse-ignite
+
 [[developing_customizations]]
 = Developing {prodname} Customizations

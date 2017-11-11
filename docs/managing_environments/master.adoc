@@ -1,7 +1,7 @@
-:prodname: iPaaS
-:prodversion: 1.0
+:prodname: Fuse Ignite
+:prodversion: 7.0-TP
+:imagesdir: topics
+:prodnameinurl: fuse-ignite
 
-= {prodname} Administrator Guide
-
-== iPaaS Administrative Tasks
-include::admin_tasks.adoc[]
+[[managing_environments]]
+= Managing {prodname} Environments

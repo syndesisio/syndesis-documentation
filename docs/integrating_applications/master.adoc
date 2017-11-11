@@ -1,16 +1,9 @@
-:prodname: iPaaS
-:prodversion: 1.0
+:prodname: Fuse Ignite
+:prodversion: 7.0-TP
+:imagesdir: topics
+:prodnameinurl: fuse-ignite
 
-= {prodname} User Guide
+[[integrating_applications]]
+= Integrating Applications with {prodname}
 
-//== Concepts
-include::concepts.adoc[]
-
-//== Tutorials
-include::tutorials.adoc[]
-
-//== Basic Workflow
-include::citizen_tasks.adoc[]
-
-//== Advanced Workflow
-include::expert_tasks.adoc[]
+TTBA
