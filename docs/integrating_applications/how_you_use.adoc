@@ -1,0 +1,31 @@
+[[how_you_use]]
+= How you use {prodname} 
+
+==== How You Use It
+
+How you use {prodname} depends on whether you are integrating 
+applications, creating connections for particular applications
+or services, or developing new connectors. 
+
+{prodname} provides a web browser interface that lets anyone integrate 
+two different applications 
+or services. No coding is required regardless of the complexity of the 
+integration. To deploy a simple integration, the main steps are to select a 
+connection for the source application, select a connection for the destination 
+application, respond to any prompts for configuration settings, 
+and give the 
+integration a name. You can then save the integration or immediately
+deploy it.
+
+The {prodname} dashboard lets you monitor and manage integrations. You can see 
+which integrations are running, start and stop integrations, edit and remove 
+integrations. 
+
+There is also a web browser interface for creating connections. You
+select the connector for the application or service you want to
+connect to.  {prodname} prompts you to
+enter values for the parameters required to create the connection.
+You then verify that the connection works before making it available
+to be used in integrations. 
+
+There are {prodname} APIs for creating additional connectors.

@@ -1,28 +1,13 @@
-[[Overview-of-Creating-an-Integration]]
-=== Overview of Creating an Integration
+[[workflow_overview]]
+=== Workflow for creating an integration
 
-Before you create an integration, it is assumed that you have done
-some planning. You should know:
 
-* Which application you want to obtain data from
-* What you want to do with that data
-* Where you want to send that data
 
-==== Prerequisites
-To create an integration, the following prerequisites
-must be met:
+After you log in to the {prodname} console, the general steps 
+for integrating applications are:
 
-* An expert {prodname} user in your organization has created
-connections for the applications or services
- you want to access in your integration. 
-
-* An administrative {prodname} user in your organization has
-provided you with login credentials for the {prodname} console. 
-
-==== General Steps for Creating an Integration
-To create an integration, the general steps are:
-
-. Log in to the {prodname} console.
+. Register {prodname} for access to the applications you want to integrate.
+. For each application you want to integrate, create a connection.
 . Click *Create Integration*.
 . Select a source connection. This connection accesses the application
 you want to obtain data from. 

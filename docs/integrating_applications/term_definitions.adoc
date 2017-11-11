@@ -1,0 +1,18 @@
+[[understanding_terms]]
+=== Understanding {prodname} terms
+
+When you integrate applications with {prodname}, you work with connectors, 
+connections, actions and steps. See the following sections for a 
+complete understanding of each of these constructs. 
+
+. <<about_integrations>>
+. <<about_connectors>>
+. <<about_connections>>
+. <<about_actions>>
+. <<about_steps>>
+
+include::about_integrations.adoc[leveloffset=+1]
+include::about_connectors.adoc[leveloffset=+1]
+include::about_connections.adoc[leveloffset=+1]
+include::about_actions.adoc[leveloffset=+1]
+include::about_steps.adoc[leveloffset=+1]

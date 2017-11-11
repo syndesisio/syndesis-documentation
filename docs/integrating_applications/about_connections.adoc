@@ -1,0 +1,16 @@
+[[about_connections]]
+= About {prodname} connections
+
+A connection represents a specific application that you want to obtain data from
+or send data to. For example, the set of connections you can choose from might  
+include a Twitter connection, a Salesforce connection, a Gmail connection, and so on. 
+Each connection has been created and configured by someone in your organization.
+
+In any number of integrations, you can select the same connection. For example,
+in integration A you can select a Twitter connection and configure it to 
+use `JDoe` as the Twitter screen name. In
+integration B, you can select that same Twitter connection and configure it
+to use `KLee` as the Twitter screen name. When multiple integrations
+use the same connection, and there is an update to that connection,
+{prodname} automatically updates all integrations that use 
+that connection. 

@@ -1,0 +1,19 @@
+[[benefits]]
+= Benefits of {prodname}
+
+The benefits of {prodname} include:
+
+* No coding required to share data between different applications or 
+services.
+
+* Deploy on the public cloud, a private cloud, or on-premise.
+
+* Run {prodname} on OpenShift or Kubernetes. 
+
+* Connectors are based on Apache Camel components. If {prodname} does
+not provide a 
+connector for an application or service you want to integrate then a 
+developer can create the connector you need. 
+
+* All the benefits of open source software. You can extend features,
+customize interfaces or connectors, and create additional connectors. 

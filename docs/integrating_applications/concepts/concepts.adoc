@@ -10,6 +10,4 @@ include::concepts/product_overview.adoc[]
 
 include::concepts/term_definitions.adoc[]
 
-include::concepts/user_types.adoc[]
-
 include::concepts/workflow_overview.adoc[]
