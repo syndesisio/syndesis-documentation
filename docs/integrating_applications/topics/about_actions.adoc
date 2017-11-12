@@ -1,4 +1,4 @@
-[[about_actions]]
+[[about-actions]]
 = About actions
 
 In an integration, each connection performs an action. For some

@@ -1,7 +1,7 @@
-[[how_you_use]]
+[[how-you-use]]
 = How you use {prodname} 
 
-==== How You Use It
+How You Use It
 
 How you use {prodname} depends on whether you are integrating 
 applications, creating connections for particular applications

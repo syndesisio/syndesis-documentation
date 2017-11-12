@@ -1,4 +1,4 @@
-[[monitor_integration_metrics]]
-= Monitor integration metrics
+[[monitoring-integration-metrics]]
+= Monitoring integration metrics
 
 Add the topic contents here.

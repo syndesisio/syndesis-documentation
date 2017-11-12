@@ -5,3 +5,5 @@
 
 [[managing_environments]]
 = Managing {prodname} Environments
+
+include::topics/admin_tasks.adoc[leveloffset=+1]

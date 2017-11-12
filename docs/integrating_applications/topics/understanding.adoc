@@ -10,18 +10,21 @@ required to accomplish this.
 
 For a high-level overview of {prodname}, see:
 
-. <<how_it_works>>
-. <<how_you_use>>
-. <<benefits>>
-. <<terms>>
-. <<workflow_overview>>
+* <<how-it-works>>
+* <<audience>>
+* <<how-you-use>>
+* <<benefits>>
+* <<understanding-terms>>
+* <<workflow-overview>>
 
 include::how_it_works.adoc[leveloffset=+1]
+
+include::user_types.adoc[leveloffset=+1]
 
 include::how_you_use.adoc[leveloffset=+1]
 
 include::benefits.adoc[leveloffset=+1]
 
-include::terms.adoc[leveloffset=+1]
+include::term_definitions.adoc[leveloffset=+1]
 
 include::workflow_overview.adoc[leveloffset=+1]

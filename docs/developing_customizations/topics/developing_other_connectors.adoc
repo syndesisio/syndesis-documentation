@@ -1,4 +1,4 @@
-[[developing_other_connectors]]
+[[developing-other-connectors]]
 = Developing other kinds of connectors
 
 TBA

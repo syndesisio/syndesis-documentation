@@ -1,0 +1,8 @@
+[[managing-integrations]]
+= Managing integratings
+
+Monitoring running integrating_applications
+Evaluating log information to manage and troubleshoot integrating_applications
+Updating integrating_applications
+Managing versions of integrations across development, test and 
+production environments

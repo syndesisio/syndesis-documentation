@@ -1,4 +1,4 @@
-[[about_connectors]]
+[[about-connectors]]
 = About {prodname} connectors
 
 {prodname} provides a set of connectors. Each connector provides the

@@ -1,6 +1,6 @@
 // Reused in 
 // "t2sf_intro.adoc", "sf2db_intro.adoc"
-[#create-salesforce-connection-{context}]
+[id='create-salesforce-connection-{context}']
 = Create a Salesforce connection
 
 A {prodname} connection to Salesforce requires registration of

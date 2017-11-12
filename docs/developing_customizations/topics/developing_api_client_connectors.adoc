@@ -1,4 +1,4 @@
-[[developing_api_client_connectors]]
+[[developing-api-client-connectors]]
 = Developing API client connectors
 
 TBA

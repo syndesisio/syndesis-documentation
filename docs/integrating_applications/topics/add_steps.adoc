@@ -1,0 +1,6 @@
+[[add-steps]]
+= Adding steps to operate on integration data
+
+After you have created integration connections, you can add functionality 
+to your integration by adding steps between the connections. 
+These steps filter the information, map data or send a message to the log.

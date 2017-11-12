@@ -1,4 +1,4 @@
-[[how_it_works]]
+[[how-it-works]]
 = How {prodname} Works
 
 {prodname} lets you enable data transfer between different applications. For example,
@@ -7,7 +7,7 @@ mention in your Salesforce account for that customer. Another example is a servi
 that makes stock trade recommendations. You can capture recommendations of interest
 and forward them to a service that automates stock transfers. 
 
-= How It Works
+How It Works
 
 Connectors form the foundation of {prodname}. Each connector
 is an Apache Camel component with added metadata that

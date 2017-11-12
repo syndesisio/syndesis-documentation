@@ -1,17 +1,11 @@
-[[Administrator-Tasks]]
-== Administrator Tasks
+[[administrator-tasks]]
+= Administrator tasks
 
 This chapter describes typical administrative tasks and processes for the 
 {prodname} administrator.
 
-include::tasks/user_admin.adoc[]
+include::user_admin.adoc[leveloffset=+1]
 
-include::tasks/team.adoc[]
+include::metrics.adoc[leveloffset=+1]
 
-include::tasks/metrics.adoc[]
-
-include::tasks/logs.adoc[]
-
-include::tasks/nexus.adoc[]
-
-include::tasks/manage_pipelines.adoc[]
+include::logs.adoc[leveloffset=+1]

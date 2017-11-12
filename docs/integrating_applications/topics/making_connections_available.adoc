@@ -1,0 +1,9 @@
+[[making-connections-available]]
+= Making connections available
+
+Overview of creating connections
+   Registering {prodname} with applications to be integrating and that
+   use OAuth
+   
+   About creating connections
+   About validating connections

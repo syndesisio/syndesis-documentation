@@ -1,4 +1,4 @@
-[[developing_custom_steps]]
-Developing custom steps
+[[developing-custom-steps]]
+= Developing custom steps
 
 TBA

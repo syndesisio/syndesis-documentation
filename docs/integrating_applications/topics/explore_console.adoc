@@ -1,2 +1,4 @@
-=== Explore the {prodname} Console
+[[about-the-console]]
+= Explore the {prodname} console
+
 Add the topic contents here.

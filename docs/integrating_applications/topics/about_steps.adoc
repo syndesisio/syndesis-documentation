@@ -1,4 +1,4 @@
-[[about_steps]]
+[[about-steps]]
 = About steps
 
 In some integrations, obtaining data from one application and 

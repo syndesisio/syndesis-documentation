@@ -1,2 +1,4 @@
-=== Verify a New Connection
+[[verifying-connections]]
+= Verify connections
+
 Add the topic contents here.

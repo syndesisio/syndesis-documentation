@@ -1,2 +1,0 @@
-=== Deploy an Integration Using a Pipeline
-Add the topic contents here.

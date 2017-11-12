@@ -1,5 +1,5 @@
-[[workflow_overview]]
-=== Workflow for creating an integration
+[[workflow-overview]]
+= Workflow for creating an integration
 
 
 

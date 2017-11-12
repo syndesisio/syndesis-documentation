@@ -1,0 +1,6 @@
+[[adding-customizations]]
+= Adding customizations
+
+API client connectors
+Technical extensions
+Other connectors

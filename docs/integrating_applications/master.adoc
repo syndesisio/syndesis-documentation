@@ -6,4 +6,34 @@
 [[integrating_applications]]
 = Integrating Applications with {prodname}
 
-TTBA
+Add an intro paragraph here.
+
+* <<understanding>>
+* <<planning>>
+* <<logging-in-and-out>>
+* <<making-connections-available>>
+* <<adding-customizations>>
+* <<creating-integrations>>
+* <<testing-integrations>>
+* <<publishing-integrations>>
+* <<managing-integrations>>
+
+
+
+include::topics/understanding.adoc[leveloffset=+1]
+
+include::topics/planning_integrations.adoc[leveloffset=+1]
+
+include::topics/log_in.adoc[leveloffset=+1]
+
+include::topics/making_connections_available.adoc[leveloffset=+1]
+
+include::topics/adding_customizations.adoc[leveloffset=+1]
+
+include::topics/creating_integrations.adoc[leveloffset=+1]
+
+include::topics/testing_integrations.adoc[leveloffset=+1]
+
+include::topics/publishing_integrations.adoc[leveloffset=+1]
+
+include::topics/managing_integrations.adoc[leveloffset=+1]

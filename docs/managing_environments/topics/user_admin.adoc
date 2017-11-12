@@ -1,4 +1,4 @@
-[[manage_users]]
-= Manage {prodname} users
+[[managing-users]]
+= Managing {prodname} users
 
 Add the topic contents here.

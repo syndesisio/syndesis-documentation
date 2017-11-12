@@ -1,4 +1,4 @@
-[[monitor_integration_logs]]
-= Monitor integration logs
+[[monitoring-integration-logs]]
+= Monitoring integration logs
 
 Add the topic contents here.

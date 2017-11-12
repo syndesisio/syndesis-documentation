@@ -1,5 +1,5 @@
-[[Managing-Connection-Authorizations]]
-=== Managing Connection Authorizations
+[[managing-connection-authorizations]]
+= Managing connection authorizations
 
 {prodname} obtains authorization for {prodname}
 to access the applications you want to connect to in an integration. 
