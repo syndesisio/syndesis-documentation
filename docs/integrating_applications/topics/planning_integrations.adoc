@@ -1,4 +1,4 @@
-[[planning]]
+[id='planning']
 = Planning integrations
 
 Before you create an integration, it is assumed that you have done

@@ -1,4 +1,4 @@
-[[t2sf-add-data-mapping-step]]
+[id='t2sf-add-data-mapping-step']
 = Add a data mapping step
 
 Add a data mapping step that correlates Twitter mention fields to 

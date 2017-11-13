@@ -3,7 +3,7 @@
 :imagesdir: topics
 :prodnameinurl: fuse-ignite
 
-[[developing_customizations]]
+[id='developing-customizations']
 = Developing {prodname} Customizations
 
 Add an intro paragraph here. 

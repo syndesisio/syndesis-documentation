@@ -1,4 +1,4 @@
-[[sf2db-choose-start-connection]]
+[id='sf2db-choose-start-connection']
 = Choose the start connection
 
 To choose the start connection:

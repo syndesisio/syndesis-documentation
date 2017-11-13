@@ -1,4 +1,4 @@
-[[t2sf-choose-finish-connection]]
+[id='t2sf-choose-finish-connection']
 = Choose the finish connection
 
 To add the finish connection to the integration:

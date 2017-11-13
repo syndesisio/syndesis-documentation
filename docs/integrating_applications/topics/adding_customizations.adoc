@@ -1,4 +1,4 @@
-[[adding-customizations]]
+[id='adding-customizations']
 = Adding customizations
 
 API client connectors

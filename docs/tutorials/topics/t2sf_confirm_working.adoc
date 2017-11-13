@@ -1,4 +1,4 @@
-[[t2sf-confirm-working]]
+[id='t2sf-confirm-working']
 = Confirm that the Twitter to Salesforce integration works 
 
 To confirm that the Twitter to Salesforce sample integration is working:

@@ -1,4 +1,4 @@
-[[sf2db-add-data-mapping-step]]
+[id='sf2db-add-data-mapping-step']
 = Add a data mapping step
 
 Add a step that maps Salesforce fields to fields in the 

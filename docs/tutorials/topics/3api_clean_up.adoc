@@ -1,4 +1,4 @@
-[[clean-up-3api]]
+[id='clean-up-3api']
 = Clean up after running the three-API sample integration
 
 To monitor and manage the three-API integration:

@@ -1,4 +1,4 @@
-[[salesforce-to-db]]
+[id='salesforce-to-db']
 = Implement a Salesforce to database sample integration
 
 :context: sf2db
@@ -9,11 +9,11 @@ with the Salesforce updates.
 
 To implement, deploy and test this sample integration, the main steps are:
 
-. <<register-with-salesforce-{context}>>.
-. <<create-salesforce-connection-{context}>>.
+. <<register-with-salesforce_{context}>>.
+. <<create-salesforce-connection_{context}>>.
 . <<create-sf-db-integration>>.
 . <<sf2db-confirm-working>>.
-. <<cleanup-{context}>>.
+. <<cleanup_{context}>>.
 
 If you already created the Twitter to Salesforce sample integration:
 

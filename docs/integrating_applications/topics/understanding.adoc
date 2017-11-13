@@ -1,4 +1,4 @@
-[[understanding]]
+[id='understanding']
 = Understanding {prodname} 
 
 {prodname} is an integration platform. With {prodname}, you 

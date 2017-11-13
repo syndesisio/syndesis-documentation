@@ -1,4 +1,4 @@
-[[sf2db-confirm-working]]
+[id='sf2db-confirm-working']
 = Confirm that the Salesforce to database integration works
 
 To confirm that the Salesforce to database integration is working:

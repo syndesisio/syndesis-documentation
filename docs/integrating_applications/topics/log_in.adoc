@@ -1,4 +1,4 @@
-[[logging-in-and-out]]
+[id='logging-in-and-out']
 = Logging in and out of {prodname}
 
 == Log In to an {prodname} Cluster using OpenShift's local Authentication.

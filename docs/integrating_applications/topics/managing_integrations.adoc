@@ -1,4 +1,4 @@
-[[managing-integrations]]
+[id='managing-integrations']
 = Managing integratings
 
 Monitoring running integrating_applications

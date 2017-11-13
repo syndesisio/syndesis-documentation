@@ -1,4 +1,4 @@
-[[create-3api-integration]]
+[id='create-3api-integration']
 = Create an integration that connects to three APIs
 
 To create an integration that uses the three API connections

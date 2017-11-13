@@ -1,4 +1,4 @@
-[[developing-api-client-connectors]]
+[id='developing-api-client-connectors']
 = Developing API client connectors
 
 TBA

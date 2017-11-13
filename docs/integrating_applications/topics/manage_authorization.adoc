@@ -1,4 +1,4 @@
-[[managing-connection-authorizations]]
+[id='managing-connection-authorizations']
 = Managing connection authorizations
 
 {prodname} obtains authorization for {prodname}

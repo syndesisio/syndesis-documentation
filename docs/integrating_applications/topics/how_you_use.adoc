@@ -1,4 +1,4 @@
-[[how-you-use]]
+[id='how-you-use']
 = How you use {prodname} 
 
 How You Use It

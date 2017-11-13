@@ -1,4 +1,4 @@
-[[t2sf-choose-start-connection]]
+[id='t2sf-choose-start-connection']
 = Choose the start connection
 
 To choose the start connection:

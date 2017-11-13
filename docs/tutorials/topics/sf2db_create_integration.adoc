@@ -1,4 +1,4 @@
-[[create-sf-db-integration]]
+[id='create-sf-db-integration']
 = Create and deploy Salesforce to database sample integration
 
 To create and deploy an integration that uses the Salesforce

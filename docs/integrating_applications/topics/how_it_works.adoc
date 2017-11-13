@@ -1,5 +1,5 @@
-[[how-it-works]]
-= How {prodname} Works
+[id='how-it-works']
+= How {prodname} works
 
 {prodname} lets you enable data transfer between different applications. For example,
 each time a customer is mentioned in Twitter, you might want to capture that

@@ -1,4 +1,4 @@
-[[monitoring-integration-metrics]]
+[id='monitoring-integration-metrics']
 = Monitoring integration metrics
 
 Add the topic contents here.

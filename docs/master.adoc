@@ -1,5 +1,11 @@
 :prodname: Fuse Ignite
-:prodversion: 0.1
+:prodversion: 7.0-TP
+:imagesdir: topics
+:prodnameinurl: fuse-ignite
+
+// This is a convenience document for generating all doc.
+// Images will not appear because each "book" has its own
+// topics/images folder inside its own folder. 
 
 = Skeleton for {prodname} User Documentation 
 
@@ -7,37 +13,10 @@ This document contains the very preliminary state of
 planned topics. Some topics contain draft documentation and/or
 notes. Other topics are empty.
 
-== Concepts
+include::tutorials/master.adoc[offsetlevel=+1]
 
-This section presents concepts for anyone with an interest
-in {prodname}.
+include::integrating_applications/master.adoc[offsetlevel=+1]
 
-include::integrators/concepts/product_overview.adoc[]
+include::developing_customizations/master.adoc[offsetlevel=+1]
 
-include::integrators/concepts/term_definitions.adoc[]
-
-// include::integrators/concepts/user_types.adoc[]
-
-include::integrators/concepts/workflow_overview.adoc[]
-
-//== Tutorials
-include::tutorials/master.adoc[leveloffset=+1]
-
-== Integrator Tasks
-
-Citizen integrators are business users who typically do not have 
-programming experience. For some integration tasks, citizen integrators
-might need help from expert integrators, who have some 
-programming experience. 
-
-include::integrators/tasks/citizen/citizen_tasks.adoc[]
-
-include::integrators/tasks/expert/expert_tasks.adoc[]
-
-== Developer Tasks
-
-include::developers/dev_tasks.adoc[]
-
-== Administrator Tasks
-
-include::admins/admin_tasks.adoc[]
+include::managing_environments/master.adoc[offsetlevel=+1]

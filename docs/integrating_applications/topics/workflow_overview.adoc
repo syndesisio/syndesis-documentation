@@ -1,4 +1,4 @@
-[[workflow-overview]]
+[id='workflow-overview']
 = Workflow for creating an integration
 
 

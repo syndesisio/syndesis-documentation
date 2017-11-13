@@ -1,4 +1,4 @@
-[[create-api2-connection]]
+[id='create-api2-connection']
 = Create a connection to the second API
 
 To create a connection for the second API: 

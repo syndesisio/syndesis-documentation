@@ -3,7 +3,7 @@
 :imagesdir: topics
 :prodnameinurl: fuse-ignite
 
-[[Tutorials]]
+[id='tutorials']
 = {prodname} Sample Integration Tutorial
 
 {prodname} lets you obtain data from an

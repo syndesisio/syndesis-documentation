@@ -1,4 +1,4 @@
-[[confirm-3api-works]]
+[id='confirm-3api-works']
 = Confirm that the three-API integration works
 
 To deploy the integration of three APIs:

@@ -1,4 +1,4 @@
-[[managing-users]]
+[id='managing-users']
 = Managing {prodname} users
 
 Add the topic contents here.

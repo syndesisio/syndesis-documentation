@@ -1,4 +1,4 @@
-[[administrator-tasks]]
+[id='administrator-tasks']
 = Administrator tasks
 
 This chapter describes typical administrative tasks and processes for the 

@@ -1,4 +1,4 @@
-[[about-integrations]]
+[id='about-integrations']
 = About integrations
 
 To set up data transfer between applications, you create an integration. When

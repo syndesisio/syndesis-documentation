@@ -1,4 +1,4 @@
-[[creating-integrations]]
+[id='creating-integrations']
 = Creating integrations
 
 You must have a connection type set up as a template for the type of connection you want to create. 

@@ -1,4 +1,4 @@
-[[create-3api-integration]]
+[id='create-3api-integration']
 = Implement a sample integration of three APIs
 
 This sample integration obtains data through an API, 

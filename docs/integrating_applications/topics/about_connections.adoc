@@ -1,4 +1,4 @@
-[[about-connections]]
+[id='about-connections']
 = About {prodname} connections
 
 A connection represents a specific application that you want to obtain data from

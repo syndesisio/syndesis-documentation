@@ -1,4 +1,4 @@
-[[making-connections-available]]
+[id='making-connections-available']
 = Making connections available
 
 Overview of creating connections

@@ -1,4 +1,4 @@
-[[audience]]
+[id='audience']
 = Who is {prodname} for?
 
 {prodname} is for business experts in, for example, 

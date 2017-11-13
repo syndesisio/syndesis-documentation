@@ -1,4 +1,4 @@
-[[understanding-terms]]
+[id='understanding-terms']
 = Understanding {prodname} terms
 
 When you integrate applications with {prodname}, you work with connectors, 

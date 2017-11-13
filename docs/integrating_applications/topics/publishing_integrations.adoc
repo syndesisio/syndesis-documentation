@@ -1,4 +1,4 @@
-[[publishing-integrations]]
+[id='publishing-integrations']
 = Publishing integrations
 
 Add the topic contents here.

@@ -1,5 +1,5 @@
-[[add-basic-filter]]
-= Add a Basic Filter Step
+[id='add-basic-filter']
+= Add a basic filter step
 
 You can add a step to an integration to filter the data that the
 integration operates on. In a filter step, {prodname} inspects the

@@ -1,4 +1,4 @@
-[[sf2db-choose-finish-connection]]
+[id='sf2db-choose-finish-connection']
 = Choose the finish connection
 
 To add the finish connection to the integration:

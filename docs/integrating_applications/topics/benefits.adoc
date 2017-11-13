@@ -1,4 +1,4 @@
-[[benefits]]
+[id='benefits']
 = Benefits of {prodname}
 
 The benefits of {prodname} include:

@@ -1,4 +1,4 @@
-[[create-stored-proc-connection]]
+[id='create-stored-proc-connection']
 
 = Create a stored procedure connection
  

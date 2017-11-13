@@ -1,4 +1,4 @@
-[[sfdb-create-database-connection]]
+[id='sfdb-create-database-connection']
 = Create a database connection
 
 To create an Oracle EBS connection:

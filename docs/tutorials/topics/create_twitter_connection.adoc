@@ -1,4 +1,4 @@
-[[create-twitter-connection]]
+[id='create-twitter-connection']
 = Create a Twitter connection
 
 A {prodname} connection to Twitter requires registration of

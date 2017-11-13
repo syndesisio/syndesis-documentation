@@ -1,4 +1,4 @@
-[[sf2db-prerequisites]]
+[id='sf2db-prerequisites']
 = Prerequisites for implementing Salesforce to database integration
 
 To implement a Salesforce to database sample integration, 

@@ -1,4 +1,4 @@
-[[add-steps]]
+[id='add-steps']
 = Adding steps to operate on integration data
 
 After you have created integration connections, you can add functionality 
