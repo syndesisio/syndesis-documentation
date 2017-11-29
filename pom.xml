@@ -42,8 +42,8 @@
                             <goal>process-asciidoc</goal>
                         </goals>
                         <configuration>
-                            <sourceDirectory>${basedir}/docs</sourceDirectory>
-                            <sourceDocumentName>index.adoc</sourceDocumentName>
+                            <sourceDirectory>${project.basedir}/docs</sourceDirectory>
+                            <sourceDocumentName>master.adoc</sourceDocumentName>
                             <imagesDir>images</imagesDir>
                             <backend>html</backend>
                             <doctype>book</doctype>
@@ -56,19 +56,20 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.4</version>
+                <groupId>io.syndesis</groupId>
+                <artifactId>syndesis-documentation-maven-plugin</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
                 <executions>
                     <execution>
-                        <phase>package</phase>
+                        <phase>generate-resources</phase>
                         <goals>
-                            <goal>single</goal>
+                            <goal>extract-tooltips</goal>
                         </goals>
                         <configuration>
-                            <descriptors>
-                                <descriptor>scripts/assembly-userguide.xml</descriptor>
-                            </descriptors>
+                            <sources>
+                                <source>${project.basedir}/docs/master.adoc</source>
+                            </sources>
+                            <output>tooltips.json</output>
                         </configuration>
                     </execution>
                 </executions>

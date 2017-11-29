@@ -11,8 +11,15 @@ The instructions below get you started with Asciidoc.
 
 _Q. I'm new to Asciidoc. How do I get this stuff to work?_
 
-This project is configured to build the docs using the `asciidoctor-maven-plugin`.
-Just run Maven from the top-level directory, as follows:
+This project is configured to build the docs using the `asciidoctor-maven-plugin` and tooltips are extracted using the `syndesis-documentation-maven-plugin`.
+Before you build the docs for the first time, build and install the `syndesis-documentation-maven-plugin` locally, as follows:
+
+----
+cd tools
+mvn install
+----
+
+To build the docs, run Maven from the top-level directory, as follows:
 
 ----
 mvn package
