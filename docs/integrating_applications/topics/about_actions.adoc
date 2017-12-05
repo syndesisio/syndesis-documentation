@@ -1,13 +1,13 @@
 [id='about-actions']
 = About actions
 
-In an integration, each connection performs an action. For some
-connections, you choose the action. Other connections can perform
-only one action and you are not offered a choice when you create
-an integration that uses that connection. For example, when you create
-an integration that uses a Salesforce connection the possible
-actions include creating a Salesforce account, updating a Salesforce
-account, searching Salesforce, and more. 
+In an integration, each connection performs one action. As you create an 
+integration, you choose a connection to add to the integration and then you 
+choose the action that the connection performs. For example, when you 
+create an integration that uses a Salesforce connection the set of
+actions that you choose from includes, but is not limited to,
+creating a Salesforce account, updating a Salesforce account and
+searching Salesforce.
 
 Some actions require additional configuration and {prodname}
 prompts you for this information if it is needed. 

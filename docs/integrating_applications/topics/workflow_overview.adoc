@@ -8,23 +8,21 @@ for integrating applications are:
 
 . Register {prodname} for access to the applications you want to integrate.
 . For each application you want to integrate, create a connection.
-. Click *Create Integration*.
-. Select a source connection. This connection accesses the application
-you want to obtain data from. 
-. Select the action you want the source connection to
-perform. 
-. Optionally, depending on the connection, enter some 
+. Create the integration:
+.. Select the start connection. This connection starts the integration by
+accessing the application you want to obtain data from. 
+.. Select the action you want the start connection to perform. 
+.. Optionally, depending on the connection, enter some 
 configuration information, such as login credentials.
-. Select a destination connection. This connection accesses the 
-application that uses the data from the source connection. 
-. Select the action you want the destination connection to perform.
-. Optionally, depending on the connection, enter some configuration
+.. Select the finish connection. This connection completes the
+integration by accessing the 
+application that uses the data from the start connection. 
+.. Select the action you want the finish connection to perform.
+.. Optionally, depending on the connection, enter some configuration
 details. 
-. Optionally, add one or more steps to be performed between the 
-source application and the destination application. Possible steps
-include logging, filtering data, splitting data, mapping data, and 
-more. 
-. Optionally, add a connection for an application you want to access
-after you obtain data from the source application and before
-you send data to the destination application. 
+.. Optionally, between the start connection and the finish connection, 
+add one or more connections to other applications. 
+.. Optionally, between connections, pperate on the data by adding one or 
+more steps. Possible steps include filtering and mapping data.
+
 . Publish your integration to run it. 

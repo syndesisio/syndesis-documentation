@@ -7,37 +7,31 @@ mention in your Salesforce account for that customer. Another example is a servi
 that makes stock trade recommendations. You can capture recommendations of interest
 and forward them to a service that automates stock transfers. 
 
-How It Works
+{prodname} provides a web browser interface that lets anyone integrate 
+two different applications or services without writing code. It also provides 
+features that allow you to introduce code if it is needed for complex 
+use cases. 
 
-Connectors form the foundation of {prodname}. Each connector
-is an Apache Camel component with added metadata that
-enables the intuitive {prodname} interface. This metadata
-specifies:
+To deploy a simple integration, 
+the main steps are:
 
-* Some connection settings
+. Create a connection to each application that you want to integrate.
+. Select a start connection. This connection is to the application that 
+contains the data you want to share to another application. 
+. Select a finish connection. This connection is to the application 
+that receives data from the start connection and that completes the
+integration. 
+. Map data fields from the start connection to data fields in the 
+finish connection. 
+. Give the integration a name.
+. Deploy it. 
 
-* Actions that can be performed and their
-properties and defaults
+The {prodname} dashboard lets you monitor and manage integrations. You can 
+see which integrations are running, start and stop integrations, edit and 
+deactivate integrations.
 
-* What the input data and output data look like
-
-Each connector
-
-* Has a single purpose, for example, connect to a 
-Salesforce application
-
-* Hides component properties that are not relevant to that purpose
-
-When an integration of different applications is ready to be deployed:
-
-. {prodname} creates a Spring Boot-based Camel project and a 
-build configuration.
-
-. Triggers the build, which produces a container image.
-
-. Starts running the container image on OpenShift.
-
-In addition, {prodname} stores your integration’s implementation 
-source code and configuration in a source control management system,
-such as GitHub. This enables you to look at it, change it and 
-include it as a part of your DevOps pipeline. 
+To create a connection, you select 
+the connector for the application or service you want to connect to. 
+{prodname} prompts you to enter values for the parameters required to create 
+the connection. You then verify that the connection works before making 
+it available to be used in integrations.

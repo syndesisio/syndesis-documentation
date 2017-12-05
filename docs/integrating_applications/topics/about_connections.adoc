@@ -1,16 +1,16 @@
 [id='about-connections']
 = About {prodname} connections
 
-A connection represents a specific application that you want to obtain data from
-or send data to. For example, the set of connections you can choose from might  
-include a Twitter connection, a Salesforce connection, a Gmail connection, and so on. 
-Each connection has been created and configured by someone in your organization.
+Before you can create an integration, you must create a connection 
+to each application or service
+that you want to obtain data from or send data to. To create a connection,
+you select a connector and add configuration information. For example,
+to create a Salesforce connection, you select the Salesforce connector
+and then follow prompts for obtaining log in credentials so that
+{prodname} uses the Salesforce account you choose when it connects to
+Salesforce. 
 
-In any number of integrations, you can select the same connection. For example,
-in integration A you can select a Twitter connection and configure it to 
-use `JDoe` as the Twitter screen name. In
-integration B, you can select that same Twitter connection and configure it
-to use `KLee` as the Twitter screen name. When multiple integrations
-use the same connection, and there is an update to that connection,
-{prodname} automatically updates all integrations that use 
-that connection. 
+To create an integraton, you select a connection to start the integration,
+a connection to end the integration, and optionally one or more 
+connections for accessing additional applications. 
+Any number of integrations can use the same connection. 

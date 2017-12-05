@@ -1,24 +1,12 @@
 [id='about-connectors']
 = About {prodname} connectors
 
-{prodname} provides a set of connectors. Each connector provides the
-infrastructure for connecting to a particular application or service.
-For example, the Salesforce connector lets you connect 
-to Salesforce. 
+{prodname} provides a set of connectors. A connector represents a specific
+application that you want to obtain data from or send data to. 
+Each connector is a template
+for creating a connection to that specific application. For example, you use the
+Salesforce connector to create a connection to
+Salesforce. 
 
-However, a connector does not provide everything needed to actually
-connect to an application or service, In an organization, an expert
-{prodname} user configures a connector with specific information, 
-such as login credentials. A configured connector is referred to
-as a connection. A particular connector is a template for any
-number of connections. For example, you can use the Salesforce
-connector to create multiple Salesforce connections. Each Salesforce
-connection would have different configuration settings. 
-
-To create an integration, end users select from available connections.
-Sometimes a connection needs additional configuration information.
-Sometimes, it does not. 
-
-Under the covers, {prodname} connectors are Apache Camel components. This
-gives {prodname} the potential to connect to more than one hundred applications
-and services. 
+If {prodname} does not provide a connector you need, a developer
+can create the needed connector.

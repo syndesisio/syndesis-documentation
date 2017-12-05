@@ -1,31 +1,56 @@
 [id='how-you-use']
 = How you use {prodname} 
 
-How You Use It
+The best way to learn about how to use {prodname} is to create the sample
+integrations by following the instructions in the
+https://access.qa.redhat.com/documentation/en-us/red_hat_jboss_fuse/7.0-tp/html-single/fuse_ignite_sample_integration_tutorial[sample integration tutorials].
 
-How you use {prodname} depends on whether you are integrating 
-applications, creating connections for particular applications
-or services, or developing new connectors. 
+One of the sample integrations captures updates in Salesforce and
+calls a database stored procedure to synchronize the database with the
+Salesforce updates. The main steps for doing this are:
 
-{prodname} provides a web browser interface that lets anyone integrate 
-two different applications 
-or services. No coding is required regardless of the complexity of the 
-integration. To deploy a simple integration, the main steps are to select a 
-connection for the source application, select a connection for the destination 
-application, respond to any prompts for configuration settings, 
-and give the 
-integration a name. You can then save the integration or immediately
-deploy it.
+. Register your installation of {prodname} as an application that can access
+Salesforce. You need to do this only once to be able to create any number of 
+integrations that connect to Salesforce. 
 
-The {prodname} dashboard lets you monitor and manage integrations. You can see 
-which integrations are running, start and stop integrations, edit and remove 
-integrations. 
+. Create a Salesforce connection. To configure this connection, you follow
+prompts for logging in to the desired Salesforce account. You can use 
+the same Salesforce connection in any number of integrations. 
 
-There is also a web browser interface for creating connections. You
-select the connector for the application or service you want to
-connect to.  {prodname} prompts you to
-enter values for the parameters required to create the connection.
-You then verify that the connection works before making it available
-to be used in integrations. 
+. Choose your Salesforce connection as the connection that starts the
+integration. 
 
-There are {prodname} APIs for creating additional connectors.
+. Choose the action that you want the Salesforce connection to perform. In 
+the sample integration, you choose the *On create* action for the
+*Lead* object. After connecting to Salesforce, the integration watches for
+notifications that a Salesforce lead was created. When the integration
+finds such a notification, it passes the new lead's data to the next
+step in the integration. However, before you can add the next step, you
+must choose the integration's finish connection. 
+
+. Choose the *PostgresDB* connection as the connection that completes
+the integration. 
+
+. Choose the action that you want the *PostgresDB* connection to perform. 
+In the sample integration, you choose *add_lead* as the procedure
+you want to invoke. This is a provided stored procedure that runs in 
+the sample database. This procedure determines the requirements
+for which Salesforce fields need to be mapped to which database fields. 
+
+. Add a step between the Salesforce connection and the database connection. 
+This step maps Salesforce fields to database fields. 
+
+. Give the integration a name. Optionally, enter a description of what
+the integration does. 
+
+. Click *Publish* to start running the integration. 
+
+. On the {prodname} dashboard, confirm that the Salesforce to database 
+integration is designated as *Active*, which means that it is running.
+
+. Confirm that the integratiosn is working as expected by creating a new
+lead in Salesforce. 
+
+. For this sample integration, in a browser, insert `todo-` in 
+front of the URL for your {prodname} installation. This displays the 
+notification that a new lead was created. 

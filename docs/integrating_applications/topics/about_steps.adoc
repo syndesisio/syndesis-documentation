@@ -3,9 +3,14 @@
 
 In some integrations, obtaining data from one application and 
 using it in another application is all you want to do. But in other
-integrations, you might need one or more steps between the data's
-source and target applications. A step can be an interaction with 
-another application or service or it can be an operation on the
-data. Operations are based on the Enterprise Integration 
-Patterns, for example, steps can filter,
-split, map or log data. 
+integrations, you might want to operate on data after obtaining it from
+one application and before sending it to another application. 
+To operate on data, you add a step. {prodname} provides steps for:
+
+* Filtering data so that the integration continues only when it meets 
+criteria you define. 
+
+* Mapping data fields in one application to data fields in another
+application. 
+
+ 

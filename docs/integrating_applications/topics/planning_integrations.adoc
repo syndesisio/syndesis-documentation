@@ -1,8 +1,8 @@
 [id='planning']
 = Planning integrations
 
-Before you create an integration, it is assumed that you have done
-some planning so that you have answers to the following questions.
+Some planning so that you have answers to the following questions is
+helpful before you create an integration.
 
 To start the integration:
 
@@ -11,23 +11,24 @@ To start the integration:
 For example, an integration that starts by obtaining data from 
 Twitter might trigger on a Twitter mention. 
 * What are the data fields of interest?
-* What credentials does the integration use to access this application?
+* What credentials does {prodname} use to access this application?
 
-To end the integration:
+To finish the integration:
 
 * Which application receives the data?
 * In that application, what action does the integration perform?
 * What are the data fields of interest?
-* What credentials does the integration use to access this application?
+* What credentials does {prodname} use to access this application?
 
-In between the start and end applications:
+In between the start and finish applications:
 
-* Do you need to connect to any other applications? For any other
-applications the integration connects to:
+* Do you need to access any other applications? For any other
+applications the integration accesses:
 +
+** Which application does the integration need to connect to?
 ** What action should the integration perform?
 ** What are the data fields of interest?
-** What credentials should the integration use?
+** What credentials should the integration use to connect to this application?
 
 * Between connections, does the integration need to operate on the data?
 For example:
