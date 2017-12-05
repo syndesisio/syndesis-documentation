@@ -22,7 +22,7 @@ application that uses the data from the start connection.
 details. 
 .. Optionally, between the start connection and the finish connection, 
 add one or more connections to other applications. 
-.. Optionally, between connections, pperate on the data by adding one or 
+.. Optionally, between connections, operate on the data by adding one or 
 more steps. Possible steps include filtering and mapping data.
 
-. Publish your integration to run it. 
+. Click *Publish* to start running your integration. 

@@ -9,7 +9,6 @@
 Add an intro paragraph here.
 
 * <<understanding>>
-* <<planning>>
 * <<logging-in-and-out>>
 * <<making-connections-available>>
 * <<adding-customizations>>
@@ -18,11 +17,7 @@ Add an intro paragraph here.
 * <<publishing-integrations>>
 * <<managing-integrations>>
 
-
-
 include::topics/understanding.adoc[leveloffset=+1]
-
-include::topics/planning_integrations.adoc[leveloffset=+1]
 
 include::topics/log_in.adoc[leveloffset=+1]
 

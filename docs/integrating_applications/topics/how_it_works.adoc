@@ -7,31 +7,31 @@ mention in your Salesforce account for that customer. Another example is a servi
 that makes stock trade recommendations. You can capture recommendations of interest
 and forward them to a service that automates stock transfers. 
 
-{prodname} provides a web browser interface that lets anyone integrate 
+{prodname} provides a web browser interface that lets your integrate 
 two different applications or services without writing code. It also provides 
 features that allow you to introduce code if it is needed for complex 
 use cases. 
 
-To deploy a simple integration, 
+To create and run a simple integration, 
 the main steps are:
 
 . Create a connection to each application that you want to integrate.
-. Select a start connection. This connection is to the application that 
-contains the data you want to share to another application. 
-. Select a finish connection. This connection is to the application 
+. Select the start connection. This connection is to the application that 
+contains the data you want to share with another application. 
+. Select the finish connection. This connection is to the application 
 that receives data from the start connection and that completes the
 integration. 
 . Map data fields from the start connection to data fields in the 
 finish connection. 
 . Give the integration a name.
-. Deploy it. 
+. Click *Publish* to start running the integration.  
 
 The {prodname} dashboard lets you monitor and manage integrations. You can 
 see which integrations are running, start and stop integrations, edit and 
 deactivate integrations.
 
-To create a connection, you select 
+The {prodname} *Create Connection* page lets you create a connection by
+selecting
 the connector for the application or service you want to connect to. 
 {prodname} prompts you to enter values for the parameters required to create 
-the connection. You then verify that the connection works before making 
-it available to be used in integrations.
+the connection. 
