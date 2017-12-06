@@ -1,10 +1,10 @@
-:prodname: Fuse Ignite
+:prodname: Ignite
 :prodversion: 7.0-TP
 :imagesdir: topics
 :prodnameinurl: fuse-ignite
 
 [id='integrating_applications']
-= Integrating Applications with {prodname}
+= Integrating Applications with Ignite
 
 Add an intro paragraph here.
 
