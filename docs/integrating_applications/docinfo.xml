@@ -1,8 +1,8 @@
-<productname>Red Hat Fuse Ignite</productname>
-<productnumber>1.0</productnumber>
-<subtitle>Tutorial</subtitle>
+<productname>Red Hat JBoss Fuse</productname>
+<productnumber>7.0-TP</productnumber>
+<subtitle>User's guide to integrating applications with Ignite</subtitle>
 <abstract>
- <para>Instructions for creating and deploying a sample integration</para>
+ <para>Ignite provides integration as a service on the OpenShift Pro tier.</para>
 </abstract>
 <authorgroup>
   <org>
