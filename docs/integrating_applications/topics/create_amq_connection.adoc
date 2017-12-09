@@ -1,0 +1,4 @@
+[id='create-amq-connection']
+= Create an AMQ connection
+
+TBA

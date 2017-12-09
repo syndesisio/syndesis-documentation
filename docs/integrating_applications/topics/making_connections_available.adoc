@@ -7,3 +7,12 @@ Overview of creating connections
    
    About creating connections
    About validating connections
+   About adding connections to integrations
+   
+include::connecting_to_amq.adoc[leveloffset=+1]
+
+include::connecting_to_databases.adoc[leveloffset=+1]
+
+include::connecting_to_sf.adoc[leveloffset=+1]
+
+include::connecting_to_twitter.adoc[leveloffset=+1]

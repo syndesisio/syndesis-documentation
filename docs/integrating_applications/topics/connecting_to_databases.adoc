@@ -1,0 +1,9 @@
+[id='connecting-to-databases']
+= Connecting to databases
+
+Add intro. 
+
+
+include::create_database_connection.adoc[leveloffset=+1]
+
+include::adding_database_connections.adoc[leveloffset=+1]

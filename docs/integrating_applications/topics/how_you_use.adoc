@@ -3,7 +3,7 @@
 
 The best way to learn about how to use {prodname} is to create the sample
 integrations by following the instructions in the
-https://access.qa.redhat.com/documentation/en-us/red_hat_jboss_fuse/7.0-tp/html-single/fuse_ignite_sample_integration_tutorial[sample integration tutorials].
+https://access.qa.redhat.com/documentation/en-us/red_hat_jboss_fuse/7.0-tp/html-single/ignite_sample_integration_tutorials/[sample integration tutorials].
 
 One of the sample integrations captures updates in Salesforce and
 calls a database stored procedure to synchronize the database with the
