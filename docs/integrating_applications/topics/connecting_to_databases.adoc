@@ -1,5 +1,5 @@
 [id='connecting-to-databases']
-= Connecting to databases
+= Connecting to SQL databases
 
 Add intro. 
 
