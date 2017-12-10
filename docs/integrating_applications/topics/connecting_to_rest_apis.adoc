@@ -1,0 +1,22 @@
+[id='connecting-to-rest-apis']
+= Connecting to REST APIs
+
+In an integration, to connect to a REST API, you must have created a
+connector for that API by uploading a Swagger specification that 
+describes the API. See <<creating-api-connectors>>. 
+
+To create a connection to a REST API: 
+
+. In {prodname}, in the left pane, click *Connections* to 
+display any available connections. 
+. In the upper right, click *Create Connection* to display 
+available connectors.   
+. Click the the connector for the API you want to create a connection for.  
+. In the *Endpoint URL* field, enter the API location you want the 
+connection to use and click *Next*.
+. In the *Connection Name* field, enter your choice of a name that
+helps you distinguish this connection from any other connection. 
+. In the *Description* field, optionally enter any information that
+is helpful to know about this connection. 
+. In the upper right, click *Create* to see that the connection you 
+created is now available.  
