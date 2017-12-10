@@ -6,7 +6,7 @@ to each application or service
 that you want to obtain data from or send data to. To create a connection,
 you select a connector and add configuration information. For example,
 to create a Salesforce connection, you select the Salesforce connector
-and then follow prompts for obtaining log in credentials so that
+and then follow prompts for providing log in credentials so that
 {prodname} uses the Salesforce account you choose when it connects to
 Salesforce. 
 

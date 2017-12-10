@@ -1,6 +1,11 @@
 [id='logging-in-and-out']
 = Logging in and out of {prodname}
 
+
+When I click the link for my Ignite evaluation, I get a
+Red Hat OpenShift Online Log In page
+I log in using my Red Hat account
+
 == Log In to an {prodname} Cluster using OpenShift's local Authentication.
 To log in to a cluster that uses local Authentication provided by OpenShift, you are automatically redirected to the OpenShift log in screen.
 
