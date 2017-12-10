@@ -1,0 +1,30 @@
+[id='creating-api-connectors']
+= Creating API client connectors
+
+To create an API client connector, upload a Swagger 2.0 specification
+that describes an API you want to connect to. When you upload a Swagger
+specification, {prodname} verifies that the content is valid and
+contains the information required to create the connector. {prodname}
+provides information if there is invalid or missing content. 
+
+To create an API client connector:
+
+. In the {prodname} navigation pane, click *Customizations* to display
+the *API Client Connector* tab. Any API client connectors that are
+already available are listed here. 
+. Click *Create API Connector*. 
+. On the *Create API Client Connector* page, indicate whether you want
+to upload a Swagger file or specify a URL for the Swagger specification. 
+. Select a file to upload or specify a URL. 
+. Click *Next*. If there is invalid or missing content, {prodname} 
+displays information about what needs to be corrected. If the specification
+is valid and complete, {prodname} displays the connector's name, 
+description, host and base URL. 
+. Click *Next*. 
+. Indicate the API's security requirements by selecting the security
+type and specifying the name and password of the account to use to 
+access the API. 
+. Click *Next*. 
+. Review the actions that the connector supports. 
+. If the actions are correct, click *Create Connector*. If there is a problem, 
+click *Cancel*, revise the Swagger specification, and try again. 

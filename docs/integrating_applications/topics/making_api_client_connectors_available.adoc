@@ -1,9 +1,0 @@
-[id='making-api-client-connectors-available']
-= Making API client connectors available
-
-TBA
-
-When creating a new API connector, I need the ability to import an existing Swagger definition from my local file system or a remote URL. When importing a Swagger definition, 
-I expect Syndesis to verify that the document is valid and supplies all information required to create an API connector. If the document is invalid or does not supply required 
-information, Syndesis should provide me with a warning with details and not allow an API connector to be created. In the event that the API definition does not declare request 
-or response types, the definition should not be considered invalid and any resource operations missing type information should result in typeless actions in the connector.

@@ -10,7 +10,7 @@ Add an intro paragraph here.
 
 * <<understanding>>
 * <<logging-in-and-out>>
-* <<making-connections-available>>
+* <<connecting-to-applications>>
 * <<adding-customizations>>
 * <<creating-integrations>>
 * <<testing-integrations>>
@@ -21,7 +21,7 @@ include::topics/understanding.adoc[leveloffset=+1]
 
 include::topics/log_in.adoc[leveloffset=+1]
 
-include::topics/making_connections_available.adoc[leveloffset=+1]
+include::topics/connecting_to_applications.adoc[leveloffset=+1]
 
 include::topics/adding_customizations.adoc[leveloffset=+1]
 

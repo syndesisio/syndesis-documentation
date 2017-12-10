@@ -1,5 +1,5 @@
-[id='making-connections-available']
-= Making connections available
+[id='connecting-to-applications']
+= Connecting to applications you want to integrate
 
 Overview of creating connections
    Registering {prodname} with applications to be integrating and that

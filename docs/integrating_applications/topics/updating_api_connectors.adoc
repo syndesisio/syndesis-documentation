@@ -1,0 +1,5 @@
+[id='updating-api-connectors']
+= Updating API connectors
+
+After you create an API client connector, if the API changes then it is
+up to you to upload an updated Swagger specification for that API. 
