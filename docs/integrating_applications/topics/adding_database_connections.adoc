@@ -54,7 +54,7 @@ To add a database connection:
 SQL query you specify.
 * *Invoke Stored Procedure* operates on data by invoking
 the stored procedure you specify or select. 
-. If you selected *Invoke SQL*, in the *Query* field,
+. If you selected *Invoke SQL*, in the *SQL Command* field,
 enter a SQL `SELECT`, `INSERT`, `UPDATE` or `DELETE` command to 
 operate on the data of interest.
 +

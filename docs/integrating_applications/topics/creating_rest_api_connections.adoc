@@ -1,0 +1,16 @@
+[id='create-rest-api-connection']
+= Create an API client connection
+
+To create a connection to a REST API: 
+
+. In {prodname}, in the left pane, click *Connections* to 
+display any available connections. 
+. In the upper right, click *Create Connection* to display 
+available connectors.   
+. Click the the connector for the API you want to create a connection for. 
+. In the *Connection Name* field, enter your choice of a name that
+helps you distinguish this connection from any other connection. 
+. In the *Description* field, optionally enter any information that
+is helpful to know about this connection. 
+. In the upper right, click *Create* to see that the connection you 
+created is now available.  

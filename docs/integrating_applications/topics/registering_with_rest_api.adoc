@@ -1,0 +1,14 @@
+[id='register-with-rest-api']
+= Register {prodname} as an API client
+
+Custom API client connectors might require {prodname} to obtain
+authorization to access the API. The Swagger specification from which 
+{prodname} created the API connector should specify any such
+security requirements. 
+
+To register {prodname} as an authorized API client:
+
+. In {prodname}, in the left pane, click *Settings*. 
+. TBA - how do you add an entry for a connection to an API?
+. TBA - how do you obtain values for client ID and client secret from
+the API?

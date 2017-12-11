@@ -1,0 +1,6 @@
+[id='add-api-client-connection']
+= Add an API client connection to an integration
+
+In an integration, to add an API client connection:
+
+TBA
