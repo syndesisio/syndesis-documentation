@@ -32,9 +32,9 @@ this sample integration, see <<sf2db-prerequisites>>.
 
 include::sf2db_prereqs.adoc[leveloffset=+1]
 
-include::register_with_sf.adoc[leveloffset=+1]
+include::shared/register_with_sf.adoc[leveloffset=+1]
 
-include::create_sf_connection.adoc[leveloffset=+1]
+include::shared/create_sf_connection.adoc[leveloffset=+1]
 
 include::sf2db_create_integration.adoc[leveloffset=+1]
 
