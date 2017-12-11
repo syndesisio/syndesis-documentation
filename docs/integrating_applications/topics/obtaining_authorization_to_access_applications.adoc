@@ -36,7 +36,7 @@ the URL for your installation of {prodname}.
 . On your {prodname} installation *Settings* page, paste the  
 client ID and client secret and save the settings.
 
-For details, see 
+For examples, see 
 
 * <<register-with-salesforce_{context}>> 
 * <<register-with-twitter>>
