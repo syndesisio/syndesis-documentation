@@ -21,7 +21,7 @@ The content is organized as follows:
 
 include::topics/understanding.adoc[leveloffset=+1]
 
-include::topics/log_in.adoc[leveloffset=+1]
+include::topics/shared/log_in.adoc[leveloffset=+1]
 
 include::topics/connecting_to_applications.adoc[leveloffset=+1]
 

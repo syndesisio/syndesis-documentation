@@ -35,6 +35,8 @@ sample integrations:
 * <<twitter-to-salesforce>>
 * <<salesforce-to-db>>
 
+include::topics/shared/log_in.adoc[leveloffset=+1]
+
 include::topics/t2sf_intro.adoc[leveloffset=+1]
 
 include::topics/sf2db_intro.adoc[leveloffset=+1]
