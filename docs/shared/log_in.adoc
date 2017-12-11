@@ -3,11 +3,10 @@
 
 In this release, you receive a link for accessing {prodname}. 
 Clicking this link displays the 
-Red Hat OpenShift Online Log In page, which prompts you to log in by
-using your Red Hat account. 
+*Red Hat OpenShift Online Log In* page, which prompts you to log in by
+using your Red Hat account. Logging in prompts you to grant access to your account:
 
-Logging in displays 
-image::shared/images/AuthorizeAccessOnLogin.png[title="Authorize Access on Login"]
+image:shared/images/AuthorizeAccessOnLogin.png[title='Authorize Access'] 
 
 Click *Allow selected permissions*. You need to do this only once. The 
 next time you log in, {prodname} immediately appears. 

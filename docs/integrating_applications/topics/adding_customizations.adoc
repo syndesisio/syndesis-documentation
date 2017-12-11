@@ -1,5 +1,5 @@
 [id='adding-customizations']
-= Adding customizations
+= Adding and managing customizations
 
 {prodname} lets you add  API client connectors and custom operations on data
 to integrations. 

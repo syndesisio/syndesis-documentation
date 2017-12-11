@@ -6,7 +6,9 @@
 [id='integrating_applications']
 = Integrating Applications with Ignite
 
-Add an intro paragraph here.
+This guide provides information and instructions for using 
+{prodname}'s web interface to integrate applications. 
+The content is organized as follows:
 
 * <<understanding>>
 * <<logging-in-and-out>>

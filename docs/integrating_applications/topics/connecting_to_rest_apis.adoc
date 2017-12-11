@@ -17,4 +17,4 @@ include::registering_with_rest_api.adoc[leveloffset=+1]
 
 include::creating_rest_api_connections.adoc[leveloffset=+1]
 
-include::add_api_client_connection.adoc[levleoffset=+1]
+include::add_api_client_connection.adoc[leveloffset=+1]
