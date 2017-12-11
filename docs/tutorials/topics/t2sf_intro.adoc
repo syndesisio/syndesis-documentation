@@ -27,13 +27,13 @@ see <<t2sf-prerequisites>>.
 
 include::t2sf_prereqs.adoc[leveloffset=+1]
 
-include::register_with_twitter.adoc[leveloffset=+1]
+include::shared/register_with_twitter.adoc[leveloffset=+1]
 
-include::create_twitter_connection.adoc[leveloffset=+1]
+include::shared/create_twitter_connection.adoc[leveloffset=+1]
 
-include::register_with_sf.adoc[leveloffset=+1]
+include::shared/register_with_sf.adoc[leveloffset=+1]
 
-include::create_sf_connection.adoc[leveloffset=+1]
+include::shared/create_sf_connection.adoc[leveloffset=+1]
  
 include::t2sf_create_integration.adoc[leveloffset=+1]
 

@@ -4,8 +4,8 @@
 :context: ug
 Add intro.  
 
-include::../tutorials/topics/register_with_sf.adoc[leveloffset=+1]
+include::shared/register_with_sf.adoc[leveloffset=+1]
 
-include::../tutorials/topics/create_sf_connection.adoc[leveloffset=+1]
+include::shared/create_sf_connection.adoc[leveloffset=+1]
 
 include::adding_sf_connections.adoc[leveloffset=+1]

@@ -16,4 +16,4 @@ in the fields that you mapped: *Company*, *Email*, *FirstName*,
 for your {prodname} installation. For example: 
 `\https://todo-app-proj7614.6a63.fuse-ignite.openshiftapps.com/`.
 . In the *To Do App* display, you should see a notification that a new 
-lead was created. 
+lead was created in the database. 

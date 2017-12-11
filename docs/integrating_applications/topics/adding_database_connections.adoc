@@ -1,4 +1,29 @@
 [id='add-database-connection']
 = Add a database connection to an integration
 
-TBA
+You must create a database connection before you can add it to an
+integration. If you did not already create the database connection, 
+see <<create-database-connection>>. 
+
+== Database connections as start connections
+
+In an integration, to add a database connection as the integration's
+start connection:  
+
+. In the {prodname} pane on the left, click *Integrations*. 
+. Click *Create Integration*. 
+. On the *Choose a Start Connection* page, click your 
+database connection. 
+. On the *Choose an Action* page, click one of the following:
++
+* *Periodic SQL Invocation* obtains data by periodically invoking the
+SQL command you specify.
+* *Periodic Stored Procedure* obtains data by periodically invoking
+the stored procedure you select. 
+
+
+
+. Click *Done* to add the start connection to the integration. 
+
+
+== Database connections as middle or finish connections

@@ -7,8 +7,8 @@ mention in your Salesforce account for that customer. Another example is a servi
 that makes stock trade recommendations. You can capture recommendations of interest
 and forward them to a service that automates stock transfers. 
 
-{prodname} provides a web browser interface that lets your integrate 
-two different applications or services without writing code. It also provides 
+{prodname} provides a web browser interface that lets you integrate two or
+more different applications or services without writing code. It also provides 
 features that allow you to introduce code if it is needed for complex 
 use cases. 
 
