@@ -1,4 +1,9 @@
 [id='deleting_api_connectors']
 = Deleting API client connectors
 
-To delete an API client connector, 
+You can delete an API connector at any time. Any running integrations 
+that use connections based on the deleted connector continue to run 
+and behave as expected. 
+
+You cannot publish an integration that uses a connection based on the
+deleted API connector.

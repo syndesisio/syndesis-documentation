@@ -1,10 +1,10 @@
 [id='register-with-rest-api']
 = Register {prodname} as an API client
 
-Custom API client connectors might require {prodname} to obtain
-authorization to access the API. The Swagger specification from which 
-{prodname} created the API connector should specify any such
-security requirements. 
+Before {prodname} creates an API client
+connector, it prompts you to indicate the API's security requirements.
+If an API uses OAuth then you must register {prodname} as a client of
+that API. Registration authorizes {prodname} to access the API. 
 
 To register {prodname} as an authorized API client:
 
