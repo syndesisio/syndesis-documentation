@@ -16,3 +16,5 @@ Published = active and running
 For a given integration:
 * There is only ever one draft.
 * There is only ever one active integration
+
+include::export_import_integrations.adoc[leveloffset=+1]
