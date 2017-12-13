@@ -54,24 +54,33 @@ To add a database connection:
 . On the *Choose an Action* page, click one of the following:
 +
 * *Invoke SQL* operates on data by executing the
-SQL query you specify.
+SQL statement you specify.
 * *Invoke Stored Procedure* operates on data by invoking
 the stored procedure you specify or select. 
-. If you selected *Invoke SQL*, in the *SQL Statement* field,
-enter a SQL `SELECT`, `INSERT`, `UPDATE` or `DELETE` statement to 
-operate on one or more records.
-The table that contains the data you want must already exist.
+. If you selected *Invoke SQL*, in the *SQL Statement* field:
++
+For a middle connection, enter a SQL `SELECT` statement that obtains
+one record or enter a SQL `INSERT`, `UPDATE` or 
+`DELETE` statement that 
+operates on one or more records.
+The table that contains the data must already exist.
 +
 In this release, when a database connection is a middle connection, 
 a `SELECT` statement can obtain only one record. You should define
 the `SELECT` statement so that it obtains one record.
 +
+For a finish connection, enter a SQL `INSERT`, `UPDATE` or 
+`DELETE` statement to 
+operate on one or more records.
++
 If you selected *Invoke Stored Procedure*, in the
 *Stored Procedure* field, select or enter the stored procedure to 
 invoke to operate on the data of interest. The stored procedure you specify must 
-exist at this time. The database administrator should have created any stored 
+already exist. The database administrator should have created any stored 
 procedures you need to use in an integration. 
-. Click *Done*. {prodname} tries to validate the connection, which includes
+. Click *Done*. 
+
+{prodname} tries to validate the connection, which includes
 checking that a specified SQL query is syntactically correct and
 confirming that the query or stored procedure target data exists. If
 verfication is successful then {prodname} adds the connection to
