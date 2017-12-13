@@ -19,5 +19,3 @@ you are connecting to.
 . Depending on the action you select, enter any parameters that 
 {prodname} prompts for. 
 . Click *Done*. 
-
-. 
