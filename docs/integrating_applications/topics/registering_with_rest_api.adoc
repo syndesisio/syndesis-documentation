@@ -24,8 +24,9 @@ might look like this:
 . In {prodname}, in the left pane, click *Settings*. 
 . Look for the name of the API you want to connect to and click its 
 *Register* button to display its client ID and client secret fields. 
-. In another browser window, go the authorization URL for the API you
-want to connect to. 
+. In another browser window, go the URL for specifying client settings
+for access to the API you want to connect to. The API service should
+provide this URL. 
 . Follow the prompts there to obtain the API client ID and API client secret
 that {prodname} will use to access the API.  
 . Paste the API client ID and the API client secret into their

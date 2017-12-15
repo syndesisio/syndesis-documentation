@@ -4,9 +4,11 @@
 Before you can add an API connection to an integration, you must
 create a connection to that API. See <<create-rest-api-connection>>. 
 
-In an integration, a connection to an API can be the start connection,
-the finish connection, or a middle connection. The instructions below
-assume that {prodname} is prompting you to select a connection. 
+In this release, in an integration, a connection to an API can be
+the finish connection or a middle connection. It cannot be the
+start connection. The instructions below
+assume that {prodname} is prompting you to select a finish connection
+or a connection that is not the start connection.
 
 To add an API connection to an integraton:
 
