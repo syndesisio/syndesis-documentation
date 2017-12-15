@@ -1,12 +1,7 @@
-[id='export-import']
-= Exporting and importing integrations
+[id='about-copying-integrations']
+= About copying integrations
 
-To deploy integrations across development, staging and 
-production environments, you can export and import integrations.
-The environments can all be on a single OpenShift cluster, 
-or they can be spread out across multiple OpenShift clusters.
-
-Every {prodname} installation is an environment from which you 
+Each {prodname} installation is an environment from which you 
 can export an integration. Exporting an integration downloads a zip file 
 that contains the information needed to recreate the integration in a 
 different environment.
@@ -19,8 +14,10 @@ secrets. You must edit each connection that is incomplete and ensure
 that it is configured for its new environment. 
 
 Reimporting an integration updates the integration, but does not update 
-the connections. The reimport operation creates any connections that are
+the connection settings that you specified in the import environment. 
+The reimport operation creates any connections that are
 new in the imported integration. 
 
-When you import an integration it because the environment's draft 
-integration. An environment can have exactly one draft integration. 
+When you import an integration it becomes the environment's draft 
+integration. An environment can have exactly one draft integration.
+ 

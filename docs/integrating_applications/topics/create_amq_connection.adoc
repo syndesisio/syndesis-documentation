@@ -2,3 +2,6 @@
 = Create an AMQ connection
 
 TBA
+
+After you select the connector, and enter data in the fields.
+Click Validate. 

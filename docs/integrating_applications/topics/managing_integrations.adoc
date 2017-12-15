@@ -1,9 +1,10 @@
 [id='managing-integrations']
-= Managing integratings
+= Managing integrations
 
+TBA - Just some notes:
 Monitoring running integrating_applications
 Evaluating log information to manage and troubleshoot integrating_applications
-Updating integrating_applications
+Updating integrations
 Managing versions of integrations across development, test and 
 production environments
 
@@ -17,4 +18,8 @@ For a given integration:
 * There is only ever one draft.
 * There is only ever one active integration
 
-include::export_import_integrations.adoc[leveloffset=+1]
+See the following topics:
+
+* <<copying-integrations-to-other-environments>>
+
+include::copying_integrations_to_other_environments.adoc[leveloffset=+1]

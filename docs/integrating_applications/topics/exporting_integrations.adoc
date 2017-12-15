@@ -1,0 +1,17 @@
+[id="exporting-integrations"]
+= Exporting integrations
+
+You can export an integration whose status is:
+
+* Draft
+* Active
+* Deactivated
+
+To export an integration:
+
+. In the left pane of {prodname}, click *Integrations*. 
+. Click the integration that you want to export.
+. In the integration's summary page, in the upper right, click *Export*. 
+
+{prodname} downloads a zip file that you can import into another
+{prodname} environment. 
