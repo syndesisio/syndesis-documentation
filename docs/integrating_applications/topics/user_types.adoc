@@ -1,5 +1,5 @@
 [id='audience']
-= Who is {prodname} for?
+= Who {prodname} is for
 
 {prodname} is for business experts in, for example, 
 finance, human resources, or

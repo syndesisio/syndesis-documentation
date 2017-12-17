@@ -1,5 +1,5 @@
-[id='create-advanced-filter']
-= Add an advanced filter
+[id='add-advanced-filter-step']
+= Add an advanced filter step
 
 . On the *Create an Integration* page, click *Add a Step*
 

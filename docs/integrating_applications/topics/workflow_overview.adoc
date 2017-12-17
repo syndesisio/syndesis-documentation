@@ -1,19 +1,19 @@
 [id='workflow-overview']
 = Workflow for creating an integration
 
-
-
 After you log in to the {prodname} console, the general steps 
 for integrating applications are:
 
-. Register {prodname} for access to the applications you want to integrate.
+. For each application that you want to integrate and that uses the
+OAuth protocol, register {prodname} as a client of that application.
 . For each application you want to integrate, create a connection.
 . Create the integration:
 .. Select the start connection. This connection starts the integration by
 accessing the application you want to obtain data from. 
 .. Select the action you want the start connection to perform. 
 .. Optionally, depending on the connection, enter some 
-configuration information, such as login credentials.
+configuration information, for example, you might indicate whether to
+operate on a Salesforce contact or a Salesforce lead. 
 .. Select the finish connection. This connection completes the
 integration by accessing the 
 application that uses the data from the start connection. 

@@ -1,34 +1,29 @@
 [id='creating-integrations']
 = Creating integrations
 
-You must have a connection type set up as a template for the type of connection you want to create. 
-For example, if you want to create a new Twitter connection, a Twitter connection must be available to be used as a template.
+After some planning and preparation, you are ready to create an 
+integration. In the {prodname} web interface, when you 
+click btn:[Create Integration], {prodname} guides you
+through the procedure to create an integration.  
 
-. On the {prodname} home page, click the *Connections* tab.
+It is assumed that you are familiar with the information in these topics:
 
-. Click *Create*
+* <<planning>>
+* <<workflow-overview>>
 
-. Provide a name for the Integration.
+The following topics provide information and instructions for creating
+an integration:
 
-. Select source Connection. 
-.. Select the type of connection from the list of pre-defined connections. Supply connection credentials for the source Connection if requested. The properties required are specific to each individual Connection.
+* <<preparing-to-create-an-integration>>
+* <<procedure-for-creating-an-integration>>
+* <<add-steps>>
 
-. Enter a *Name* and optional *Description* for the connection.
+include::preparing_to_create_an_integration.adoc[leveloffset=+1]
 
-. Select destination Connection.
-.. Select the type of connection from the list of pre-defined connections. 
--- Supply connection credentials for the source Connection if requested. The properties required are specific to each individual Connection.
+include::procedure_for_creating_an_integration.adoc[leveloffset=+1]
 
-. Enter a *Name* and optional *Description* for the connection.
+include::add_steps.adoc[leveloffset=+1]
 
-. You can add further steps or connections if required, by clicking *Add a step* or *Add a connection*.  
-.. *Add a step*   You can add some functionality to your Integration by adding a log entry, a filter, or by adding a data mapper. 
-.. *Add a connection*   You can add further connections to the Integration.
 
-. Click *Next*.
 
-. Enter a *Name* and optional *Description* for the Integration.
-
-. Click *Publish*.
-
-. View Integration on the *Integrations* page.
+Y

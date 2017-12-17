@@ -9,8 +9,14 @@ To operate on data, you add a step. {prodname} provides steps for:
 
 * Filtering data so that the integration continues only when it meets 
 criteria you define. 
-
+ 
 * Mapping data fields in one application to data fields in another
 application. 
+
+* Describing the data type for requests and responses when connecting
+to a REST API. 
+
+For details, see <<add-steps>>. 
+
 
  
