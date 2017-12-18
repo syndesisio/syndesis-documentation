@@ -37,5 +37,10 @@ configuration to any new connections.
 |There is only a draft integration with the same name as the integration being 
 imported.
 |The imported integration is now the *Draft* and the previous draft is lost. 
+
+The import operation creates each 
+connection that the imported integration uses and copies all connection 
+settings except for secrets. You must edit each connection that is incomplete 
+and ensure that it is configured for its new environment. 
 |===
  
