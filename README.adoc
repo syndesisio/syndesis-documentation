@@ -1,3 +1,10 @@
+*SEPTEMBER 22, 2019* 
+*THE CONTENT IN THIS REPO IS OUT OF DATE.*
+*YOU CAN FIND UP-TO-DATE SYNDESIS DOCUMENTATION HERE:*
+https://github.com/syndesisio/syndesis/tree/master/doc
+
+
+
 Documentation for Syndesis - a platform for running JBoss Fuse on the 
 enterprise public cloud (OpenShift Dedicated).
 
